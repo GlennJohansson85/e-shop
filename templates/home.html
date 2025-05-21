@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="home-banner">LATEST PRODUCTS ARE HERE!</div>
+    <div class="home-header">POPULAR PRODUCTS:
+        <a href="{% url 'products' %}" class="btn">All Products</a>
+    </div>
+
+    <div class="home-container">
+        <div class="home-row">
+            {% for product in products|slice:":8" %}
+                <div class="col-md-3">
+                    <div class="home-card">
+                        <a class="home-img-wrap" href="{{ product.get_url }}">
+                            <img class="home-img" src="{{ product.images.url }}">
+                        </a>
+                        <figcaption class="home-text-container">
+                            <a class="home-name" href="{{ product.get_url }}">
+                                {{ product.product_name }}
+                            </a>
+                            <div class="home-price">$ {{ product.price }}</div>
+                        </figcaption>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}
