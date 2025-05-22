@@ -6,6 +6,17 @@ if os.path.isfile('env.py'):
     import env
 
 
+
+BASE_DIR = Path(__file__).resolve().parent.parent
+
+SECRET_KEY = os.environ.get('SECRET_KEY', '')
+
+DEBUG = True
+
+ROOT_URLCONF = 'e-shop.urls'
+WSGI_APPLICATION = 'e-shop.wsgi.application'
+AUTH_USER_MODEL = 'accounts.Account'
+
 # CSRF_TRUSTED_ORIGINS = ['']
 
 ALLOWED_HOSTS = [
@@ -57,6 +68,10 @@ TEMPLATES = [
     },
 ]
 
+
+
+
+
 if 'DATABASE_URL' in os.environ:
     DATABASES = {
         'default': dj_database_url.config(
@@ -79,16 +94,6 @@ AUTH_PASSWORD_VALIDATORS = [
     {'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator'},
     {'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator'},
 ]
-
-BASE_DIR            = Path(__file__).resolve().parent.parent
-
-SECRET_KEY          = os.environ.get('SECRET_KEY', '')
-
-DEBUG               = True
-
-ROOT_URLCONF        = 'e-shop.urls'
-WSGI_APPLICATION    = 'e-shop.wsgi.application'
-AUTH_USER_MODEL     = 'accounts.Account'
 
 MESSAGE_TAGS        = {messages.ERROR: 'danger'}
 
@@ -113,11 +118,10 @@ MEDIA_URL           = '/media/'
 
 DEFAULT_AUTO_FIELD  = 'django.db.models.BigAutoField'
 
-
 # AWS S3 configuration for production
 if 'USE_AWS' in os.environ:
 
-    # AWS S3 settings
+    #AWS S3 Configuration
     AWS_STORAGE_BUCKET_NAME = 'app-e-shop'
     AWS_S3_REGION_NAME      = 'eu-north-1'
     AWS_ACCESS_KEY_ID       = os.environ.get('AWS_ACCESS_KEY', '')

@@ -1,53 +1,98 @@
 /* NEXT FONTS */
 @font-face {
-    font-family: "next-light.otf";
+    font-family: "next-light";
     src: url('/static/fonts/next-light.otf') format('opentype');
 }
 
 @font-face {
-    font-family: "next-regular.otf";
+    font-family: "next-regular";
     src: url('/static/fonts/next-regular.otf') format('opentype');
 }
 
 @font-face {
-    font-family: "next-bold.otf";
+    font-family: "next-bold";
     src: url('/static/fonts/next-bold.otf') format('opentype');
 }
 
 @font-face {
-    font-family: "next-semibold.otf";
+    font-family: "next-semibold";
     src: url('/static/fonts/next-semibold.otf') format('opentype');
 }
 
 
 /* COOPER HEWITT */
 @font-face {
-    font-family: "CooperHewitt-Thin.otf";
+    font-family: "CooperHewitt-Thin";
     src: url('/static/fonts/CooperHewitt-Thin.otf') format('opentype');
 }
 
 @font-face {
-    font-family: "CooperHewitt-Light.otf";
+    font-family: "CooperHewitt-Light";
     src: url('/static/fonts/CooperHewitt-Light.otf') format('opentype');
 }
 
 @font-face {
-    font-family: "CooperHewitt-Book.otf";
+    font-family: "CooperHewitt-Book";
     src: url('/static/fonts/CooperHewitt-Book.otf') format('opentype');
 }
 
+/* ELEPHNT */
+@font-face {
+    font-family: "ELEPHNT";
+    src: url('/static/fonts/ELEPHNT.TTF') format('truetype');
+}
+
+@font-face {
+    font-family: "ELEPHNTI";
+    src: url('/static/fonts/ELEPHNTI.TTF') format('truetype');
+}
+
+/* ELEPHANT */
+@font-face {
+    font-family: "Elephant-Normal";
+    src: url('/static/fonts/Elephant-Normal.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "Elephant-Bold";
+    src: url('/static/fonts/Elephant-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "Elephant-Extended-Bold";
+    src: url('/static/fonts/Elephant-Extended-Bold.ttf') format('truetype');
+}
+
+/* PHOTINA */
+@font-face {
+    font-family: "PhotinaMTStd-SemiBold";
+    src: url('/static/fonts/PhotinaMTStd-SemiBold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: "Photina MT Ultra Bold";
+    src: url('/static/fonts/Photina MT Ultra Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "PhotinaMT";
+    src: url('/static/fonts/PhotinaMT.ttf') format('truetype');
+}
+
+
 /*                                                                                          GENERAL STYLES */
+
+
 html {
-    height:                 100%;
-    margin:                 0 auto;
     background-color:       #fff;
     background-blend-mode:  exclusion;
     background-image:       url("/static/images/items/pa8.png");
 }
 
 body {
-    font-family:            "next-light.otf";
+    height: 100%;
     max-width:              1200px;
+    width:                  100%;
     margin:                 0 auto;
     display:                flex;
     flex-direction:         column;
@@ -60,6 +105,7 @@ body {
 .main-content {
     margin-top:             80px; /* Push content down from Navbar */
     min-height:             calc(90vh);  /* Adjust for footer height */
+    flex: 1;
 }
 
 .container {
@@ -80,16 +126,12 @@ body {
 }
 
 /*                                                                                          HEADER & BREAD TEXT */
-h1,h2 {
-    font-family:            "next-light.otf";
-}
-
-h3 {
-    font-family:            "next-light.otf";
+h1,h2,h3  {
+    font-family:            "ELEPHNT";
 }
 
 .grey-text {
-    font-family:            "CooperHewitt-Light.otf";
+    font-family:            "Elephant-Normal";
 
 }
 .page-header-container {
@@ -97,12 +139,10 @@ h3 {
     display:                flex;
     justify-content:        space-between;
     align-items:            center;
-    color:                  #000;
-    text-shadow:            1px 1px 1px #4445447f;
 }
 
 .card-header {
-    font-family:            "next-light.otf";
+    font-family:            "ELEPHNTI";
     text-shadow:            2px 1px 1px#000;
     display:                flex;
     justify-content:        space-between;
@@ -114,7 +154,7 @@ h3 {
 }
 
 .card-header-2 {
-    font-family:            "next-light.otf";
+    font-family:            "ELEPHNT";
     background-color:     #d58db0dd;
     display:                flex;
     justify-content:        space-between;
@@ -146,9 +186,9 @@ h3 {
 
 /*                                                                                          FORM */
 .form-header {
-    font-family:            "next-semibold.otf";
+    margin-left:            10px;
+    font-family:            "ELEPHNTI";
     font-size:              20px;
-
 }
 
 .form-group {
@@ -156,8 +196,14 @@ h3 {
     color:                  #000;
 }
 
-.form-control {
-    color:                  #000;
+
+
+/* Showing number of clothes */
+.form-inline {
+    font-family:            "ELEPHNT";
+    font-size:              16px;
+    color:                  #7f7d7d;
+    word-spacing:           2px;
 }
 
 /*                                                                                          TABLE */
@@ -172,47 +218,26 @@ table {
 }
 
 .btn {
-    font-family:            "next-light.otf";
+    font-family:            "Photina MT";
+    font-size:              14px;
     text-align:             center;
     cursor:                 pointer;
     border-radius:          5px;
-    color:                  #fff;
+    color:                  #ffffff;
     border:                 2px outset #000;
-    background-image:       linear-gradient(135deg, #000,#3d3d3d);
+    background-image:       linear-gradient(135deg, #000,#6f6d6d);
     transition:             all 0.1s ease-in-out;
 }
 
 .btn:hover {
     color:                  #ffb8b8;
-    background-image:       linear-gradient(135deg,#3d3d3d, #000);
+    background-image:       linear-gradient(225deg,#6f6d6d, #000);
 }
 
-/* remove? */
-.btn-small {
-    font-family:            "next-light.otf";
-    font-size:              12px;
-    padding:                3px;
-    text-decoration:        none;
-    border:                 2px solid #000;
-    border-radius:          5px;
-    color:                  #fff;
-    background-color:       transparent;
-    text-align:             center;
-    cursor:                 pointer;
-    transition:             all 0.1s ease-in-out;
-    box-shadow:             2px 2px 1px rgba(0, 0, 0, 0.291);
-}
-
-.btn-small:hover {
-    color:               #004078;
-    background-color:    #db9cbb;
-    border:                 2px solid #004078;
-    box-shadow:             none;
-}
-
+    
 /*                                                                                          PAGINATION */
 .pagination {
-    font-family:            "next-light.otf";
+    font-family:            "Elephant-Bold";
     font-size:              18px;
     display:                flex;
     justify-content:        center;
@@ -277,19 +302,26 @@ table {
 }
 
 .info-wrap {
-    font-family:            "next-light.otf", sans-serif;
+    font-family:            "next-light", sans-serif;
     text-align:             center;
 }
 
 /*                                                                                          HOME.HTML*/
 .home-banner {
-    font-family:            "next-light.otf";
+    font-family:            "ELEPHNT";
+    text-shadow:            2px 1px 3px #a7a7a7;
+    font-size:              52px;
+    word-spacing:           8px;
     text-align:             center;
-    color:                  #3a3939;
+    color:                  #4a4a4a;
+    -webkit-text-stroke: 0.5px rgb(78, 78, 78);
 }
 
 .home-header {
     max-width:              1000px;
+    font-family:            "ELEPHNT";
+    font-size:              22px;
+    text-shadow:            1px 1px 2px #a7a7a7;
     width:                  100%;
     display:                flex;
     justify-content:        space-between;
@@ -297,9 +329,8 @@ table {
     margin:                 0 auto;
     margin-bottom:          5px;
     padding:                10px;
-    color:                  #000;
-    text-shadow:            1px 1px 2px rgba(92, 92, 92, 0.95);
-
+    color:                  #535252;
+    
 }
 
 .home-container {
@@ -341,8 +372,7 @@ table {
 }
 
 /* Hovering card = Bold Font also */
-.home-card:hover .home-text-container {
-    font-family:            "next-regular.otf";
+.home-card:hover.home-text-container {
     text-decoration:        none;
     color:                  #000;
 }
@@ -355,8 +385,7 @@ table {
     display:                flex;
     align-items:            center;
     justify-content:        center;
-    border-bottom:          none;
-    border-top:             2px inset #fff;
+    border-top: none;
     border-right:           2px inset #fff;
     border-left:            2px inset #fff;
     background-color:       #fff;
@@ -366,27 +395,32 @@ table {
 .home-img {
     width:                  100%;
     height:                 100%;
+    border:                 none;
+    outline:                none;
     background-color:       #fff;
     object-fit:             contain;
 }
 
 /* Product name & price */
 .home-text-container  {
-    font-family:            "next-light.otf";
+    font-family:            "PhotinaMTStd-SemiBold";
+    font-size:              14px;
     text-align:             center;
     margin:                 0;
     padding:                0;
-    border-top:             4px solid #fff;
+    outline:                none;
+    border-top:             none;
     border-right:           2px inset #fff;
     border-bottom:          2px inset #fff;
     border-left:            2px inset #fff;
+    
     background-color:       #fff;
 }
 
 /* Remove default */
 .home-name  {
     text-decoration:        none;
-    color:                  #000;
+    color:                  #171616;
 }
 
 /* Remove default */
@@ -397,14 +431,30 @@ table {
 /* Remove default */
 .home-price {
     margin-bottom:          5px;
-    color:                  #000;
+    color:                  #005023;
 }
 
 /*                                                                                          PRODUCTS.HTML*/
+/* Our Products */
+.products-header {
+    font-family:            ElEPHNT;
+    font-size:              32px;
+    margin-left:            20px;
+    color:                  #3c3c3c;
+    -webkit-text-stroke:    0.5px rgb(78, 78, 78);
+   
+}
+
+/* Page Container */
+.products-container {
+    max-width:              1100px;
+    margin:                 auto;
+}
+
+/* Header text "Categories" of all products */
 .products-list-header {
-    font-family:            "next-light.otf";
-    font-size:              24px;
-    line-height:            20px;
+    font-family:            "ELEPHNT";
+    font-size:              22px;
     padding:                10px;
     display:                flex;
     justify-content:        space-between;
@@ -413,25 +463,27 @@ table {
     border-top-left-radius: 5px;
     border-top-right-radius:5px;
     color:                  #fff;
-    background-size:        auto 100%;
-    background-position:    center right;
-    background-repeat:      no-repeat;
-    background-image:       url("/static/images/icons/di5.png"),
-                            linear-gradient(135deg, #000,#3d3d3d);
+    background-image:       linear-gradient(135deg, #000,#3d3d3d);
 }
 
+/* Product list container */
 .products-list-menu {
     list-style:             none;
     text-align:             right;
+    margin:                 10px;
 }
 
+/* Product text in the list container */
 .products-list-item {
+    font-family: "PhotinaMTStd-SemiBold";
+    line-height:            12px;
+    font-size:              14px;
     text-decoration:        none;
-    color:                  #000;
+    color:                  #171616;
 }
 
 .products-list-item:hover {
-    font-family:            "next-regular.otf";
+    font-size:              18px;
     color:                  #000;
 }
 
@@ -454,52 +506,88 @@ table {
 
 .products-card:hover .products-card-name,
 .products-card:hover .products-card-price {
-    font-family:            "next-regular.otf";
+    font-family:            "Elephant-Bold";
     text-decoration:        none;
     color:                  #000;
 }
 
 .products-card-text-container {
     text-align:             center;
-    padding:                10px;
+    padding:                5px;
 }
 
-.products-card-name {
+.product-info {
+    margin: 0;
+    padding: 0;
+    font-family: "PhotinaMTStd-SemiBold";
+    font-size:              14px;
     text-decoration:        none;
-    color:                  #000;
 }
 
-.products-card-price {
-    margin-bottom:          5px;
-}
+
 /*                                                                                          PRODUCT_DETAIL.HTML */
+/* Page container */
 .detail-container {
-    margin:                 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
+.col-md-5, .col-md-7 {
+    display: flex;
+    align-items: center;
+}
+
+/* Product Image Settings */
 .detail-img {
-    max-width:              100%;
+    max-width:              400px;
     height:                 auto;
     display:                block;
-    margin-left:            auto;
-    margin-right:           auto;
+    border:                 5px outset transparent;
+    border-image-slice:     30;
+    border-image-repeat:    stretch;
+    border-image-source:    url("/static/images/items/gold3.png");
 }
 
+/* Product Option Container */
 .detail-text-container {
-    font-family:            "CooperHewitt-Light.otf";
     margin:                 20px 0;
     color:                  #000;
 }
 
-.detail-selection {
-    font-family:            "CooperHewitt-Light.otf";
-    margin-bottom:          20px;
-    width:                  200px;
+/* Product header = "Urban Jacket" etc. */
+.detail-header {
+    font-family:            "ELEPHNT";
+    font-size:              26px;
+    text-shadow:            1px 1px 2px #a7a7a7;
+    color:                  #535252;  
 }
 
+/* Product Price Settings */
+.detail-price {
+    font-family:            "ELEPHNT";
+    font-size:              18px;
+    color:                  #1c7e48;
+}
+
+/* "Choose Color/Size" */
+.product-select {
+    font-family:            "PhotinaMTStd-Semibold";
+    font-size:              16px;
+    color:                  #333232; 
+}
+
+/*"Large, Medium, Small, One Size/Color Only"*/
+.detail-selection {
+    font-family:            "Photina MT";
+    font-size:              14px;
+    margin-bottom:          20px;
+    width:                  200px;
+    color:                  #000000; 
+}
+
+/* Button "Add Item" */
 .detail-cart {
-    width:                  30px;
-    height:                 30px;
     display:                inline-block;
     position:               relative;
     vertical-align:         middle;
@@ -508,104 +596,250 @@ table {
     background-image:       url("/static/images/icons/cart15.png");
 }
 
+/* Product Reviews Section */
 .detail-review-section {
+    margin:                 0 auto;
     margin-bottom:          0;
     padding-bottom:         0;
+    max-width: 900px;
 }
 
+/* "Customer reviews " */
 .detail-review-header {
-    font-family:            "next-light.otf";
-    text-align:             center;
-    border-bottom:          1px solid #4445447f;
+    font-family:                "ELEPHNTI";
+    font-size:                  24px;
+    color:                      #535252;
+    text-align:                 center;
+    border-bottom:              1px solid #838282;
 }
 
+/* Container for Product Reviews */
 .detail-review-container {
-    display:                flex;
-    flex-direction:         column;
-    justify-content:        center;
-    text-align:             center;
+    display:                    flex;
+    flex-direction:             column;
+    justify-content:            center;
+    text-align:                 center;
 }
 
+/* Container for Review Text */
 .detail-review-text {
-    font-family:            "CooperHewitt-Light.otf";
-    margin:                 0px;
-    padding:                2px;
-    color:                  #000;
+    font-family:                "Photina MT";
+    font-size:                  14px;
+    line-height:                18px;
+    margin:                     0px;
+    padding:                    2px 10px;
+    color:                      #272727;
 }
 
+/* Container for Review Image */
 .detail-review-img {
-    width:                  150px;
-    height:                 100px;
-    border-radius:          2px;
+    width:                      150px;
+    height:                     100px;
+    border-radius:              2px;
 }
 
-/* Dashboard_sidebar.html - Specific Styles */
+/*                                                                                          CART.HTML */
+.cart-page-container {
+    width:                      1000px;
+    max-width:                  100%;
+    margin:                     0 auto;  /* This centers horizontally */
+    margin-top:                 30px;
+    padding:                    0 15px; /* Side padding so content doesn’t touch edges */
+}
+
+/* "Product:, Details:, Quantity:, Price:" Headers */
+.cart-th {
+    font-family:                "PhotinaMTStd-SemiBold";
+    font-size:                  18px;
+}
+
+/* Product Image Container in Product Column */
+.cart-img-container {
+    width:                      100px;
+    align-items:                center;
+    justify-content:            center;
+}
+
+/* Image Settings */
+.cart-img {
+    width:                      80px;
+    justify-content:            center;
+    text-align:                 center;
+    height:                     auto;
+    object-fit:                 cover;
+    border-radius:              4px;
+}
+
+/* Details Column - Text Settings */
+.cart-product-details {
+    font-family:                "Photina MT";
+    font-size:                  14px;
+}
+
+/* Details Column - Link to product detail for specific product item in cart */
+.cart-info-link {
+    font-size:                  18px;
+    font-weight:                bold;
+    text-decoration:            none;
+    color:                      #004078;
+}
+
+/* Quantiy Column - FIX THIS HERE !!!! */
+.cart-quantity {
+    font-family:                "Photina MT";
+    font-size:                  14px;
+}
+
+.cart-plus,
+.cart-minus {
+    display:                    inline-block;
+    width:                      15px;
+    height:                     15px;
+    background-size:            contain;
+    background-repeat:          no-repeat;
+    background-position:        center;
+    border:                     none;
+    background-color:           transparent;
+    cursor:                     pointer;
+    padding:                    0;
+}
+
+/* Quantiy Column - Plus Image Settings */
+.cart-plus {
+    background-image:           url("/static/images/icons/plus.png");
+    margin-right:               3px; /* Space between plus and input */
+}
+
+.cart-plus:hover {
+    background-image:           rl("/static/images/icons/plus-green.png");
+}
+
+/* Quantiy Column - Minus Image Settings */
+.cart-minus {
+    background-image:           url("/static/images/icons/minus.png");
+    margin-left:                3px; /* Space between plus and input */
+}
+.cart-minus:hover {
+    background-image:           url("/static/images/icons/minus-red.png");
+}
+
+/* Price Column */
+.cart-price {
+    font-family:                "Photina MT";
+    font-size:                  14px;
+    color:                      #005023;
+}
+
+/* Remove Column - Container settings for remove image */
+.cart-remove {
+    display:                    inline-block;
+    width:                      25px;
+    height:                     25px;
+    background-size:            contain;
+    background-repeat:          no-repeat;
+    background-position:        right;
+    border:                     none;
+    background-color:           transparent;
+    cursor:                     pointer;
+    padding:                    0;
+}
+
+/* Remove Column - Remove Image Settings */
+.cart-remove {
+    background-image:           url("/static/images/icons/remove-1.png");
+    margin-top:                 8px;
+}
+
+.cart-remove:hover {
+    background-image:           url("/static/images/icons/remove-1.1.png");
+    margin-top:                 8px;
+}
+
+/* Cart Cost Container "Total Price, Tax, Grand Total" */
+.cart-cost-container {
+    border:                     1px solid #000;
+    padding:                    5px;
+}
+
+/* Cart Cost Container - Header Text "Total Price, Tax, Grand Total" */
+.cart-cost-header {
+    font-family:                "PhotinaMTStd-SemiBold";
+    font-size:                  18px;
+}
+
+/* Numbers for "Total Price, Tax, Grand Total" */
+.cart-cost {
+    font-family:                "Photina MT";
+    font-size:                  14px;
+    color:                      #005023;
+}
+/*                                                                                          DASHBOARD_SIDARBAR.HTML */
 /* Item Container */
 .list-group {
-    border:                 none;
-    box-shadow:             2px 4px 4px rgba(0, 0, 0, 0.291);
+    border:                     none;
+    box-shadow:                 2px 4px 4px rgba(0, 0, 0, 0.291);
 }
 
 /* Item */
 .list-group-item {
-    font-family: "next-light.otf";
-    color: #000;
-    border: none;
+    font-family:                "Photina MT";
+    color:                      #000;
+    border:                     none;
 }
 
 /* Top Item */
 .list-group-item:first-child {
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+    border-top-left-radius:     5px;
+    border-top-right-radius:    5px;
 }
 
 /* Bottom Item */
 .list-group-item:last-child {
-    border-bottom-left-radius: 5px;
+    border-bottom-left-radius:  5px;
     border-bottom-right-radius: 5px;
 }
 
 /* Sign Out - Container */
 .sidebar-btn-container {
-    margin: 20px 0;
+    margin:                     20px 0;
 }
 
 /* Sign Out - Icon */
 .icon-control {
-  margin-top: 5px;
-  float: right;
-  font-size: 80%;
+  margin-top:                   5px;
+  float:                        right;
+  font-size:                    80%;
 }
 
 
 /* Dashboard.html - Specific Styles */
 /* Profile Image */
 .dash-img {
-    width: 150px;
-    height: auto;
-    border: transparent;
+    width:                      150px;
+    height:                     auto;
+    border:                     transparent;
 }
 
 /* Increase black for default Text */
 .dash-text {
-    color:#000;
+    color:                      #000;
 }
 
 /* Email Text below Profile Image */
 .dash-email {
-    margin-top: 10px;
+    margin-top:                 10px;
 }
 
 /* My_Orders.html - Header */
 .my-header {
-    color: #000;
-    font-weight: 500;
+    color:                      #000;
+    font-weight:                500;
 }
 
 /* Edit_Profile.html - Form */
 .edit-form {
-    padding: 0 40px;
-    color: #000;
+    padding:                    0 40px;
+    color:                      #000;
 }
 
 /* Change_Password.html, Register.html - Specific Styles */
@@ -620,142 +854,6 @@ table {
     margin: 0 auto;
 }
 
-/* Cart.html - Specific Styles */
-.cart-container {
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-
-.cart-card {
-    padding: 10px;
-    border-color: transparent;
-    background-color: #30303137;
-    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.291);
-}
-
-/* Product, Quantity, Price */
-.cart-header {
-    font-family: "next-light.otf";
-    text-align: center;
-}
-
-/* Clothing Item */
-.cart-item {
-    text-align: center;
-}
-
-/* Product name, color, size */
-.cart-info {
-    font-size: 14px;
-    margin-top: 5px;
-    color: #000;
-}
-
-/* Product Name - Link to Product Detail */
-.cart-info-link {
-    text-decoration: none;
-    color: #000;
-    border-bottom: 1px solid #000;
-}
-
-/* Product name - Effect */
-.cart-info-link:hover {
-    color: #004078;
-    border-bottom: 1px solid #004078;
-}
-
-/* Add/Remove Item */
-.cart-btn-plus,
-.cart-btn-minus {
-    text-align: center;
-    padding: 5px;
-    border: none;
-    color: #000;
-    background-color: transparent;
-    cursor: pointer;
-    transition: transform 0.2s ease, background-color 0.3s ease;
-}
-
-/* Remove Item - Effect */
-.cart-btn-minus:hover {
-    color: rgb(156, 2, 2);
-    transform: scale(1.2);
-}
-
-/* Add Item - Effect */
-.cart-btn-plus:hover {
-    color:#1c7e48;
-    transform: scale(1.2);
-}
-
-/* Product Image in Cart */
-.cart-img {
-    width: 150px;
-    height: auto;
-}
-
-/* Cart Text */
-.cart-price {
-    font-size: 14px;
-    font-weight: 600;
-    color:#1c7e48;
-    text-align: left;
-}
-
-.cart-price-small {
-    color: #000;
-}
-
-.cart-total {
-    color:#1c7e48;
-    font-weight: bold;
-}
-
-/* Container for Checkout & Continue Shopping Buttons */
-.cart-link-container {
-    font-family: "next-light.otf";
-    margin-top: 5px;
-}
-
-/* Checkout & Continue Shopping Buttons */
-.cart-link {
-    padding: 2px;
-    text-decoration: none;
-    border: 2px solid #000;
-    border-radius: 5px;
-    color: #000;
-    color: #000;
-    background-color: transparent;
-    cursor: pointer;
-    transition: all 0.1s ease-in-out;
-    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.291);
-}
-
-/* Checkout & Continue Shopping Button - Effect */
-.cart-link:hover {
-    color: #004078;
-    border: 2px solid #004078;
-    background-color: #db9cbb;
-    box-shadow: none;
-}
-
-/* Payments.html - Specific Styles */
-.payments-header-container {
-    margin-bottom: 20px;
-}
-
-.payments-header {
-    font-family: "next-light.otf";
-    text-align: center;
-}
-
-.payments-quantity {
-    text-align: center;
-}
 
 /* Checkout.html - Specific Styles */
 .checkout-container {
@@ -827,7 +925,7 @@ table {
 @media (max-width: 768px) {
     .home-banner {
         margin: 40px 0;
-        font-size: 40px
+
     }
 
     /* Product_Detail.html */
@@ -881,22 +979,15 @@ table {
 @media (min-width: 769px) and (max-width: 1200px) {
     .home-banner {
         margin: 60px 0;
-        font-size: 60px;
     }
 
     /* Product_detail.html */
     .detail-review-header {
         margin-top: 110px;
-
     }
 
     .detail-review-container {
         padding: 20px;
-    }
-
-    /* Payments.html */
-    .card-body {
-        font-size: 14px;
     }
 
     .card-item {
@@ -908,7 +999,7 @@ table {
 @media (min-width: 1201px) {
     .home-banner {
         margin: 40px 0;
-        font-size: 80px;
+
     }
 
     .detail-review-container {
