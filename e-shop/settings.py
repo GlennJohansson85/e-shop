@@ -110,30 +110,38 @@ EMAIL_HOST ='smtp.gmail.com'
 EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
 EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [BASE_DIR / "static"]
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 if 'USE_AWS' in os.environ:
-    # AWS S3 settings
-    AWS_STORAGE_BUCKET_NAME = 'app-e-shop'
-    AWS_S3_REGION_NAME = 'eu-north-1'
     AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY', '')
     AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY', '')
+    AWS_STORAGE_BUCKET_NAME = 'app-e-shop'
+    AWS_S3_REGION_NAME = 'eu-north-1'
+    AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
 
-    # S3 Static and Media settings
-    AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.{AWS_S3_REGION_NAME}.amazonaws.com'
     STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/static/'
     STATICFILES_STORAGE = 'e-shop.custom_storages.StaticStorage'
 
     MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/media/'
-
     DEFAULT_FILE_STORAGE = 'e-shop.custom_storages.MediaStorage'
+else:
+    STATIC_URL = '/static/'
+    STATICFILES_DIRS = [BASE_DIR / "static"]
+    STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+    MEDIA_URL = '/media/'
+    MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+    
+    
+
+
+
+    
 
     
     
