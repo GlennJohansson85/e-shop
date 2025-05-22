@@ -12,10 +12,15 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 DEBUG = True
 
 ROOT_URLCONF = 'e-shop.urls'
+
 WSGI_APPLICATION = 'e-shop.wsgi.application'
+
 AUTH_USER_MODEL = 'accounts.Account'
 
+MESSAGE_TAGS = {messages.ERROR: 'danger'}
+
 CSRF_TRUSTED_ORIGINS = ['https://app-e-shop-c5039fdaf8fd.herokuapp.com']
+
 
 ALLOWED_HOSTS = [
     'localhost',
@@ -90,7 +95,7 @@ AUTH_PASSWORD_VALIDATORS = [
     {'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator'},
 ]
 
-MESSAGE_TAGS={messages.ERROR: 'danger'}
+
 
 LANGUAGE_CODE = 'en-us'
 TIME_ZONE = 'UTC'
@@ -114,13 +119,21 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-#if 'USE_AWS' in os.environ:
-#    AWS_STORAGE_BUCKET_NAME = 'app-e-shop'
-#    AWS_S3_REGION_NAME = 'eu-north-1'
-#    AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY', '')
-#    AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY', '')
-#    AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.{AWS_S3_REGION_NAME}.amazonaws.com'
-#    STATICFILES_STORAGE = 'e-shop.custom_storages.StaticStorage'
-#    DEFAULT_FILE_STORAGE = 'e-shop.custom_storages.MediaStorage'
-#    STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/static/'
-#    MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/media/'
+if 'USE_AWS' in os.environ:
+    # AWS S3 settings
+    AWS_STORAGE_BUCKET_NAME = 'app-e-shop'
+    AWS_S3_REGION_NAME = 'eu-north-1'
+    AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY', '')
+    AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY', '')
+
+    # S3 Static and Media settings
+    AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.{AWS_S3_REGION_NAME}.amazonaws.com'
+    STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/static/'
+    STATICFILES_STORAGE = 'e-shop.custom_storages.StaticStorage'
+
+    MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/media/'
+
+    DEFAULT_FILE_STORAGE = 'e-shop.custom_storages.MediaStorage'
+
+    
+    
