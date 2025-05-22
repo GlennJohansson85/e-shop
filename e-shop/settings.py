@@ -17,11 +17,12 @@ ROOT_URLCONF = 'e-shop.urls'
 WSGI_APPLICATION = 'e-shop.wsgi.application'
 AUTH_USER_MODEL = 'accounts.Account'
 
-# CSRF_TRUSTED_ORIGINS = ['']
+CSRF_TRUSTED_ORIGINS = ['https://app-e-shop-c5039fdaf8fd.herokuapp.com']
 
 ALLOWED_HOSTS = [
     'localhost',
     '127.0.0.1',
+    'app-e-shop-c5039fdaf8fd.herokuapp.com'
 ]
 
 INSTALLED_APPS = [
