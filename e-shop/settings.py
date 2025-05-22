@@ -6,17 +6,6 @@ if os.path.isfile('env.py'):
     import env
 
 
-
-BASE_DIR = Path(__file__).resolve().parent.parent
-
-SECRET_KEY = os.environ.get('SECRET_KEY', '')
-
-DEBUG = True
-
-ROOT_URLCONF = 'e-shop.urls'
-WSGI_APPLICATION = 'e-shop.wsgi.application'
-AUTH_USER_MODEL = 'accounts.Account'
-
 # CSRF_TRUSTED_ORIGINS = ['']
 
 ALLOWED_HOSTS = [
@@ -68,16 +57,21 @@ TEMPLATES = [
     },
 ]
 
-
-MESSAGE_TAGS = {messages.ERROR: 'danger'}
-
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+if 'DATABASE_URL' in os.environ:
+    DATABASES = {
+        'default': dj_database_url.config(
+            default=os.environ['DATABASE_URL'],
+            conn_max_age=600,
+            ssl_require=True
+        )
     }
-}
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / 'db.sqlite3',
+        }
+    }
 
 AUTH_PASSWORD_VALIDATORS = [
     {'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator'},
@@ -86,39 +80,52 @@ AUTH_PASSWORD_VALIDATORS = [
     {'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator'},
 ]
 
-LANGUAGE_CODE = 'en-us'
-TIME_ZONE = 'UTC'
-USE_I18N = True
-USE_L10N = True
-USE_TZ = True
+BASE_DIR            = Path(__file__).resolve().parent.parent
 
-#EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-#EMAIL_USE_TLS = True
-#EMAIL_PORT = 587
-#EMAIL_HOST = 'smtp.gmail.com'
-#EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
-#EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
+SECRET_KEY          = os.environ.get('SECRET_KEY', '')
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+DEBUG               = True
 
-STATIC_URL = '/static/'
-STATICFILES_DIRS = [BASE_DIR / "static"]
-MEDIA_URL = '/media/'
+ROOT_URLCONF        = 'e-shop.urls'
+WSGI_APPLICATION    = 'e-shop.wsgi.application'
+AUTH_USER_MODEL     = 'accounts.Account'
 
-DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+MESSAGE_TAGS        = {messages.ERROR: 'danger'}
+
+LANGUAGE_CODE       = 'en-us'
+TIME_ZONE           = 'UTC'
+USE_I18N            = True
+USE_L10N            = True
+USE_TZ              = True
+
+EMAIL_BACKEND       = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_USE_TLS       = True
+EMAIL_PORT          = 587
+EMAIL_HOST          = 'smtp.gmail.com'
+EMAIL_HOST_USER     = os.environ.get('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
+
+STATIC_ROOT         = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_URL          = '/static/'
+STATICFILES_DIRS    = [BASE_DIR / "static"]
+
+MEDIA_URL           = '/media/'
+
+DEFAULT_AUTO_FIELD  = 'django.db.models.BigAutoField'
+
 
 # AWS S3 configuration for production
-#if 'USE_AWS' in os.environ:
+if 'USE_AWS' in os.environ:
 
-    #AWS S3 Configuration
-#    AWS_STORAGE_BUCKET_NAME = 'p5-bucket'
-#    AWS_S3_REGION_NAME = 'eu-north-1'
-#    AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY', '')
-#    AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY', '')
-#    AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.{AWS_S3_REGION_NAME}.amazonaws.com'
+    # AWS S3 settings
+    AWS_STORAGE_BUCKET_NAME = 'app-e-shop'
+    AWS_S3_REGION_NAME      = 'eu-north-1'
+    AWS_ACCESS_KEY_ID       = os.environ.get('AWS_ACCESS_KEY', '')
+    AWS_SECRET_ACCESS_KEY   = os.environ.get('AWS_SECRET_ACCESS_KEY', '')
+    AWS_S3_CUSTOM_DOMAIN    = f'{AWS_STORAGE_BUCKET_NAME}.s3.{AWS_S3_REGION_NAME}.amazonaws.com'
 
-#    STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
-#    STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/static/'
-#    MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/media/'
+    STATICFILES_STORAGE     = 'storages.backends.s3boto3.S3Boto3Storage'
+    STATIC_URL              = f'https://{AWS_S3_CUSTOM_DOMAIN}/static/'
+    MEDIA_URL               = f'https://{AWS_S3_CUSTOM_DOMAIN}/media/'
 
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
