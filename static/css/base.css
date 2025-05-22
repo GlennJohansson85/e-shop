@@ -543,8 +543,10 @@ table {
     max-width:              400px;
     height:                 auto;
     display:                block;
-    border-radius:          5px;
-    border:                 2px outset #fff;
+    border:                 5px outset transparent;
+    border-image-slice:     30;
+    border-image-repeat:    stretch;
+    border-image-source:    url("/static/images/items/gold3.png");
 }
 
 /* Product Option Container */
@@ -604,236 +606,240 @@ table {
 
 /* "Customer reviews " */
 .detail-review-header {
-    font-family:            "ELEPHNTI";
-    font-size:              24px;
-    color:                  #535252;
-    text-align:             center;
-    border-bottom:          1px solid #838282;
+    font-family:                "ELEPHNTI";
+    font-size:                  24px;
+    color:                      #535252;
+    text-align:                 center;
+    border-bottom:              1px solid #838282;
 }
 
 /* Container for Product Reviews */
 .detail-review-container {
-    display:                flex;
-    flex-direction:         column;
-    justify-content:        center;
-    text-align:             center;
+    display:                    flex;
+    flex-direction:             column;
+    justify-content:            center;
+    text-align:                 center;
 }
 
 /* Container for Review Text */
 .detail-review-text {
-    font-family:            "Photina MT";
-    font-size:              14px;
-    line-height:            18px;
-    margin:                 0px;
-    padding:                2px 10px;
-    color:                  #272727;
+    font-family:                "Photina MT";
+    font-size:                  14px;
+    line-height:                18px;
+    margin:                     0px;
+    padding:                    2px 10px;
+    color:                      #272727;
 }
 
 /* Container for Review Image */
 .detail-review-img {
-    width:                  150px;
-    height:                 100px;
-    border-radius:          2px;
+    width:                      150px;
+    height:                     100px;
+    border-radius:              2px;
 }
 
 /*                                                                                          CART.HTML */
 .cart-page-container {
-    width: 1000px;
-    max-width: 100%;
-    margin: 0 auto;  /* This centers horizontally */
-    margin-top: 30px;
-    padding: 0 15px; /* Add side padding so content doesn’t touch edges */
-}
-
-.row {
-
-}
-
-.col-lg-8 {
-
-}
-
-.cart-table {
-
-}
-
-.cart-thead {
-
-}
-
-.cart-tr {
-
-
+    width:                      1000px;
+    max-width:                  100%;
+    margin:                     0 auto;  /* This centers horizontally */
+    margin-top:                 30px;
+    padding:                    0 15px; /* Side padding so content doesn’t touch edges */
 }
 
 /* "Product:, Details:, Quantity:, Price:" Headers */
 .cart-th {
-    font-family: "PhotinaMTStd-SemiBold";
-    font-size: 18px;
+    font-family:                "PhotinaMTStd-SemiBold";
+    font-size:                  18px;
 }
-
-.cart-td {
-
-}
-
 
 /* Product Image Container in Product Column */
 .cart-img-container {
-    width: 100px;
-    align-items: center;
-    justify-content: center;
+    width:                      100px;
+    align-items:                center;
+    justify-content:            center;
 }
 
 /* Image Settings */
 .cart-img {
-    width: 80px;
-    justify-content: center;
-    text-align: center;
-    height: auto;
-    object-fit: cover;
-    border-radius: 4px;
+    width:                      80px;
+    justify-content:            center;
+    text-align:                 center;
+    height:                     auto;
+    object-fit:                 cover;
+    border-radius:              4px;
 }
 
 /* Details Column - Text Settings */
 .cart-product-details {
-    font-family: "Photina MT";
-    font-size: 14px;
+    font-family:                "Photina MT";
+    font-size:                  14px;
 }
 
 /* Details Column - Link to product detail for specific product item in cart */
 .cart-info-link {
-    font-size: 18px;
-    font-weight: bold;
-    text-decoration: none;
-    color: #004078;
+    font-size:                  18px;
+    font-weight:                bold;
+    text-decoration:            none;
+    color:                      #004078;
 }
 
-/* Quantiy Column - Container settings for plus and minus image */
+/* Quantiy Column - FIX THIS HERE !!!! */
+.cart-quantity {
+    font-family:                "Photina MT";
+    font-size:                  14px;
+}
+
 .cart-plus,
 .cart-minus {
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-    padding: 0;
+    display:                    inline-block;
+    width:                      15px;
+    height:                     15px;
+    background-size:            contain;
+    background-repeat:          no-repeat;
+    background-position:        center;
+    border:                     none;
+    background-color:           transparent;
+    cursor:                     pointer;
+    padding:                    0;
 }
 
 /* Quantiy Column - Plus Image Settings */
 .cart-plus {
-    background-image: url("/static/images/icons/plus.png");
-    margin-right: 3px; /* Space between plus and input */
+    background-image:           url("/static/images/icons/plus.png");
+    margin-right:               3px; /* Space between plus and input */
 }
 
 .cart-plus:hover {
-    background-image: url("/static/images/icons/plus-green.png");
+    background-image:           rl("/static/images/icons/plus-green.png");
 }
 
 /* Quantiy Column - Minus Image Settings */
 .cart-minus {
-    background-image: url("/static/images/icons/minus.png");
-    margin-left: 3px; /* Space between plus and input */
+    background-image:           url("/static/images/icons/minus.png");
+    margin-left:                3px; /* Space between plus and input */
 }
 .cart-minus:hover {
-    background-image: url("/static/images/icons/minus-red.png");
+    background-image:           url("/static/images/icons/minus-red.png");
 }
 
-/* Quantiy Column - Container settings for remove image */
-.cart-remove {
-    display: inline-block;
-    width: 25px;
-    height: 25px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: right;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-    padding: 0;
+/* Price Column */
+.cart-price {
+    font-family:                "Photina MT";
+    font-size:                  14px;
+    color:                      #005023;
 }
 
-/* Quantiy Column - Remove Image Settings */
+/* Remove Column - Container settings for remove image */
 .cart-remove {
-    background-image: url("/static/images/icons/remove-1.png");
-    margin-top: 8px;
+    display:                    inline-block;
+    width:                      25px;
+    height:                     25px;
+    background-size:            contain;
+    background-repeat:          no-repeat;
+    background-position:        right;
+    border:                     none;
+    background-color:           transparent;
+    cursor:                     pointer;
+    padding:                    0;
+}
+
+/* Remove Column - Remove Image Settings */
+.cart-remove {
+    background-image:           url("/static/images/icons/remove-1.png");
+    margin-top:                 8px;
 }
 
 .cart-remove:hover {
-    background-image: url("/static/images/icons/remove-1.1.png");
-    margin-top: 8px;
+    background-image:           url("/static/images/icons/remove-1.1.png");
+    margin-top:                 8px;
 }
 
+/* Cart Cost Container "Total Price, Tax, Grand Total" */
+.cart-cost-container {
+    border:                     1px solid #000;
+    padding:                    5px;
+}
+
+/* Cart Cost Container - Header Text "Total Price, Tax, Grand Total" */
+.cart-cost-header {
+    font-family:                "PhotinaMTStd-SemiBold";
+    font-size:                  18px;
+}
+
+/* Numbers for "Total Price, Tax, Grand Total" */
+.cart-cost {
+    font-family:                "Photina MT";
+    font-size:                  14px;
+    color:                      #005023;
+}
 /*                                                                                          DASHBOARD_SIDARBAR.HTML */
 /* Item Container */
 .list-group {
-    border:                 none;
-    box-shadow:             2px 4px 4px rgba(0, 0, 0, 0.291);
+    border:                     none;
+    box-shadow:                 2px 4px 4px rgba(0, 0, 0, 0.291);
 }
 
 /* Item */
 .list-group-item {
-    font-family: "next-light";
-    color: #000;
-    border: none;
+    font-family:                "Photina MT";
+    color:                      #000;
+    border:                     none;
 }
 
 /* Top Item */
 .list-group-item:first-child {
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+    border-top-left-radius:     5px;
+    border-top-right-radius:    5px;
 }
 
 /* Bottom Item */
 .list-group-item:last-child {
-    border-bottom-left-radius: 5px;
+    border-bottom-left-radius:  5px;
     border-bottom-right-radius: 5px;
 }
 
 /* Sign Out - Container */
 .sidebar-btn-container {
-    margin: 20px 0;
+    margin:                     20px 0;
 }
 
 /* Sign Out - Icon */
 .icon-control {
-  margin-top: 5px;
-  float: right;
-  font-size: 80%;
+  margin-top:                   5px;
+  float:                        right;
+  font-size:                    80%;
 }
 
 
 /* Dashboard.html - Specific Styles */
 /* Profile Image */
 .dash-img {
-    width: 150px;
-    height: auto;
-    border: transparent;
+    width:                      150px;
+    height:                     auto;
+    border:                     transparent;
 }
 
 /* Increase black for default Text */
 .dash-text {
-    color:#000;
+    color:                      #000;
 }
 
 /* Email Text below Profile Image */
 .dash-email {
-    margin-top: 10px;
+    margin-top:                 10px;
 }
 
 /* My_Orders.html - Header */
 .my-header {
-    color: #000;
-    font-weight: 500;
+    color:                      #000;
+    font-weight:                500;
 }
 
 /* Edit_Profile.html - Form */
 .edit-form {
-    padding: 0 40px;
-    color: #000;
+    padding:                    0 40px;
+    color:                      #000;
 }
 
 /* Change_Password.html, Register.html - Specific Styles */

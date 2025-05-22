@@ -266,14 +266,14 @@
     padding:                    0.25rem;
     color:                      #ffb8b8;
     background-color:           transparent;
+    transform:                  scale(1); /* Base state */
+    transition:                 all 0.2s ease;
 }
-
 /*                                              NAVBAR-LINK - CART-CONTAINER - NOFITY:Active States */
 .cart-container:hover .notify {
     top:                        -7px;
     right:                      3px;
-    transform:                  scale(1.8);
-    transition:                 all 0.2s ease;
+    transform:                  scale(1.4);
 }
 
 /*                                              RESPONSIVE SETTINGS:TOGGLER OPEN */

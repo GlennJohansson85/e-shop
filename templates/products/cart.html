@@ -85,20 +85,15 @@
             <!-- Total Cost -->
             <!-- col-lg-4 = Container for total price, TAX, Grand Total, Checkout-btn, Continue Shopping-btn -->
             <div class="col-lg-4">
-                <div class="card">
-                    <div class="card-body">
-                        <dl class="dlist-align">
-                            <dt>Total price:</dt>
-                            <dd class="text-right">${{total}}</dd>
-                        </dl>
-                        <dl class="dlist-align">
-                            <dt>Tax:</dt>
-                            <dd class="text-right">${{tax}}</dd>
-                        </dl>
-                        <dl class="dlist-align">
-                            <dt>Grand Total:</dt>
-                            <dd class="cart-price">${{grand_total}}</dd>
-                        </dl>
+                <div class="cart-cost-container">
+                    <div class="cart-cost-header">Total price: </div>
+                        <p class="cart-cost">${{total}}
+
+                    <div class="cart-cost-header">Tax: </div>
+                        <p class="cart-cost">${{tax}}
+                    
+                    <div class="cart-cost-header">Grand Total: </div>
+                        <p class="cart-cost">${{grand_total}}
                         <hr>
                         <p class="text-center">
                             <img src="{% static '/images/misc/payments.png' %}" height="26">
