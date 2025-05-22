@@ -5,17 +5,17 @@ import dj_database_url
 if os.path.isfile('env.py'):
     import env
 
-BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR=Path(__file__).resolve().parent.parent
 
-SECRET_KEY = os.environ.get('SECRET_KEY', '')
+SECRET_KEY=os.environ.get('SECRET_KEY', '')
 
-DEBUG = False
+DEBUG=True
 
-ROOT_URLCONF = 'e-shop.urls'
-WSGI_APPLICATION = 'e-shop.wsgi.application'
-AUTH_USER_MODEL = 'accounts.Account'
+ROOT_URLCONF='e-shop.urls'
+WSGI_APPLICATION='e-shop.wsgi.application'
+AUTH_USER_MODEL='accounts.Account'
 
-CSRF_TRUSTED_ORIGINS = ['https://app-e-shop-c5039fdaf8fd.herokuapp.com']
+CSRF_TRUSTED_ORIGINS=['https://app-e-shop-c5039fdaf8fd.herokuapp.com']
 
 ALLOWED_HOSTS = [
     'localhost',
@@ -90,39 +90,36 @@ AUTH_PASSWORD_VALIDATORS = [
     {'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator'},
 ]
 
-MESSAGE_TAGS        = {messages.ERROR: 'danger'}
+MESSAGE_TAGS={messages.ERROR: 'danger'}
 
-LANGUAGE_CODE       = 'en-us'
-TIME_ZONE           = 'UTC'
-USE_I18N            = True
-USE_L10N            = True
-USE_TZ              = True
+LANGUAGE_CODE='en-us'
+TIME_ZONE='UTC'
+USE_I18N=True
+USE_L10N=True
+USE_TZ=True
 
-EMAIL_BACKEND       = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_USE_TLS       = True
-EMAIL_PORT          = 587
-EMAIL_HOST          = 'smtp.gmail.com'
-EMAIL_HOST_USER     = os.environ.get('EMAIL_HOST_USER')
-EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
+EMAIL_BACKEND='django.core.mail.backends.smtp.EmailBackend'
+EMAIL_USE_TLS=True
+EMAIL_PORT=587
+EMAIL_HOST='smtp.gmail.com'
+EMAIL_HOST_USER=os.environ.get('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD=os.environ.get('EMAIL_HOST_PASSWORD')
 
-STATIC_ROOT         = os.path.join(BASE_DIR, 'staticfiles')
-STATIC_URL          = '/static/'
-STATICFILES_DIRS    = [BASE_DIR / "static"]
+STATIC_ROOT=os.path.join(BASE_DIR, 'staticfiles')
+STATIC_URL='/static/'
+STATICFILES_DIRS=[BASE_DIR / "static"]
 
-MEDIA_URL           = '/media/'
+MEDIA_URL='/media/'
 
-DEFAULT_AUTO_FIELD  = 'django.db.models.BigAutoField'
+DEFAULT_AUTO_FIELD='django.db.models.BigAutoField'
 
 if 'USE_AWS' in os.environ:
-
-    AWS_STORAGE_BUCKET_NAME = 'app-e-shop'
-    AWS_S3_REGION_NAME      = 'eu-north-1'
-    AWS_ACCESS_KEY_ID       = os.environ.get('AWS_ACCESS_KEY', '')
-    AWS_SECRET_ACCESS_KEY   = os.environ.get('AWS_SECRET_ACCESS_KEY', '')
-    AWS_S3_CUSTOM_DOMAIN    = f'{AWS_STORAGE_BUCKET_NAME}.s3.{AWS_S3_REGION_NAME}.amazonaws.com'
-
-    STATICFILES_STORAGE     = 'e-shop.custom_storages.StaticStorage'
-    DEFAULT_FILE_STORAGE    = 'e-shop.custom_storages.MediaStorage'
-
-    STATIC_URL              = f'https://{AWS_S3_CUSTOM_DOMAIN}/static/'
-    MEDIA_URL               = f'https://{AWS_S3_CUSTOM_DOMAIN}/media/'
+    AWS_STORAGE_BUCKET_NAME='app-e-shop'
+    AWS_S3_REGION_NAME='eu-north-1'
+    AWS_ACCESS_KEY_ID=os.environ.get('AWS_ACCESS_KEY', '')
+    AWS_SECRET_ACCESS_KEY=os.environ.get('AWS_SECRET_ACCESS_KEY', '')
+    AWS_S3_CUSTOM_DOMAIN=f'{AWS_STORAGE_BUCKET_NAME}.s3.{AWS_S3_REGION_NAME}.amazonaws.com'
+    STATICFILES_STORAGE='e-shop.custom_storages.StaticStorage'
+    DEFAULT_FILE_STORAGE='e-shop.custom_storages.MediaStorage'
+    STATIC_URL=f'https://{AWS_S3_CUSTOM_DOMAIN}/static/'
+    MEDIA_URL=f'https://{AWS_S3_CUSTOM_DOMAIN}/media/'
