@@ -13,8 +13,8 @@
                 <a class="navbar-brand "href="{% url 'home' %}">E-SHOP</a>
 
                 <!-- NAVBAR SEARCH-FORM -->
-                <form class="d-flex" role="search">
-                    <input class="search-input" type="search" placeholder="Search..." aria-label="Search">
+                <form class="d-flex" role="search" method="GET" action="{% url 'search' %}">
+                    <input class="search-input" type="search" name="keyword" placeholder="Search..." aria-label="Search">
                     <button class="btn-search" type="submit">
                         <div class="icon-search" aria-label="Search Icon"></div>
                     </button>

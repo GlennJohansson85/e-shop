@@ -28,7 +28,6 @@
 
 /*                                              GENERAL STYLES */
 
-
 html {
     background-color:       #fff;
     background-blend-mode:  exclusion;
@@ -66,18 +65,13 @@ body {
     transition:             transform 0.2s ease;
 }
 
-/* REMOVE IF STYLE IS NOT USED SOMEWHERE. AFFECTING DASHBOARD.HTML */
 col-md-6 {
     margin:                 0;
     padding:                0;
     box-sizing:             border-box;
 }
 
-
-/* HEADER & BREAD TEXT */
-h1,
-h2,
-h3 {
+h1, h2, h3 {
     font-family: "ELEPHNT";
 }
 
@@ -110,8 +104,6 @@ p {
     background-image: linear-gradient(135deg, #000, #3d3d3d);
 }
 
-
-/* CARD */
 .card-product-name {
     text-decoration:        none;
     color:                  #000;
@@ -127,7 +119,6 @@ p {
     color:                  #000;
 }
 
-/* FORM */
 .form-header {
     margin-left:            10px;
     font-family:            "ELEPHNT";
@@ -167,13 +158,11 @@ p {
     word-spacing:           2px;
 }
 
-/* TABLE */
 table {
     table-layout:           auto;
     width:                  100%;
 }
 
-/*                                              BASIC BUTTON STYLE */
 .btn-container {
     margin-top:                 20px;
 }
