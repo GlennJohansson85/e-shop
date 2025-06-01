@@ -4,45 +4,42 @@
 {% block title %} E-SHOP @ Products {% endblock %}
 
 {% block content %}
-<section class="products-page-header-container">
-    {% if 'search' in request.path %}
-        <div class="products-page-header">SEARCH RESULTS:</div>
-    {% else %}
-        <div class="products-page-header">OUR PRODUCTS:</div>
-    {% endif %}
-</section>
+<div class="products-page-container">
+    <section class="products-page-header-container">
+        {% if 'search' in request.path %}
+            <h1 class="products-page-header">SEARCH RESULTS:</h1>
+        {% else %}
+            <h1 class="products-page-header">OUR PRODUCTS:</h1>
+        {% endif %}
+    </section>
 
-
-<section class="section-content padding-y">
-    <div class="products-container">
+    <section class="section-content padding-y">
         <div class="row">
 
             <aside class="col-md-3">
-                <div class="card">
-                    <article class="filter-group">
-                        <div class="products-list-header" data-toggle="collapse" data-target="#collapse_1" aria-expanded="true">
-                            Categories:
+                <article class="filter-group">
+                    <div class="products-list-header" data-toggle="collapse" data-target="#collapse_1" aria-expanded="true">
+                        Categories:
+                    </div>
+                    <div class="filter-content collapse show" id="collapse_1">
+                        <div class="card-body">
+                            <ul class="products-list-menu">
+                                <li>
+                                    <a class="products-list-item" href="{% url 'products' %}">
+                                        All Products
+                                    </a>
+                                </li>
+                                {% for category in links %}
+                                <li>
+                                    <a class="products-list-item" href="{{ category.get_url }}">
+                                        {{ category.category_name }}
+                                    </a>
+                                </li>
+                                {% endfor %}
+                            </ul>
                         </div>
-                        <div class="filter-content collapse show" id="collapse_1">
-                            <div class="card-body">
-                                <ul class="products-list-menu">
-                                    <li>
-                                        <a class="products-list-item" href="{% url 'products' %}">
-                                            All Products
-                                        </a>
-                                    </li>
-                                    {% for category in links %}
-                                    <li>
-                                        <a class="products-list-item" href="{{ category.get_url }}">
-                                            {{ category.category_name }}
-                                        </a>
-                                    </li>
-                                    {% endfor %}
-                                </ul>
-                            </div>
-                        </div>
-                    </article>
-                </div>
+                    </div>
+                </article>
             </aside>
 
             <main class="col-md-9">
@@ -57,7 +54,6 @@
                         </div>
                     </header>
                 </div>
-
                 <div class="row">
                     {% if products %}
                     {% for product in products %}
@@ -133,9 +129,8 @@
                         </ul>
                     {% endif %}
                 </nav>
-
             </main>
         </div>
-    </div>
-</section>
+    </section>
+</div>
 {% endblock %}

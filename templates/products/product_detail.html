@@ -4,102 +4,98 @@
 {% block title %} E-SHOP @ Product Details {% endblock %}
 
 {% block content %}
-    <section class="detail-section">
-        <div class="detail-container">
-            <div class="row align-items-center" style="min-height: 50vh;">
+<section class="detail-section">
+    <div class="detail-container">
+        <div class="row align-items-center" style="min-height: 50vh;">
 
-                <!-- Left Column: Product Image -->
-                <div class="col-md-6 detail-left-column">
-                    <img class="detail-img" src="{{ single_product.images.url }}" alt="Product Image">
+            <!-- Left Column: Product Image -->
+            <div class="col-md-6 detail-left-column">
+                <img class="detail-img" src="{{ single_product.images.url }}" alt="Product Image">
+            </div>
+
+            <!-- Right Column: Product Info & Add to Cart -->
+            <div class="col-md-6 detail-right-column">
+                <form action="{% url 'add_cart' single_product.id %}" method="POST">
+                    {% csrf_token %}
+                    <article class="detail-info-container">
+                        <div class="detail-info-header">{{ single_product.product_name }}</div>
+                        <div class="detail-info-price">${{ single_product.price }}</div>
+                        <div class="detail-info-text">{{ single_product.description }}</div>
+
+                        <!-- Color Selection -->
+                        <div class="product-select mb-3">Choose Color:
+                            <select name="color" class="detail-selection form-control" required>
+                                {% for variation in single_product.variation_set.colors %}
+                                    <option value="{{ variation.variation_value }}">{{ variation.variation_value }}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+
+                        <!-- Size Selection -->
+                        <div class="product-select mb-3">Choose Size:
+                            <select name="size" class="detail-selection form-control" required>
+                                {% for variation in single_product.variation_set.sizes %}
+                                    <option value="{{ variation.variation_value }}">{{ variation.variation_value }}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+
+                        <!-- Stock Check -->
+                        {% if single_product.stock <= 0 %}
+                            <h5 class="text-danger">Out of Stock</h5>
+                        {% else %}
+                            <div class="detail-btn-container">
+                                <button class="btn" type="submit">
+                                    <span class="text">ADD ITEM</span>
+                                    <i class="fas fa-shopping-cart"></i>
+                                </button>
+                            </div>
+                        {% endif %}
+                    </article>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Customer Reviews Section -->
+<section class="detail-review-section">
+    <div class="detail-container">
+        <div class="detail-review-header">
+            <span>Customer Reviews</span>
+        </div>
+        <div class="row">
+            <!-- Mark's Review -->
+            <div class="col-md-6">
+                <div class="detail-review-container">
+                    <div class="detail-img-container">
+                        <img class="detail-review-img" src="{% static 'images/avatars/avatar1.png' %}" alt="Reviewer Avatar">
+                    </div>
+                    <div class="detail-review-content">
+                        <p class="detail-review-text">Mark Johnson</p>
+                        <p class="detail-review-text">11.05.2020</p>
+                        <p class="detail-review-text">
+                            <i>Great Service, Great Clothes, and Great Prices!</i>
+                        </p>
+                    </div>
                 </div>
-
-                <!-- Right Column: Product Info & Add to Cart -->
-                <div class="col-md-6 detail-right-column">
-                    <form action="{% url 'add_cart' single_product.id %}" method="POST">
-                        {% csrf_token %}
-                        <article class="detail-info-container">
-                            <div class="detail-info-header">{{ single_product.product_name }}</div>
-                            <div class="detail-info-price">${{ single_product.price }}</div>
-                            <div class="detail-info-text">{{ single_product.description }}</div>
-
-                            <!-- Color Selection -->
-                            <div class="product-select mb-3">Choose Color:
-                                <select name="color" class="detail-selection form-control" required>
-                                    {% for variation in single_product.variation_set.colors %}
-                                        <option value="{{ variation.variation_value }}">{{ variation.variation_value }}</option>
-                                    {% endfor %}
-                                </select>
-                            </div>
-
-                            <!-- Size Selection -->
-                            <div class="product-select mb-3">Choose Size:
-                                <select name="size" class="detail-selection form-control" required>
-                                    {% for variation in single_product.variation_set.sizes %}
-                                        <option value="{{ variation.variation_value }}">{{ variation.variation_value }}</option>
-                                    {% endfor %}
-                                </select>
-                            </div>
-
-                            <!-- Stock Check -->
-                            {% if single_product.stock <= 0 %}
-                                <h5 class="text-danger">Out of Stock</h5>
-                            {% else %}
-                                <div class="detail-btn-container">
-                                    <button class="btn" type="submit">
-                                        <span class="text">ADD ITEM</span>
-                                        <i class="fas fa-shopping-cart"></i>
-                                    </button>
-                                </div>
-                            {% endif %}
-                        </article>
-                    </form>
+            </div>
+            <!-- Jane's Review -->
+            <div class="col-md-6 ">
+                <div class="detail-review-container">
+                    <div class="detail-img-container">
+                        <img class="detail-review-img" src="{% static 'images/avatars/avatar2.png' %}" alt="Reviewer Avatar">
+                    </div>
+                    <div class="detail-review-content">
+                        <p class="detail-review-text">Jane Doe</p>
+                        <p class="detail-review-text">15.07.2021</p>
+                        <p class="detail-review-text">
+                            <i>Absolutely love the product! Excellent quality and very fast shipping.</i>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- Customer Reviews Section -->
-    <section class="detail-review-section">
-        <div class="detail-container">
-            <div class="detail-review-header">
-                <span>Customer Reviews</span>
-            </div>
-
-            <div class="row">
-
-                <!-- Mark's Review -->
-                <div class="col-md-6">
-                    <div class="detail-review-container">
-                        <div class="detail-img-container">
-                            <img class="detail-review-img" src="{% static 'images/avatars/avatar1.png' %}" alt="Reviewer Avatar">
-                        </div>
-                        <div class="detail-review-content">
-                            <p class="detail-review-text">Mark Johnson</p>
-                            <p class="detail-review-text">11.05.2020</p>
-                            <p class="detail-review-text">
-                                <i>Great Service, Great Clothes, and Great Prices!</i>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Jane's Review -->
-                <div class="col-md-6 ">
-                    <div class="detail-review-container">
-                        <div class="detail-img-container">
-                            <img class="detail-review-img" src="{% static 'images/avatars/avatar2.png' %}" alt="Reviewer Avatar">
-                        </div>
-                        <div class="detail-review-content">
-                            <p class="detail-review-text">Jane Doe</p>
-                            <p class="detail-review-text">15.07.2021</p>
-                            <p class="detail-review-text">
-                                <i>Absolutely love the product! Excellent quality and very fast shipping.</i>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
+    </div>
 </section>
 {% endblock %}

@@ -1,33 +1,28 @@
-/* ELEPHNT */
+/*                                              FONTS */
 @font-face {
     font-family:            "ELEPHNT";
     src:                    url('/static/fonts/ELEPHNT.TTF') format('truetype');
 }
-
 @font-face {
     font-family:            "ELEPHNTI";
     src:                    url('/static/fonts/ELEPHNTI.TTF') format('truetype');
 }
-
 
 /* PHOTINA */
 @font-face {
     font-family:            "PhotinaMTStd-SemiBold";
     src:                    url('/static/fonts/PhotinaMTStd-SemiBold.otf') format('opentype');
 }
-
 @font-face {
     font-family:            "Photina MT Ultra Bold";
     src:                    url('/static/fonts/Photina MT Ultra Bold.ttf') format('truetype');
 }
-
 @font-face {
     font-family:            "PhotinaMT";
     src:                    url('/static/fonts/PhotinaMT.ttf') format('truetype');
 }
 
-/*                                              GENERAL STYLES */
-
+/*                                              BASIC */
 html {
     background-color:       #fff;
     background-blend-mode:  exclusion;
@@ -48,6 +43,22 @@ body {
                             inset 4px 4px 6px #000;
 }
 
+h1, h2, h3 {
+    font-family:            "ELEPHNT";
+}
+
+p {
+    font-family:            "Photina MT";
+    font-size:              14px;
+}
+
+table {
+    table-layout:           auto;
+    width:                  100%;
+}
+
+
+
 .main-content {
     margin-top:             80px;
     min-height:             calc(90vh);
@@ -58,50 +69,36 @@ body {
     margin:                 0 auto;
 }
 
-/* COL-MD */
 .col-md-3 {
     flex:                   1 1 calc(25% - 20px);
     max-width:              calc(25% - 20px);
     transition:             transform 0.2s ease;
 }
 
-col-md-6 {
+/* it was missing . before "col-md-6" */
+.col-md-6 {
     margin:                 0;
     padding:                0;
     box-sizing:             border-box;
 }
 
-h1, h2, h3 {
-    font-family: "ELEPHNT";
-}
-
-p {
-    font-family: "Photina MT";
-    font-size: 14px;
-}
-
-.grey-text {
-    font-family: "Elephant-Normal";
-
-}
-
 .page-header-container {
-    margin: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    margin:                 10px;
+    display:                flex;
+    justify-content:        space-between;
+    align-items:            center;
 }
 
 .card-header {
-    font-family: "ELEPHNTI";
-    text-shadow: 2px 1px 1px#000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    overflow: hidden;
-    color: #fff;
-    border: 2px outset #000;
-    background-image: linear-gradient(135deg, #000, #3d3d3d);
+    font-family:            "ELEPHNTI";
+    text-shadow:            2px 1px 1px#000;
+    display:                flex;
+    justify-content:        space-between;
+    align-items:            center;
+    overflow:               hidden;
+    color:                  #fff;
+    border:                 2px outset #000;
+    background-image:       linear-gradient(135deg, #000, #3d3d3d);
 }
 
 .card-product-name {
@@ -126,28 +123,28 @@ p {
     letter-spacing:         1px;
 }
 
-/* FORM-GROUP (Text above form inputs "First Name:", "Email:" etc.) */
+/* Text above form inputs "First Name:", "Email:" etc. */
 .form-group {
     margin:                 10px;
     font-family:            "PhotinaMTStd-Semibold";
     color:                  #000;
 }
 
-/* FORM-CONTROL (Form and user text input style ( Rectangle shaped)  */
+/* Form and user text input style (Rectangle shaped)  */
 .form-control {
-    font-family: "Photina MT";
-    font-size: 14px;
-    border-radius: 0;
-    border: none;
-    box-shadow: none;   /* Remove browser default color*/
-    outline: none;
+    font-family:            "Photina MT";
+    font-size:              14px;
+    border-radius:          0;
+    border:                 none;
+    box-shadow:             none; /* Remove browser default color*/
+    outline:                none;
 }
 
-/* FORM-CONTROL:FOCUS (Remove browser default color and adding my own) */
+/* Remove browser default color and adding my own */
 .form-control:focus {
-    box-shadow: inset 1px 1px 2px #313131;
-    border: none;
-    outline: none;
+    box-shadow:             inset 1px 1px 2px #313131;
+    border:                 none;
+    outline:                none;
 }
 
 /* Showing number of clothes */
@@ -158,14 +155,10 @@ p {
     word-spacing:           2px;
 }
 
-table {
-    table-layout:           auto;
-    width:                  100%;
-}
-
 .btn-container {
     margin-top:                 20px;
 }
+
 .btn {
     font-family:                "PhotinaMTStd-Semibold";
     font-size:                  14px;
@@ -182,6 +175,7 @@ table {
     box-shadow:                 1px 2px 4px rgba(0, 0, 0, 0.7);
     transition:                 all 0.3s ease;
 }
+
 .btn:hover {
     cursor:                     pointer;
     color:                      #fafafa;
@@ -190,7 +184,6 @@ table {
     box-shadow:                 none;
 }
 
-/*                                              BASIC IMAGE STYLE */
 .img-wrap {
     display:                    block;
     overflow:                   hidden;
@@ -212,22 +205,17 @@ table {
     text-align:                 center;
 }
 
-
-/*                                              BASIC PAGE CONTAINER */
 .dash-page-container {
     max-width:                  1000px;
     margin:                     0 auto;
 }
 
-/*                                              BASIC CONTENT CONTAINER*/
 .dash-content-container {
     max-width:                  600px;
     margin:                     0 auto;
     position:                   relative;
 }
 
-
-/*                                              BASIC HEADER CONTAINER */
 .dash-header-container {
     text-transform:             uppercase;
     display:                    flex;
@@ -264,160 +252,155 @@ table {
 }
 
 .home-header {
-    max-width: 1000px;
-    font-family: "ELEPHNT";
-    font-size: 22px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
-    margin-bottom: 5px;
-    padding: 10px;
-    color: #000;
+    max-width:                  1000px;
+    font-family:                "ELEPHNT";
+    font-size:                  22px;
+    width:                      100%;
+    display:                    flex;
+    justify-content:            space-between;
+    align-items:                center;
+    margin:                     0 auto;
+    margin-bottom:              5px;
+    padding:                    10px;
+    color:                      #000;
 }
 
 .home-container {
-    max-width: 1000px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
+    max-width:                  1000px;
+    width:                      100%;
+    display:                    flex;
+    justify-content:            space-between;
+    align-items:                center;
+    margin:                     0 auto;
 }
 
 .home-row {
-    gap: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 80px;
+    gap:                        20px;
+    display:                    flex;
+    flex-wrap:                  wrap;
+    justify-content:            center;
+    margin-bottom:              80px;
 }
 
 .home-card {
-    flex: 1 1 220px;
-    max-width: 280px;
-    min-width: 220px;
-    padding: 15px;
-    overflow: hidden;
-    box-sizing: border-box;
-    display: block;
-    background-position: center;
-    background-size: cover;
-    background-repeat: repeat;
-    background-image: url("/static/images/items/wo6.png");
-    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.7);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex:                       1 1 220px;
+    max-width:                  280px;
+    min-width:                  220px;
+    padding:                    15px;
+    overflow:                   hidden;
+    box-sizing:                 border-box;
+    display:                    block;
+    background-position:        center;
+    background-size:            cover;
+    background-repeat:          repeat;
+    background-image:           url("/static/images/items/wo6.png");
+    box-shadow:                 1px 2px 4px rgba(0, 0, 0, 0.7);
+    transition:                 transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .home-card:hover {
-    transform: scale(1.05);
-    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+    transform:                  scale(1.05);
+    box-shadow:                 2px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 /* Hovering card = Bold Font also */
 .home-card:hover.home-text-container {
-    text-decoration: none;
-    color: #000;
+    text-decoration:            none;
+    color:                      #000;
 }
 
 /* Image container within card */
 .home-img-wrap {
-    width: 100%;
-    height: 200px;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-top: none;
-    border-right: 2px inset #fff;
-    border-left: 2px inset #fff;
-    background-color: #fff;
+    width:                      100%;
+    height:                     200px;
+    overflow:                   hidden;
+    display:                    flex;
+    align-items:                center;
+    justify-content:            center;
+    border-top:                 none;
+    border-right:               2px inset #fff;
+    border-left:                2px inset #fff;
+    background-color:           #fff;
 }
 
 /* Image within card */
 .home-img {
-    width: 100%;
-    height: 100%;
-    border: none;
-    outline: none;
-    background-color: #fff;
-    object-fit: contain;
+    width:                      100%;
+    height:                     100%;
+    border:                     none;
+    outline:                    none;
+    background-color:           #fff;
+    object-fit:                 contain;
 }
 
 /* Product name & price */
 .home-text-container {
-    font-family: "PhotinaMTStd-SemiBold";
-    font-size: 14px;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    outline: none;
-    border-top: none;
-    border-right: 2px inset #fff;
-    border-bottom: 2px inset #fff;
-    border-left: 2px inset #fff;
-
-    background-color: #fff;
+    font-family:                "PhotinaMTStd-SemiBold";
+    font-size:                  14px;
+    text-align:                 center;
+    margin:                     0;
+    padding:                    0;
+    outline:                    none;
+    border-top:                 none;
+    border-right:               2px inset #fff;
+    border-bottom:              2px inset #fff;
+    border-left:                2px inset #fff;
+    background-color:           #fff;
 }
 
 /* Remove default */
 .home-name {
-    text-decoration: none;
-    color: #171616;
+    text-decoration:            none;
+    color:                      #171616;
 }
 
 /* Remove default */
 .home-name:hover {
-    color: #000;
+    color:                      #000;
 }
 
 /* Remove default */
 .home-price {
-    margin-bottom: 5px;
-    color: #005023;
+    margin-bottom:              5px;
+    color:                      #005023;
 }
 
 /*                                              PRODUCTS.HTML*/
-/* PRODUCTS PAGE HEADER CONTAINER */
-.products-page-header-container {
-    margin: 10px;
-}
-
 /* PRODUCTS PAGE HEADER TEXT STYLE */
 .products-page-header {
-    font-family: ElEPHNT;
-    font-size: 32px;
-    color: #000;
+    margin: 5px;
+    font-family:                ElEPHNT;
+    color:                      #000;
 
 }
 
 /* Page Container */
-.products-container {
-    max-width: 1100px;
-    margin: auto;
+.products-page-container {
+    max-width:                  1100px;
+    margin:                     0 auto;
 }
 
 /* Header text "Categories" of all products */
 .products-list-header {
-    font-family: "ELEPHNT";
-    font-size: 22px;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    overflow: hidden;
-    color: #FAFAFA;
-    border-top: 2px solid #FAFAFA;
-    border-left: 2px solid #FAFAFA;
-    border-right: 2px solid #FAFAFA;
-    background-position: center;
-    background-size: cover;
-    background-repeat: repeat;
-    background-image: url("/static/images/items/paper.png");
-    background-color: #4c4b4bb1;
-    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.7);
+    font-family:                "ELEPHNT";
+    font-size:                  22px;
+    padding:                    10px;
+    display:                    flex;
+    justify-content:            space-between;
+    align-items:                center;
+    overflow:                   hidden;
+    color:                      #FAFAFA;
+    border-top:                 2px solid #FAFAFA;
+    border-left:                2px solid #FAFAFA;
+    border-right:               2px solid #FAFAFA;
+    background-position:        center;
+    background-size:            cover;
+    background-repeat:          repeat;
+    background-image:           url("/static/images/items/paper.png");
+    background-color:           #4c4b4bb1;
+    box-shadow:                 1px 2px 4px rgba(0, 0, 0, 0.7);
 }
+
 
 /* Menu Container for item categories (T-shirts, Jackets, Shorts etc.)*/
 .card-body {
@@ -434,71 +417,70 @@ table {
 
 /* T-shirts, Jackets, Shorts etc. List customization */
 .products-list-menu {
-    list-style: none;
-    text-align: right;
+    list-style:                 none;
+    text-align:                 right;
 
 }
 
 /* Product text in the list container */
 .products-list-item {
-    font-family: "Photina MT";
-    line-height: 8px;
-    font-size: 14px;
-    text-decoration: none;
-    color: #171616;
+    font-family:                "Photina MT";
+    line-height:                8px;
+    font-size:                  14px;
+    text-decoration:            none;
+    color:                      #171616;
 }
 
 .products-list-item:hover {
-    font-size: 16px;
-    color: #000;
+    font-size:                  16px;
+    color:                      #000;
 }
 
 .products-card {
-    padding: 0px;
-    overflow: hidden;
-    box-sizing: border-box;
-    display: block;
-    color: #000;
-    background-color: #FAFAFA;
-    background-position: center;
-    background-size: cover;
-    background-repeat: repeat;
-    background-image: url("/static/images/items/paper.png");
-    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.7);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding:                    0px;
+    overflow:                   hidden;
+    box-sizing:                 border-box;
+    display:                    block;
+    color:                      #000;
+    background-position:        center;
+    background-size:            cover;
+    background-repeat:          repeat;
+    background-image:           url("/static/images/items/paper.png");
+    box-shadow:                 1px 2px 4px rgba(0, 0, 0, 0.7);
+    transition:                 transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .products-card:hover {
-    transform: scale(1.05);
-    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+    transform:                  scale(1.05);
+    box-shadow:                 2px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .products-card:hover .products-card-name,
 .products-card:hover .products-card-price {
-    font-family: "Elephant-Bold";
-    text-decoration: none;
-    color: #000;
+    font-family:                "Elephant-Bold";
+    text-decoration:            none;
+    color:                      #000;
 }
 
 .products-card-text-container {
-    text-align: center;
-    padding: 5px;
+    text-align:                 center;
+    padding:                    5px;
 }
 
 .products-info {
-    margin: 5px;
-    padding: 0;
-    font-family: "Photina MT";
-    font-size: 14px;
-    text-decoration: none;
+    margin:                     5px;
+    padding:                    0;
+    font-family:                "Photina MT";
+    font-size:                  14px;
+    text-decoration:            none;
 }
 
 .products-price {
-    padding: 0;
-    font-family: "PhotinaMTStd-Semibold";
-    font-size: 14px;
-    text-decoration: none;
-    color: #005023;
+    padding:                    0;
+    font-family:                "PhotinaMTStd-Semibold";
+    font-size:                  14px;
+    text-decoration:            none;
+    color:                      #005023;
 }
 
 /* PAGINATION CONTAINER */
@@ -704,175 +686,173 @@ table {
 
 /*                                              CART.HTML */
 .cart-page-container {
-    width: 1000px;
-    max-width: 100%;
-    margin: 0 auto;
-    margin-top: 30px;
-    padding: 0 15px;
+    width:                  1000px;
+    max-width:              100%;
+    margin:                 0 auto;
+    margin-top:             30px;
+    padding:                0 15px;
 }
 
 /* "Product:, Details:, Quantity:, Price:" Headers */
 .cart-th {
-    font-family: "PhotinaMTStd-SemiBold";
-    font-size: 18px;
+    font-family:            "PhotinaMTStd-SemiBold";
+    font-size:              18px;
 }
 
 /* Product Image Container in Product Column */
 .cart-img-container {
-    width: 100px;
-    align-items: center;
-    justify-content: center;
+    width:                  100px;
+    align-items:            center;
+    justify-content:        center;
 }
 
 /* Image Settings */
 .cart-img {
-    width: 80px;
-    justify-content: center;
-    text-align: center;
-    height: auto;
-    object-fit: cover;
+    width:                  80px;
+    justify-content:        center;
+    text-align:             center;
+    height:                 auto;
+    object-fit:             cover;
     box-shadow:             1px 2px 2px rgba(51, 51, 51, 0.7);
 }
 
 /* Details Column - Text Settings */
 .cart-product-details {
-    font-family: "Photina MT";
-    font-size: 14px;
+    font-family:            "Photina MT";
+    font-size:              14px;
 }
 
 /* Quantiy Column - FIX THIS HERE !!!! */
 .cart-quantity {
-    font-family: "Photina MT";
-    font-size: 14px;
+    font-family:            "Photina MT";
+    font-size:              14px;
 }
 
 .cart-plus,
 .cart-minus {
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-    padding: 0;
+    display:                inline-block;
+    width:                  15px;
+    height:                 15px;
+    background-size:        contain;
+    background-repeat:      no-repeat;
+    background-position:    center;
+    border:                 none;
+    background-color:       transparent;
+    cursor:                 pointer;
+    padding:                0;
 }
 
 /* Quantiy Column - Plus Image Settings */
 .cart-plus {
-    background-image: url("/static/images/icons/plus.png");
-    margin-right: 3px;
-    /* Space between plus and input */
+    background-image:       url("/static/images/icons/plus.png");
+    margin-right:           3px; /* Space between plus and input */
 }
 
 .cart-plus:hover {
-    background-image: rl("/static/images/icons/plus-green.png");
+    background-image:       url("/static/images/icons/plus-green.png");
 }
 
 /* Quantiy Column - Minus Image Settings */
 .cart-minus {
-    background-image: url("/static/images/icons/minus.png");
-    margin-left: 3px;
-    /* Space between plus and input */
+    background-image:       url("/static/images/icons/minus.png");
+    margin-left:            3px; /* Space between minus and input */
 }
 
 .cart-minus:hover {
-    background-image: url("/static/images/icons/minus-red.png");
+    background-image:       url("/static/images/icons/minus-red.png");
 }
 
 /* Price Column */
 .cart-price {
-    font-family: "Photina MT";
-    font-size: 14px;
-    color: #005023;
+    font-family:            "Photina MT";
+    font-size:              14px;
+    color:                  #005023;
 }
 
 /* Remove Column - Container settings for remove image */
 .cart-remove {
-    display: inline-block;
-    width: 25px;
-    height: 25px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: right;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-    padding: 0;
+    display:                inline-block;
+    width:                  25px;
+    height:                 25px;
+    background-size:        contain;
+    background-repeat:      no-repeat;
+    background-position:    right;
+    border:                 none;
+    background-color:       transparent;
+    cursor:                 pointer;
+    padding:                0;
 }
 
 /* Remove Column - Remove Image Settings */
 .cart-remove {
-    background-image: url("/static/images/icons/remove-1.png");
-    margin-top: 8px;
+    background-image:       url("/static/images/icons/remove-1.png");
+    margin-top:             8px;
 }
 
 .cart-remove:hover {
-    background-image: url("/static/images/icons/remove-1.1.png");
-    margin-top: 8px;
+    background-image:       url("/static/images/icons/remove-1.1.png");
+    margin-top:             8px;
 }
 
 /* CART-COST-CONTAINER STYLE */
 .cart-cost-container {
-    font-family: "PhotinaMTStd-SemiBold";
-    padding:            10px;
-    border:             2px solid #FAFAFA;
-    background-position: center;
-    background-size: cover;
-    background-repeat: repeat;
-    background-image: url("/static/images/items/paper.png");
-    background-color: #FAFAFA;
+    font-family:            "PhotinaMTStd-SemiBold";
+    padding:                10px;
+    border:                 2px solid #FAFAFA;
+    background-position:    center;
+    background-size:        cover;
+    background-repeat:      repeat;
+    background-image:       url("/static/images/items/paper.png");
+    background-color:       #FAFAFA;
     box-shadow:             1px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 /* CART-COST-HEADER TEXT STYLE */
 .cart-cost-header {
-    font-size: 18px;
+    font-size:              18px;
 }
 
 /* CART-COST STYLE (NUMBERS) */
 .cart-cost {
-    color: #005023;
+    color:                  #005023;
 }
 
 
 /* CART-LINK Style (Links in cart.html) */
 .cart-link {
-    font-family: "PhotinaMTStd-SemiBold";
-    color: #004078;
-    margin-right: 5px;
-    padding-bottom: 3px;
-    position: relative;
-    text-decoration: none;
-    -webkit-transition: color 0.3s ease;
-    transition: color 0.3s ease;
+    font-family:            "PhotinaMTStd-SemiBold";
+    color:                  #004078;
+    margin-right:           5px;
+    padding-bottom:         3px;
+    position:               relative;
+    text-decoration:        none;
+    -webkit-transition:     color 0.3s ease;
+    transition:             color 0.3s ease;
 }
 
 .cart-link:hover {
-    color: #004078;
+    color:                  #004078;
 }
 
 .cart-link::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 1px;
-    background: #004078;
-    transform: scaleX(0);
-    transform-origin: left;
-    -webkit-transform: scaleX(0);
+    content:                "";
+    position:               absolute;
+    left:                   0;
+    bottom:                 0;
+    width:                  100%;
+    height:                 1px;
+    background:             #004078;
+    transform:              scaleX(0);
+    transform-origin:       left;
+    -webkit-transform:      scaleX(0);
     -webkit-transform-origin: left;
-    -webkit-transition: -webkit-transform 0.3s ease;
-    transition: transform 0.3s ease;
+    -webkit-transition:     -webkit-transform 0.3s ease;
+    transition:             transform 0.3s ease;
 }
 
 .cart-link:hover::after {
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);   
+    -webkit-transform:      scaleX(1);
+    transform:              scaleX(1);   
 }
 
 /*                                              DASHBOARD_SIDARBAR.HTML */
@@ -1182,57 +1162,92 @@ table {
 }
 
 
-/*                                              SMALL SCREEN */
-/*                                              SMALL SCREEN */
 @media (max-width: 768px) {
-    .home-banner {
-        margin: 40px 0;
+
+    /*                                          SMALL HOME.HTML */
+    .home-page-container {
+        padding: 10px;
     }
 
-
-    .list-menu {
-        margin-bottom: 0;
-    }
-
-    .border-header-container {
-        margin-top: 20px;
-    }
-
-    .card-item {
-        padding: 0;
-    }
-
-    .btn {
-        padding: 3px;
-    }
-
+    /* 2 columns and 4 rows */
     .col-md-3 {
         flex: 1 1 1 calc(50% - 20px);
         max-width: calc(50% - 20px);
     }
 
-    .card-width-400 {
-        width: 80%;
+    /*                                          SMALL PRODUCTS.HTML */
+    .products-page-container {
+        max-width: 400px;
+        margin: 0 auto;
     }
+
+
+    /* Filter group container takes the whole page width */
+    .section-content .row > aside.col-md-3 {
+        width: 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    /* Centers the text inside the filter group container  */
+    .products-list-menu {
+        text-align: center;
+    }
+
+    /*                                          SMALL CART.HTML */
+    /* Container for the whole cart page */
+    .cart-section {
+        padding: 5px;
+    }
+
+    /* Centers text in Container */
+    .cart-cost-container {
+        text-align: center;
+    }
+    
 }
 
-/*                                              MEDIUM SCREEN */
 @media (min-width: 769px) and (max-width: 1200px) {
-    .home-banner {
-        margin: 60px 0;
+
+    /*                                          MEDIUM HOME.HTML */
+    .home-page-container {
+        padding:            10px;
     }
 
 
+    /* 3 columns and 3 rows */
+    .col-md-3 {
+        flex:               1 1 1 calc(50% - 20px);
+        max-width:          calc(50% - 20px);
+        display:            flex;               /* Center the cards */
+        box-sizing:         border-box;         /* Center the cards */
+        justify-content:    center;             /* Center the cards */
+    }
+
+    /*                                          MEDIUM PRODUCTS.HTML */
+    .products-page-container {
+        max-width:          800px;
+        margin:             0 auto;
+    }
+
+    /* Product_detail.html */
+    .detail-review-header {
+        margin-top: 110px;
+    }
+    .detail-review-container {
+        padding: 20px;
+    }
     .card-item {
         padding: 0;
     }
 }
-
 /*                                              LARGE SCREEN */
 @media (min-width: 1201px) {
+    /* HOME.HTML */
     .home-banner {
         margin: 40px 0;
     }
 
+    /* PRODUCTS.HTML */
 
 }
