@@ -9,21 +9,6 @@
     src:                    url('/static/fonts/ELEPHNTI.TTF') format('truetype');
 }
 
-/* ELEPHANT */
-@font-face {
-    font-family:            "Elephant-Normal";
-    src:                    url('/static/fonts/Elephant-Normal.ttf') format('truetype');
-}
-
-@font-face {
-    font-family:            "Elephant-Bold";
-    src:                    url('/static/fonts/Elephant-Bold.ttf') format('truetype');
-}
-
-@font-face {
-    font-family:            "Elephant-Extended-Bold";
-    src:                    url('/static/fonts/Elephant-Extended-Bold.ttf') format('truetype');
-}
 
 /* PHOTINA */
 @font-face {
