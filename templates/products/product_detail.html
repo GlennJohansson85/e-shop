@@ -1,26 +1,26 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block title %} Product Details {% endblock %}
+{% block title %} E-SHOP @ Product Details {% endblock %}
 
 {% block content %}
-    <section>
+    <section class="detail-section">
         <div class="detail-container">
             <div class="row align-items-center" style="min-height: 50vh;">
 
                 <!-- Left Column: Product Image -->
-                <div class="col-md-7 d-flex justify-content-center mb-4 mb-md-0">
+                <div class="col-md-6 detail-left-column">
                     <img class="detail-img" src="{{ single_product.images.url }}" alt="Product Image">
                 </div>
 
                 <!-- Right Column: Product Info & Add to Cart -->
-                <div class="col-md-5 d-flex flex-column justify-content-center">
-                    <form action="{% url 'add_cart' single_product.id %}" method="POST" class="w-100 px-3">
+                <div class="col-md-6 detail-right-column">
+                    <form action="{% url 'add_cart' single_product.id %}" method="POST">
                         {% csrf_token %}
-                        <article>
-                            <div class="detail-header">{{ single_product.product_name }}</div>
-                            <div class="detail-price">${{ single_product.price }}</div>
-                            <div class="detail-text-container">{{ single_product.description }}</div>
+                        <article class="detail-info-container">
+                            <div class="detail-info-header">{{ single_product.product_name }}</div>
+                            <div class="detail-info-price">${{ single_product.price }}</div>
+                            <div class="detail-info-text">{{ single_product.description }}</div>
 
                             <!-- Color Selection -->
                             <div class="product-select mb-3">Choose Color:
@@ -44,10 +44,12 @@
                             {% if single_product.stock <= 0 %}
                                 <h5 class="text-danger">Out of Stock</h5>
                             {% else %}
-                                <button type="submit" class="btn btn-dark">
-                                    <span class="text">Add Item</span>
-                                    <i class="fas fa-shopping-cart"></i>
-                                </button>
+                                <div class="detail-btn-container">
+                                    <button class="btn" type="submit">
+                                        <span class="text">ADD ITEM</span>
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </button>
+                                </div>
                             {% endif %}
                         </article>
                     </form>
@@ -57,31 +59,34 @@
     </section>
 
     <!-- Customer Reviews Section -->
-    <section class="detail-review-section mt-5">
+    <section class="detail-review-section">
         <div class="detail-container">
-            <div class="detail-review-header mb-4">Customer Reviews</div>
+            <div class="detail-review-header">
+                <span>Customer Reviews</span>
+            </div>
+
             <div class="row">
 
                 <!-- Mark's Review -->
-                <div class="col-md-6 mb-4">
+                <div class="col-md-6">
                     <div class="detail-review-container">
-                        <div class="detail-img-container mb-2">
+                        <div class="detail-img-container">
                             <img class="detail-review-img" src="{% static 'images/avatars/avatar1.png' %}" alt="Reviewer Avatar">
                         </div>
                         <div class="detail-review-content">
                             <p class="detail-review-text">Mark Johnson</p>
                             <p class="detail-review-text">11.05.2020</p>
                             <p class="detail-review-text">
-                                <i>Great Service, Great Clothes, and Great Prices! I´ll buy everything from I SHOP from now on!!!</i>
+                                <i>Great Service, Great Clothes, and Great Prices!</i>
                             </p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Jane's Review -->
-                <div class="col-md-6 mb-4">
+                <div class="col-md-6 ">
                     <div class="detail-review-container">
-                        <div class="detail-img-container mb-2">
+                        <div class="detail-img-container">
                             <img class="detail-review-img" src="{% static 'images/avatars/avatar2.png' %}" alt="Reviewer Avatar">
                         </div>
                         <div class="detail-review-content">

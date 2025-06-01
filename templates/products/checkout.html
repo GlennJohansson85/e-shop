@@ -1,12 +1,12 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block title %} Checkout {% endblock %}
+{% block title %} E-SHOP @ Checkout {% endblock %}
 
 {% block content %}
     <section class="content-down">
         <div class="checkout-container">
-            <h4 class="header-1">Billing Address</h4>
+            <div class="dash-header">BILLING ADDRESS:</div>
             <form action="{% url 'place_order' %}" method="POST">
                 {% csrf_token %}
 
@@ -126,20 +126,13 @@
                             >
                         </div>
                     </div>
-
-                    <!-- Submit Button -->
                     <div class="form-row">
                         <div class="form-group">
                             <div class="btn-container">
-                                <button
-                                    type="submit"
-                                    name="submit"
-                                    class="btn">Place Order
-                                </button>
-                                <a
-                                    href="{% url 'products' %}"
-                                    class="btn">Continue Shopping
-                                </a>
+                                <!-- PLACE ORDER - BUTTON -->
+                                <button type="submit" name="Place order Button" class="btn">PLACE ORDER</button>
+                                <!-- CONTINUE - SHOPPING BUTTON-->
+                                <a href="{% url 'products' %}" class="btn">CONTINUE SHOPPING</a>
                             </div>
                         </div>
                     </div>
