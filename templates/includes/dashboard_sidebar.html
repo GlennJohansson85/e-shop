@@ -5,13 +5,9 @@
         <a class="list-group-item {% if '/my_orders/' in request.path %}active{% endif %}" href="{% url 'my_orders' %}">MY ORDERS</a>
         <a class="list-group-item {% if '/edit_profile/' in request.path %}active{% endif %}" href="{% url 'edit_profile' %}">EDIT PROFILE</a>
         <a class="list-group-item {% if '/change_password/' in request.path %}active{% endif %}" href="{% url 'change_password' %}">CHANGE PASSWORD</a>
-    </ul>
-
-    <!-- BTN LOGOUT -->
-    <div class ="sidebar-btn-container">
-        <a class="btn" href="{% url 'signout' %}">
+        <a class="list-group-item" href="{% url 'signout' %}">
             <i class="fa fa-power-off"></i>
-            <span class="sign-out">LOGOUT</span>
+                <span class="sign-out">LOGOUT</span>
         </a>
-    </div>
+    </ul>
 </aside>
