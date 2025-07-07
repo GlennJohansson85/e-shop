@@ -1198,7 +1198,7 @@ table {
     }
 
     /*                                          SMALL DASHBOARD.HTML */
-        .d-line {
+    .d-line {
         margin:                 0 auto;
         display:                flex;
         justify-content:        center;

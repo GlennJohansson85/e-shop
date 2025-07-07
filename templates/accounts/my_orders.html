@@ -5,13 +5,16 @@
 
 {% block content %}
 <section>
-    <!-- DASHBOARD_SIDEBAR.HTML -->
+    <!-- ALERT MESSAGES -->
     {% include 'includes/alerts.html' %}
 
-    <!-- DASHBOARD.HTML -->
     <div class="container">
-        <div class="row">
+        <div class="row center">
+
+            <!-- DASHBOARD_SIDEBAR.HTML -->
             {% include 'includes/dashboard_sidebar.html' %}
+
+            <!-- DASHBOARD.HTML -->
             <main class="col-md-9">
                 <article class="card d-card">
                     <div class="dash-header-container">
