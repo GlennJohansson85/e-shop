@@ -9,49 +9,54 @@
     <!-- ALERT MESSAGES -->
     {% include 'includes/alerts.html' %}
 
-    <div class="row d-line">
+    <div class="dash-container">
+        <div class="row">
 
-        <!-- DASHBOARD_SIDEBAR.HTML -->
-        {% include 'includes/dashboard_sidebar.html' %}
+            <!-- DASHBOARD_SIDEBAR.HTML -->
+            {% include 'includes/dashboard_sidebar.html' %}
 
-        <!-- DASHBOARD.HTML -->
-        <main class="col-md-6">
-            <article class="card d-card">
-                <div class="dash-header-container">
-                    <div class="dash-header">DASHBOARD: {{user.full_name}}</div>
-                </div>
-                <div class="dash-row">
 
-                    <!-- Profile Info with Fallback -->
-                    <div class="col-6">
-                        <div class="card">
-                            <div class="dash-card-body">
-                                {% if userprofile.profile_picture %}
-                                    <img class="dash-img" src="{{ userprofile.profile_picture.url }}" alt="User Profile Picture">
-                                {% else %}
-                                    <img class="dash-img" src="/media/userprofile/default-profile.png" alt="Default Profile Image">
-                                {% endif %}
-                                <div class="dash-user-info">{{ user.full_name }}</div>
-                                <div class="dash-user-info">{{ user.email }}</div>
-                                <div class="dash-user-info">{{ user.phone_number }}</div>
-                            </div>
-                        </div>
+            <!-- DASHBOARD.HTML -->
+            <main class="col-md-9 dashboard-card">
+                <article class="card">
+                    <div class="dash-header-container">
+                        <div class="dash-header">DASHBOARD: {{user.full_name}}</div>
                     </div>
 
-                    <!-- Orders Information -->
-                    <div class="col-md-6 dash-col">
-                        <div class="card">
-                            <div class="dash-card-body">
-                                <div class="semi-bold">Total Orders:</div>
-                                <div class="semi-bold">{{ orders_count }}</div>
-                                <a class="cart-link" href="{% url 'my_orders' %}">Order History</a>
+                    <!-- Responsive row for Profile and Orders -->
+                    <div class="dash-row">
+
+                        <!-- Profile Info with Fallback -->
+                        <div class="col-6">
+                            <div class="card">
+                                <div class="dash-card-body">
+                                    {% if userprofile.profile_picture %}
+                                        <img class="dash-img" src="{{ userprofile.profile_picture.url }}" alt="User Profile Picture">
+                                    {% else %}
+                                        <img class="dash-img" src="/media/userprofile/default-profile.png" alt="Default Profile Image">
+                                    {% endif %}
+                                    <div class="dash-user-info">{{ user.full_name }}</div>
+                                    <div class="dash-user-info">{{ user.email }}</div>
+                                    <div class="dash-user-info">{{ user.phone_number }}</div>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                </div>
-            </article>
-        </main>
+                        <!-- Orders Information -->
+                        <div class="col-6">
+                            <div class="card">
+                                <div class="dash-card-body">
+                                    <div class="semi-bold">Total Orders:</div>
+                                    <div class="semi-bold">{{ orders_count }}</div>
+                                    <a class="cart-link" href="{% url 'my_orders' %}">Order History</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </article>
+            </main>
+        </div>
     </div>
 </section>
 {% endblock %}
