@@ -1203,10 +1203,6 @@ table {
 
     /*                                          SMALL DASHBOARD.HTML */
     /* ADDED 2025.07.09 */
-    .dash-container {
-        margin: 20px;
-    }
-    /* ADDED 2025.07.09 */
     .dashboard-card {
         margin-top: 20px;
     }
@@ -1242,19 +1238,10 @@ table {
     .card-item {
         padding:                0;
     }
-    .dash-container {
-        max-width: 800px;
-        margin: 0 auto;
-    }
 }
 
 @media (min-width: 1201px) {
     .home-banner {
         margin: 40px 0;
-    }
-
-    .dash-container {
-        max-width: 1000px;
-        margin: 0 auto;
     }
 }
