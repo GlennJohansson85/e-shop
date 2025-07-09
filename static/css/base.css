@@ -890,6 +890,10 @@ table {
     margin: 10px;
 }
 
+.dash-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
 
 /* HTML TEMPLATE: USER NAME | CONTAINER STYLE */
 .dash-header-container {
@@ -1152,7 +1156,6 @@ table {
 }
 
 @media (max-width: 768px) {
-    /*                                          SMALL HOME.HTML */
     .home-page-container {
         padding:                10px;
     }
@@ -1210,7 +1213,6 @@ table {
 }
 
 @media (min-width: 769px) and (max-width: 1200px) {
-    /*                                          MEDIUM HOME.HTML */
     .home-page-container {
         padding:                10px;
     }
@@ -1247,9 +1249,8 @@ table {
 }
 
 @media (min-width: 1201px) {
-    /*                                          LARGE HOME.HTML */
     .home-banner {
-        margin:                 40px 0;
+        margin: 40px 0;
     }
 
     .dash-container {
