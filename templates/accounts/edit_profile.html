@@ -28,7 +28,11 @@
                             <!-- Profile Picture -->
                             <div class="form-row">
                                 <div class="form-group">
-                                    <img class="edit-profile-picture" src="{{ userprofile.profile_picture.url }}">
+                                    {% if userprofile.profile_picture and userprofile.profile_picture.url %}
+                                        <img class="edit-profile-picture" src="{{ userprofile.profile_picture.url }}" alt="User Profile Picture">
+                                    {% else %}
+                                        <img class="edit-profile-picture" src="{% static 'images/misc/default_profile.png' %}" alt="Default Profile Picture">
+                                    {% endif %}
                                 </div>
                             </div>
 

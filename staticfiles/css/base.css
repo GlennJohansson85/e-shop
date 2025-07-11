@@ -877,22 +877,18 @@ table {
 
 /* Edit_Profile & My_orders = Added for space between card and footer */
 .d-card {
-    margin-bottom:              40px;
+    margin: 20px 0px;
 }
 
 /*                                              DASHBOARD.HTML */
+.dash-container {
+    max-width: 1000px;
+}
+
+/* Cards in dashboard sticks together */
 .dash-row {
     display: flex;
     flex-wrap: wrap;
-}
-
-.dash-col {
-    margin: 10px;
-}
-
-.dash-container {
-    max-width: 1000px;
-    margin: 0 auto;
 }
 
 /* HTML TEMPLATE: USER NAME | CONTAINER STYLE */
@@ -949,14 +945,11 @@ table {
 
 /* Card Body: Centered Content */
 .dash-card-body {
-    margin: 0;
-    padding: 0;
     display:                    flex;
     flex-direction:             column;
-    justify-content:            center;   /* vertical centering */
+    justify-content:            center;       /* vertical centering */
     align-items:                center;       /* horizontal centering */
     height:                     250px;
-    border-radius:              0;
     background-image:           url("/static/images/items/paper.png");
     background-position:        center;
     background-size:            cover;
@@ -1155,6 +1148,7 @@ table {
     font-size:                  12px;
 }
 
+/*                                                                                                  SMALL */
 @media (max-width: 768px) {
     .home-page-container {
         padding:                10px;
@@ -1202,12 +1196,13 @@ table {
     }
 
     /*                                          SMALL DASHBOARD.HTML */
-    /* ADDED 2025.07.09 */
     .dashboard-card {
-        margin-top: 20px;
+        margin: 0 20px;
+        
     }
 }
 
+/*                                                                                                  MEDIUM */
 @media (min-width: 769px) and (max-width: 1200px) {
     .home-page-container {
         padding:                10px;
@@ -1240,8 +1235,11 @@ table {
     }
 }
 
+/*                                                                                                  LARGE */
 @media (min-width: 1201px) {
     .home-banner {
         margin: 40px 0;
     }
+
+
 }
