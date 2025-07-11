@@ -877,7 +877,7 @@ table {
 
 /* Edit_Profile & My_orders = Added for space between card and footer */
 .d-card {
-    margin-bottom:              40px;
+    margin: 20px 0px;
 }
 
 /*                                              DASHBOARD.HTML */
@@ -1197,12 +1197,8 @@ table {
 
     /*                                          SMALL DASHBOARD.HTML */
     .dashboard-card {
-        margin-top: 20px;
+        margin: 0 20px;
         
-    }
-
-    .d-space {
-        margin-bottom: 20px;
     }
 }
 

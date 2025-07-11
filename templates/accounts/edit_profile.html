@@ -15,9 +15,9 @@
             {% include 'includes/dashboard_sidebar.html' %}
 
             <!-- DASHBOARD.HTML -->
-            <main class="col-md-9 d-space">
+            <main class="col-md-9">
 
-                <article class="card dashboard-card">
+                <article class="card dashboard-card d-card">
                     <div class="dash-header-container">
                         <div class="dash-header">Edit Profle: {{user.full_name}}</div>
                     </div>
@@ -28,11 +28,7 @@
                             <!-- Profile Picture -->
                             <div class="form-row">
                                 <div class="form-group">
-                                    {% if userprofile.profile_picture and userprofile.profile_picture.url %}
-                                        <img class="edit-profile-picture" src="{{ userprofile.profile_picture.url }}" alt="User Profile Picture">
-                                    {% else %}
-                                        <img class="edit-profile-picture" src="{% static 'images/misc/default_profile.png' %}" alt="Default Profile Picture">
-                                    {% endif %}
+                                    <img class="edit-profile-picture" src="{{ userprofile.profile_picture.url }}">
                                 </div>
                             </div>
 
