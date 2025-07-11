@@ -132,9 +132,9 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 #    MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/media/'
 #    DEFAULT_FILE_STORAGE = 'e-shop.custom_storages.MediaStorage'
 #else:
-#    STATIC_URL = '/static/'
-#    STATICFILES_DIRS = [BASE_DIR / "static"]
-#    STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_URL = '/static/'
+STATICFILES_DIRS = [BASE_DIR / "static"]
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
-#    MEDIA_URL = '/media/'
-#    MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
