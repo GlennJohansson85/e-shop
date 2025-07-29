@@ -4,12 +4,34 @@
 ### [****See Live Project Here!****](https://p5-shop-8a4cf1a2ceb9.herokuapp.com/)
 
 ### About:
-E-SHOP is a dynamic e-commerce platform offering a wide range of clothing in various sizes. Customers can explore the entire collection, browse by clothing categories, or use the convenient search function in the navbar to find specific items. With secure transaction processing, customers can shop with confidence and enjoy a seamless shopping experience. By registering, users gain access to personalized accounts where all transaction and account details are securely stored for future convenience.
-Registered members can also access a personalized dashboard showcasing their complete order history. Orders are displayed as clickable links, organized in descending order by date, with each link providing detailed information about the corresponding purchase. This feature allows members to easily review and manage their past orders at any time.
-Additionally, iShop empowers users with options to update their profiles and conveniently reset their passwords in case the current one is forgotten, ensuring a user-friendly and secure experience.
+E-SHOP is a dynamic e-commerce platform offering a wide range of products with customizable options. Customers can browse items by category, size, and color, or use the built-in search function in the navigation bar to quickly find what they need. With secure transaction processing, shoppers can make purchases with confidence and enjoy a smooth, user-friendly experience.
+
+By registering, users can save their shipping details for faster future checkouts and gain access to a personal dashboard where all past orders, transactions, and receipts are stored in a clean, easy-to-read format.
 
 ### Project Goals:
-Create a Ecommerce website using the tools and knowledge gained from Code Institute.
+The goal of this project was to develop a fully functional and scalable e-commerce platform using Django, emphasizing modular design, secure deployment, and real-world integrations. The key objectives included:
+
+    Building the backend using Python and the Django framework to handle business logic, data management via ORM, and secure user authentication with a custom Django user model.
+
+    Creating a responsive and user-friendly frontend using HTML5, CSS3, JavaScript, and the Bootstrap framework for styling and layout.
+
+    Utilizing Django Templates for server-side rendering and dynamic content delivery.
+
+    Implementing payment processing through integration with the PayPal SDK, enabling real-world transaction functionality.
+
+    Managing static and media files locally during development and in production via AWS S3 for cloud storage.
+
+    Securing cloud resources by managing access permissions with AWS IAM, ensuring proper authorization controls.
+
+    Preparing the application for production deployment using Gunicorn as a reliable WSGI server.
+
+    Using SQLite as a lightweight development database.
+
+    Designing RESTful APIs and patterns to facilitate dynamic frontend and backend interactions.
+
+    Employing environment variables (os.environ) for secure and flexible configuration management.
+
+These goals reflect a comprehensive approach to building a professional-grade e-commerce system that balances frontend usability, backend robustness, and secure cloud deployment.
 
 ### User Goals:
 Create a user friendly website where customers can browse for clothes and make secure purchases.
