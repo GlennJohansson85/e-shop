@@ -10,9 +10,19 @@ With secure transaction processing, shoppers can make purchases with confidence 
 
 [****See Live Project Here!****](https://app-e-shop-c5039fdaf8fd.herokuapp.com/)
 
-<div style="text-align: center;">
-### Project Goals
+<center>
+
+# E-Shop
+
+</center>
+
+<div align="center">
+
+# E-Shop
+
 </div>
+
+<center># E-Shop</center>
 
 The goal of this project was to develop a fully functional and scalable e-commerce platform using Django, emphasizing modular design, secure deployment, and real-world integrations. The key objectives included:
 
