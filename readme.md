@@ -1,4 +1,4 @@
-<center>##E-Shop</center>
+<center><h1>E-Shop</h1></center>
 
 ![Homepage Preview](docs/readme_images/frontpage-img.png)
 
