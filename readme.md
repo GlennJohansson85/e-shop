@@ -12,8 +12,11 @@ By registering, users can save their shipping details for faster future checkout
 
 With secure transaction processing, shoppers can make purchases with confidence and enjoy a smooth, user-friendly experience.
 
+<div align="center">
+
 [****See Live Project Here!****](https://app-e-shop-c5039fdaf8fd.herokuapp.com/)
 
+</div>
 
 <div align="center">
 
