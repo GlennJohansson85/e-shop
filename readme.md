@@ -1,6 +1,4 @@
-<div style="width: 100%;">
-  <h1 style="text-align: center;">E-Shop</h1>
-</div>
+<h1 style="text-align: center;">E-Shop</h1>
 
 ![Homepage Preview](docs/readme_images/frontpage-img.png)
 
@@ -12,8 +10,10 @@ With secure transaction processing, shoppers can make purchases with confidence 
 
 [****See Live Project Here!****](https://app-e-shop-c5039fdaf8fd.herokuapp.com/)
 
+<div style="text-align: center;">
+### Project Goals
+</div>
 
-<h2 style="text-align: center;">Project Goals</h2>
 The goal of this project was to develop a fully functional and scalable e-commerce platform using Django, emphasizing modular design, secure deployment, and real-world integrations. The key objectives included:
 
   Building the backend using Python and the Django framework to handle business logic, data management via ORM, and secure user authentication with a custom Django user model.
