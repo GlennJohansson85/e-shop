@@ -1,4 +1,8 @@
-<center><h1>E-Shop</h1></center>
+<div align="center">
+
+# E-Shop
+
+</div>
 
 ![Homepage Preview](docs/readme_images/frontpage-img.png)
 
