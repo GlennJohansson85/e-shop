@@ -79,8 +79,8 @@
 
 ### ***1.1.1 - First Time User Goals:***
 - *a) As a First Time User, I want to quickly understand the purpose of the website.*
-- *b)As a First Time User, I want to browse clothes.*
-- *c)As a First Time User, I want to search for a specific clothing wear.*
+- *b) As a First Time User, I want to browse clothes.*
+- *c) As a First Time User, I want to search for a specific clothing wear.*
 
 ### ***1.1.2 - Returning User Goals:***
 - *a) As a Returning User, I want to make a purchase.*
