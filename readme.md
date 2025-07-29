@@ -1,17 +1,15 @@
 # E-SHOP
+![Homepage Preview](docs/readme_images/front_ss_shell.png)
 
-
-[****See Live Project Here!****](https://app-e-shop-c5039fdaf8fd.herokuapp.com/)
-
-
-### <u>About</u>:
 E-SHOP is a dynamic e-commerce platform offering a wide range of products — primarily clothing — with customizable options. Customers can browse items by category, size and color, or quickly locate specific products using the built-in search function in the navigation bar.
 
 By registering, users can save their shipping details for faster future checkouts and gain access to a personal dashboard where all past orders, transactions, and receipts are stored in a clean, easy-to-read format.
 
 With secure transaction processing, shoppers can make purchases with confidence and enjoy a smooth, user-friendly experience.
 
-### Project Goals:
+[****See Live Project Here!****](https://app-e-shop-c5039fdaf8fd.herokuapp.com/)
+
+### ***Project Goals***:
 The goal of this project was to develop a fully functional and scalable e-commerce platform using Django, emphasizing modular design, secure deployment, and real-world integrations. The key objectives included:
 
   Building the backend using Python and the Django framework to handle business logic, data management via ORM, and secure user authentication with a custom Django user model.
