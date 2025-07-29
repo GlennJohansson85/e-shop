@@ -1,6 +1,6 @@
 <div align="center">
 
-# ***E-Shop***
+# **E-Shop**
 
 </div>
 
@@ -14,13 +14,13 @@ With secure transaction processing, shoppers can make purchases with confidence 
 
 <div align="center">
 
-[****See Live Project Here!****](https://app-e-shop-c5039fdaf8fd.herokuapp.com/)
+[See Live Project Here](https://app-e-shop-c5039fdaf8fd.herokuapp.com/)
 
 </div>
 
 <div align="center">
 
-### ***Project Goals***
+### **Project Goals**
 
 </div>
 
