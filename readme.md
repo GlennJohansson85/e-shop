@@ -22,9 +22,7 @@
 
 ***The goal of this project was to develop a fully functional and scalable e-commerce platform using Django, emphasizing modular design, secure deployment, and real-world integrations. The key objectives included:***
 
-
-
-- ***Building the backend using Python and the Django framework to handle business logic, data management via ORM, and secure user authentication with a custom Django user model.***
+- *Building the backend using Python and the Django framework to handle business logic, data management via ORM, and secure user authentication with a custom Django user model.*
 
 - *Creating a responsive and user-friendly frontend using HTML5, CSS3, JavaScript, and the Bootstrap framework for styling and layout.*
 
