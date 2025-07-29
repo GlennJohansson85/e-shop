@@ -6,11 +6,11 @@
 
 ![Homepage Preview](docs/readme_images/frontpage-img.png)
 
-E-SHOP is a dynamic e-commerce platform offering a wide range of products — primarily clothing — with customizable options. Customers can browse items by category, size and color, or quickly locate specific products using the built-in search function in the navigation bar.
+***E-SHOP is a dynamic e-commerce platform offering a wide range of products — primarily clothing — with customizable options. Customers can browse items by category, size and color, or quickly locate specific products using the built-in search function in the navigation bar.***
 
-By registering, users can save their shipping details for faster future checkouts and gain access to a personal dashboard where all past orders, transactions, and receipts are stored in a clean, easy-to-read format.
+***By registering, users can save their shipping details for faster future checkouts and gain access to a personal dashboard where all past orders, transactions, and receipts are stored in a clean, easy-to-read format.***
 
-With secure transaction processing, shoppers can make purchases with confidence and enjoy a smooth, user-friendly experience.
+***With secure transaction processing, shoppers can make purchases with confidence and enjoy a smooth, user-friendly experience.***
 
 <div align="center">
 
@@ -20,7 +20,7 @@ With secure transaction processing, shoppers can make purchases with confidence 
 
 <div align="center">
 
-### **Project Goals**
+## **Project Goals**
 
 </div>
 
