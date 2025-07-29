@@ -26,7 +26,7 @@
 
 - ***Building the backend using Python and the Django framework to handle business logic, data management via ORM, and secure user authentication with a custom Django user model.***
 
-- ***Creating a responsive and user-friendly frontend using HTML5, CSS3, JavaScript, and the Bootstrap framework for styling and layout.***
+- ****Creating a responsive and user-friendly frontend using HTML5, CSS3, JavaScript, and the Bootstrap framework for styling and layout.****
 
 - ***Utilizing Django Templates for server-side rendering and dynamic content delivery.***
 
