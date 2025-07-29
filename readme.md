@@ -45,36 +45,37 @@
 
 ***These goals reflect a comprehensive approach to building a professional e-commerce system that balances frontend usability, backend robustness, and secure cloud deployment.***
 
-
 <div align="center">
 
 ## **User Goals:**
 
 </div>
 
+***The primary goal for users is to have a seamless and secure online shopping experience. E-SHOP is designed to provide:***
 
+- An intuitive interface for browsing and searching products by category, size, and color.
 
-The primary goal for users is to have a seamless and secure online shopping experience. E-SHOP is designed to provide:
+- A smooth and responsive shopping experience across devices.
 
-    - An intuitive interface for browsing and searching products by category, size, and color.
+- Secure user registration and login, with access to a personal account area.
 
-    - A smooth and responsive shopping experience across devices.
+- The ability to manage profile information and reset passwords if needed.
 
-    - Secure user registration and login, with access to a personal account area.
+- A personalized dashboard displaying past orders and transaction history.
 
-    - The ability to manage profile information and reset passwords if needed.
+- A fast and reliable checkout process with secure PayPal payment integration.
 
-    - A personalized dashboard displaying past orders and transaction history.
+- Saved shipping details to simplify future purchases.
 
-    - A fast and reliable checkout process with secure PayPal payment integration.
+***Overall, E-SHOP aims to offer a clean, trustworthy, and convenient platform for purchasing customizable clothing and electronics online.***
 
-    - Saved shipping details to simplify future purchases.
+<div align="center">
 
-Overall, E-SHOP aims to offer a clean, trustworthy, and convenient platform for purchasing customizable clothing and electronics online.
+# **1 - UX**
 
-# 1 - UX
+## **1.1 - User Stories:**
 
-## 1.1 - User Stories:
+</div>
 
 ### 1.1.1 - First Time User Goals:
 &nbsp;&nbsp;&nbsp;&nbsp;**a)** As a **First Time User**, I want to quickly understand the purpose of the website.
