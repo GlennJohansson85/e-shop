@@ -1,12 +1,15 @@
 # E-SHOP
-![image](https://github.com/user-attachments/assets/5909e845-3818-4808-9e1c-a862db84cb9a)
 
-### [****See Live Project Here!****](https://p5-shop-8a4cf1a2ceb9.herokuapp.com/)
+
+### [****See Live Project Here!****](https://app-e-shop-c5039fdaf8fd.herokuapp.com/)
+
 
 ### About:
-E-SHOP is a dynamic e-commerce platform offering a wide range of products with customizable options. Customers can browse items by category, size, and color, or use the built-in search function in the navigation bar to quickly find what they need. With secure transaction processing, shoppers can make purchases with confidence and enjoy a smooth, user-friendly experience.
+E-SHOP is a dynamic e-commerce platform offering a wide range of products — primarily clothing — with customizable options. Customers can browse items by category, size and color, or quickly locate specific products using the built-in search function in the navigation bar.
 
 By registering, users can save their shipping details for faster future checkouts and gain access to a personal dashboard where all past orders, transactions, and receipts are stored in a clean, easy-to-read format.
+
+With secure transaction processing, shoppers can make purchases with confidence and enjoy a smooth, user-friendly experience.
 
 ### Project Goals:
 The goal of this project was to develop a fully functional and scalable e-commerce platform using Django, emphasizing modular design, secure deployment, and real-world integrations. The key objectives included:
@@ -31,10 +34,27 @@ The goal of this project was to develop a fully functional and scalable e-commer
 
     Employing environment variables (os.environ) for secure and flexible configuration management.
 
-These goals reflect a comprehensive approach to building a professional-grade e-commerce system that balances frontend usability, backend robustness, and secure cloud deployment.
+These goals reflect a comprehensive approach to building a professional e-commerce system that balances frontend usability, backend robustness, and secure cloud deployment.
 
 ### User Goals:
-Create a user friendly website where customers can browse for clothes and make secure purchases.
+
+The primary goal for users is to have a seamless and secure online shopping experience. E-SHOP is designed to provide:
+
+    - An intuitive interface for browsing and searching products by category, size, and color.
+
+    - A smooth and responsive shopping experience across devices.
+
+    - Secure user registration and login, with access to a personal account area.
+
+    - The ability to manage profile information and reset passwords if needed.
+
+    - A personalized dashboard displaying past orders and transaction history.
+
+    - A fast and reliable checkout process with secure PayPal payment integration.
+
+    - Saved shipping details to simplify future purchases.
+
+Overall, E-SHOP aims to offer a clean, trustworthy, and convenient platform for purchasing customizable clothing and electronics online.
 
 # 1 - UX
 
