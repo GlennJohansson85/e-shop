@@ -46,7 +46,13 @@
 ***These goals reflect a comprehensive approach to building a professional e-commerce system that balances frontend usability, backend robustness, and secure cloud deployment.***
 
 
-### User Goals:
+<div align="center">
+
+## **User Goals:**
+
+</div>
+
+
 
 The primary goal for users is to have a seamless and secure online shopping experience. E-SHOP is designed to provide:
 
