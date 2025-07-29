@@ -14,25 +14,25 @@ With secure transaction processing, shoppers can make purchases with confidence 
 ### Project Goals:
 The goal of this project was to develop a fully functional and scalable e-commerce platform using Django, emphasizing modular design, secure deployment, and real-world integrations. The key objectives included:
 
-    Building the backend using Python and the Django framework to handle business logic, data management via ORM, and secure user authentication with a custom Django user model.
+  Building the backend using Python and the Django framework to handle business logic, data management via ORM, and secure user authentication with a custom Django user model.
 
-    Creating a responsive and user-friendly frontend using HTML5, CSS3, JavaScript, and the Bootstrap framework for styling and layout.
+  Creating a responsive and user-friendly frontend using HTML5, CSS3, JavaScript, and the Bootstrap framework for styling and layout.
 
-    Utilizing Django Templates for server-side rendering and dynamic content delivery.
+  Utilizing Django Templates for server-side rendering and dynamic content delivery.
 
-    Implementing payment processing through integration with the PayPal SDK, enabling real-world transaction functionality.
+  Implementing payment processing through integration with the PayPal SDK, enabling real-world transaction functionality.
 
-    Managing static and media files locally during development and in production via AWS S3 for cloud storage.
+  Managing static and media files locally during development and in production via AWS S3 for cloud storage.
 
-    Securing cloud resources by managing access permissions with AWS IAM, ensuring proper authorization controls.
+  Securing cloud resources by managing access permissions with AWS IAM, ensuring proper authorization controls.
 
-    Preparing the application for production deployment using Gunicorn as a reliable WSGI server.
+  Preparing the application for production deployment using Gunicorn as a reliable WSGI server.
 
-    Using SQLite as a lightweight development database.
+  Using SQLite as a lightweight development database.
 
-    Designing RESTful APIs and patterns to facilitate dynamic frontend and backend interactions.
+  Designing RESTful APIs and patterns to facilitate dynamic frontend and backend interactions.
 
-    Employing environment variables (os.environ) for secure and flexible configuration management.
+  Employing environment variables (os.environ) for secure and flexible configuration management.
 
 These goals reflect a comprehensive approach to building a professional e-commerce system that balances frontend usability, backend robustness, and secure cloud deployment.
 
