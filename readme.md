@@ -1,4 +1,6 @@
-<h1 style="text-align: center;">E-Shop</h1>
+<div style="width: 100%;">
+  <h1 style="text-align: center;">E-Shop</h1>
+</div>
 
 ![Homepage Preview](docs/readme_images/frontpage-img.png)
 
