@@ -73,6 +73,8 @@
 
 ## ***1 - UX***
 
+</div>
+
 ### ***1.1 - User Stories:***
 
 ### ***1.1.1 - First Time User Goals:***
@@ -90,7 +92,7 @@
 - *b) As a Frequent User, I want to see all my orders.*
 - *c) As a Frequent User, I want change my account details.*
 
-</div>
+
 
 ## 1.2 - Design
 
