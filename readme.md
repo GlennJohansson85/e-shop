@@ -77,20 +77,35 @@
 
 ### ***1.1 - User Stories:***
 
-### ***1.1.1 - First Time User Goals:***
-- *a) As a First Time User, I want to quickly understand the purpose of the website.*
-- *b) As a First Time User, I want to browse clothes.*
-- *c) As a First Time User, I want to search for a specific clothing wear.*
+#### ***1.1.1 – First-Time User Goals***
 
-### ***1.1.2 - Returning User Goals:***
-- *a) As a Returning User, I want to make a purchase.*
-- *b) As a Returning User, I want to register to the site.*
-- *c) As a Returning User, I want to contact customer support.*
+***(These users are new and unfamiliar with the site.)***
 
-### ***1.1.3 - Frequent User Goals:***
-- *a) As a Frequent User, I want my purchases to go faster.*
-- *b) As a Frequent User, I want to see all my orders.*
-- *c) As a Frequent User, I want change my account details.*
+*a) I want to quickly understand what this website offers.*
+
+*b) I want to explore available items.*
+
+*c) I want to easily search for a specific type of clothing.*
+
+***1.1.2 – Returning User Goals***
+
+***(These users have visited before but may not be fully engaged or registered.)***
+
+*a) I want to view product details and reviews before purchasing.*
+
+*b) I want to complete a purchase.*
+
+*c) I want to register for an account to track my activity.*
+
+***1.1.3 – Frequent User Goals***
+
+***(These users are active, likely registered, and returning regularly.)***
+
+*a) I want a faster, more streamlined checkout process.*
+
+*b) I want to view and manage my past orders.*
+
+*c) I want to update my personal or account details.*
 
 
 
