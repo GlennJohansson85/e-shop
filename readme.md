@@ -107,22 +107,8 @@ c) I want to update my personal or account details.
 
 
 ### **4.1 Fonts:**
-<table>
-  <tr>
-    <th>ELEPHNT</th>
-    <th>ELEPHNTI</th>
-    <th>Photina MT Ultra Bold</th>
-    <th>Photina MT</th>
-    <th>PhotinaMTStd-Semibold</th>
-  </tr>
-  <tr>
-    <td>Row 2, Col 1</td>
-    <td>Row 2, Col 2</td>
-    <td>Row 2, Col 3</td>
-    <td>Row 2, Col 4</td>
-    <td>Row 2, Col 5</td>
-  </tr>
-</table>
+![4.1-fonts](docs/readme_images/4.1-fonts.png.png)
+
 
 ### 1.2.3 - Responsive Design
 
