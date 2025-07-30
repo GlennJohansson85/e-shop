@@ -1,14 +1,14 @@
 <div align="center">
 
-# ***E-Shop***
+# **E-Shop**
 
 ![Homepage Preview](docs/readme_images/frontpage-img.png)
 
-***E-SHOP is a dynamic e-commerce platform offering a wide range of products — primarily clothing — with customizable options. Customers can browse items by category, size and color, or quickly locate specific products using the built-in search function in the navigation bar.***
+**E-SHOP is a dynamic e-commerce platform offering a wide range of products — primarily clothing — with customizable options. Customers can browse items by category, size and color, or quickly locate specific products using the built-in search function in the navigation bar.**
 
-***By registering, users can save their shipping details for faster future checkouts and gain access to a personal dashboard where all past orders, transactions, and receipts are stored in a clean, easy-to-read format.***
+**By registering, users can save their shipping details for faster future checkouts and gain access to a personal dashboard where all past orders, transactions, and receipts are stored in a clean, easy-to-read format.**
 
-***With secure transaction processing, shoppers can make purchases with confidence and enjoy a smooth, user-friendly experience.***
+**With secure transaction processing, shoppers can make purchases with confidence and enjoy a smooth, user-friendly experience.**
 
 [***See Live Project Here***](https://app-e-shop-c5039fdaf8fd.herokuapp.com/)
 
@@ -16,91 +16,91 @@
 
 <div align="center">
 
-## ***1. Project Goals***
+## **1. Project Goals**
 
 </div>
 
-***The goal of this project was to develop a fully functional and scalable e-commerce platform using Django, emphasizing modular design, secure deployment, and real-world integrations. The key objectives included:***
+**The goal of this project was to develop a fully functional and scalable e-commerce platform using Django, emphasizing modular design, secure deployment, and real-world integrations. The key objectives included:**
 
-- *Building the backend using Python and the Django framework to handle business logic, data management via ORM, and secure user authentication with a custom Django user model.*
+- Building the backend using Python and the Django framework to handle business logic, data management via ORM, and secure user authentication with a custom Django user model.
 
-- *Creating a responsive and user-friendly frontend using HTML5, CSS3, JavaScript, and the Bootstrap framework for styling and layout.*
+- Creating a responsive and user-friendly frontend using HTML5, CSS3, JavaScript, and the Bootstrap framework for styling and layout.
 
-- *Utilizing Django Templates for server-side rendering and dynamic content delivery.*
+- Utilizing Django Templates for server-side rendering and dynamic content delivery.
 
-- *Implementing payment processing through integration with the PayPal SDK, enabling real-world transaction functionality.*
+- Implementing payment processing through integration with the PayPal SDK, enabling real-world transaction functionality.
 
-- *Managing static and media files locally during development and in production via AWS S3 for cloud storage.*
+- Managing static and media files locally during development and in production via AWS S3 for cloud storage.
 
-- *Securing cloud resources by managing access permissions with AWS IAM, ensuring proper authorization controls.*
+- Securing cloud resources by managing access permissions with AWS IAM, ensuring proper authorization controls.
 
-- *Preparing the application for production deployment using Gunicorn as a reliable WSGI server.*
+- Preparing the application for production deployment using Gunicorn as a reliable WSGI server.
 
-- *Using SQLite as a lightweight development database.*
+- Using SQLite as a lightweight development database.
 
-- *Designing RESTful APIs and patterns to facilitate dynamic frontend and backend interactions.*
+- Designing RESTful APIs and patterns to facilitate dynamic frontend and backend interactions.
 
-- *Employing environment variables (os.environ) for secure and flexible configuration management.*
+- Employing environment variables (os.environ) for secure and flexible configuration management.
 
 
-***These goals reflect a comprehensive approach to building a professional e-commerce system that balances frontend usability, backend robustness, and secure cloud deployment.***
+**These goals reflect a comprehensive approach to building a professional e-commerce system that balances frontend usability, backend robustness, and secure cloud deployment.**
 
 <div align="center">
 
-## ***2. User Goals:***
+## **2. User Goals:**
 
 </div>
 
-***The primary goal for users is to have a seamless and secure online shopping experience. E-SHOP is designed to provide:***
+**The primary goal for users is to have a seamless and secure online shopping experience. E-SHOP is designed to provide:**
 
-- *An intuitive interface for browsing and searching products by category, size, and color.*
+- An intuitive interface for browsing and searching products by category, size, and color.
 
-- *A smooth and responsive shopping experience across devices.*
+- A smooth and responsive shopping experience across devices.
 
-- *Secure user registration and login, with access to a personal account area.*
+- Secure user registration and login, with access to a personal account area.
 
-- *The ability to manage profile information and reset passwords if needed.*
+- The ability to manage profile information and reset passwords if needed.
 
-- *A personalized dashboard displaying past orders and transaction history.*
+- A personalized dashboard displaying past orders and transaction history.
 
-- *A fast and reliable checkout process with secure PayPal payment integration.*
+- A fast and reliable checkout process with secure PayPal payment integration.
 
-- *Saved shipping details to simplify future purchases.*
+- Saved shipping details to simplify future purchases.
 
-***Overall, E-SHOP aims to offer a clean, trustworthy, and convenient platform for purchasing customizable clothing and electronics online.***
+**Overall, E-SHOP aims to offer a clean, trustworthy, and convenient platform for purchasing customizable clothing and electronics online.**
 
 
-## ***3. User Stories:***
+## **3. User Stories:**
 
-### ***3.1. First-Time User Goals***
+### **3.1. First-Time User Goals**
 
-***(These users are new and unfamiliar with the site.)***
+**(These users are new and unfamiliar with the site.)**
 
-*a) I want to quickly understand what this website offers.*
+a) I want to quickly understand what this website offers.
 
-*b) I want to explore available items.*
+b) I want to explore available items.
 
-*c) I want to easily search for a specific type of clothing.*
+c) I want to easily search for a specific type of clothing.
 
-### ***3.2. Returning User Goals***
+### **3.2. Returning User Goals**
 
-***(These users have visited before but may not be fully engaged or registered.)***
+**(These users have visited before but may not be fully engaged or registered.)**
 
-*a) I want to view product details and reviews before purchasing.*
+a) I want to view product details and reviews before purchasing.
 
-*b) I want to complete a purchase.*
+b) I want to complete a purchase.
 
-*c) I want to register for an account to track my activity.*
+c) I want to register for an account to track my activity.
 
-### ***3.3. Frequent User Goals***
+### **3.3. Frequent User Goals**
 
-***(These users are active, likely registered, and returning regularly.)***
+**(These users are active, likely registered, and returning regularly.)**
 
-*a) I want a faster, more streamlined checkout process.*
+a) I want a faster, more streamlined checkout process.
 
-*b) I want to view and manage my past orders.*
+b) I want to view and manage my past orders.
 
-*c) I want to update my personal or account details.*
+c) I want to update my personal or account details.
 
 
 
