@@ -106,8 +106,8 @@ c) I want to update my personal or account details.
 ## **4. Design**
 
 
-### **4.1 Fonts:**
-![4.1-fonts](docs/readme_images/4.1-fonts.png.png)
+### **4.1 Fonts used in project**
+![4.1-fonts](docs/readme_images/4.1-fonts.png)
 
 
 ### 1.2.3 - Responsive Design
