@@ -152,8 +152,6 @@ table {
 
 .btn {
     font-family:                    "PhotinaMTStd-Semibold", "Sans-serif";
-    font-size:                      14px;
-    letter-spacing:                 0.8px;
     text-align:                     center;
     border-radius:                  0;
     border:                         2px solid #FAFAFA;
@@ -197,19 +195,28 @@ table {
 }
 
 /*                                              HOME.HTML*/
+
+.home-banner-container {
+    max-width:                      1000px;
+    margin:                         10px auto;
+    padding:                        5px;
+    background-color:              #FFF;
+    box-shadow:                     1px 2px 3px #000000b6;
+
+
+}
+
 .home-banner {
-    font-family:                    "ELEPHNT", "Sans-serif";
-    text-shadow:                    2px 1px 3px #a7a7a7;
-    font-size:                      52px;
-    word-spacing:                   8px;
-    text-align:                     center;
-    color:                          #000;
+    font-family:                "ELEPHNTI", "Sans-serif";
+    text-shadow:                1px 1px 2px #1e1e1e8f;
+    text-align:                 center;
+    color:                      #000000;
+
 }
 
 .home-header {
     max-width:                      1000px;
     font-family:                    "ELEPHNT", "Sans-serif";
-    font-size:                      22px;
     width:                          100%;
     display:                        flex;
     justify-content:                space-between;
@@ -217,7 +224,7 @@ table {
     margin:                         0 auto;
     margin-bottom:                  5px;
     padding:                        10px;
-    color:                          #000;
+    color:                          #2a2929;
 }
 
 .home-container {
@@ -230,32 +237,20 @@ table {
 }
 
 .home-row {
-    gap:                            20px;
-    display:                        flex;
-    flex-wrap:                      wrap;
-    justify-content:                center;
     margin-bottom:                  80px;
 }
 
+/* Img- + img text-container style */ 
 .home-card {
-    flex:                           1 1 220px;
-    max-width:                      280px;
-    min-width:                      220px;
     padding:                        15px;
     overflow:                       hidden;
     box-sizing:                     border-box;
     display:                        block;
-    background-position:            center;
-    background-size:                cover;
-    background-repeat:              repeat;
-    background-image:               url("/static/images/items/wo6.png");
-    box-shadow:                     1px 2px 4px rgba(0, 0, 0, 0.7);
     transition:                     transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .home-card:hover {
     transform:                      scale(1.05);
-    box-shadow:                     2px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 /* Hovering card = Bold Font also */
@@ -273,8 +268,6 @@ table {
     align-items:                    center;
     justify-content:                center;
     border-top:                     none;
-    border-right:                   2px inset #fff;
-    border-left:                    2px inset #fff;
     background-color:               #fff;
 }
 
@@ -282,8 +275,6 @@ table {
 .home-img {
     width:                          100%;
     height:                         100%;
-    border:                         none;
-    outline:                        none;
     background-color:               #fff;
     object-fit:                     contain;
 }
@@ -294,12 +285,7 @@ table {
     font-size:                      14px;
     text-align:                     center;
     margin:                         0;
-    padding:                        0;
-    outline:                        none;
-    border-top:                     none;
-    border-right:                   2px inset #fff;
-    border-bottom:                  2px inset #fff;
-    border-left:                    2px inset #fff;
+    padding:                        5px;
     background-color:               #fff;
 }
 
@@ -316,7 +302,7 @@ table {
 
 /* Remove default */
 .home-price {
-    margin-bottom:                  5px;
+    margin-bottom:                  10px;
     color:                          #005023;
 }
 
@@ -1150,8 +1136,22 @@ table {
 
 /*                                                                                                  SMALL */
 @media (max-width: 768px) {
+    /* Remove witdh between columns */
     .home-page-container {
-        padding:                10px;
+        padding: 0 20px;
+    }
+
+
+    .home-banner {
+        margin: 20px 0;
+    }
+
+    .home-header {
+        font-size: 16px;
+    }
+
+    .btn {
+        font-size: 12px;
     }
 
     /* 2 columns and 4 rows */
@@ -1204,42 +1204,64 @@ table {
 
 /*                                                                                                  MEDIUM */
 @media (min-width: 769px) and (max-width: 1200px) {
+    /* Remove witdh between columns */
     .home-page-container {
-        padding:                10px;
+        padding: 0 20px;
+    }
+
+    .home-banner {
+        margin: 40px 0;
+    }
+
+    .home-header {
+        font-size: 18px;
+    }
+
+    .btn {
+        font-size: 14px;
+        letter-spacing: 0.8px;
     }
 
     /* 3 columns and 3 rows */
     .products-col {
-        flex:                   1 1 1 calc(50% - 20px);
-        max-width:              calc(50% - 20px);
-        display:                flex;               /* Center the cards */
-        box-sizing:             border-box;         /* Center the cards */
-        justify-content:        center;             /* Center the cards */
+        flex: 1 1 1 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+        display: flex; /* 1. Center the cards */
+        box-sizing: border-box; /* 2. Center the cards */
+        justify-content: center;  /* 3. Center the cards */
     }
 
     /*                                          MEDIUM PRODUCTS.HTML */
     .products-page-container {
-        max-width:              800px;
-        margin:                 0 auto;
+        max-width: 800px;
+        margin: 0 auto;
     }
 
     /*                                          MEDIUM PRODUCT_DETAIL.HTML */
     .detail-review-header {
-        margin-top:             110px;
+        margin-top: 110px;
     }
     .detail-review-container {
-        padding:                20px;
+        padding: 20px;
     }
     .card-item {
-        padding:                0;
+        padding: 0;
     }
 }
 
 /*                                                                                                  LARGE */
 @media (min-width: 1201px) {
     .home-banner {
+        font-size: 32px;
         margin: 40px 0;
     }
 
+    .home-header {
+        font-size: 22px;
+    }
 
+    .btn {
+        font-size: 14px;
+        letter-spacing: 0.8px;
+    }
 }

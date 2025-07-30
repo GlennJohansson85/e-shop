@@ -5,29 +5,30 @@
 
 {% block content %}
 <div class="home-page-container">
-    <div class="home-banner">LATEST PRODUCTS ARE HERE!</div>
-        <div class="home-header">POPULAR PRODUCTS:
-            <a href="{% url 'products' %}" class="btn">ALL PRODUCTS</a>
-        </div>
+    <div class="home-banner-container">
+        <h1 class="home-banner">Wear Your Confidence. Shop the Style You Deserve.</h1>
+    </div>
+    <div class="home-header">POPULAR PRODUCTS:
+        <a href="{% url 'products' %}" class="btn">ALL PRODUCTS</a>
+    </div>
 
-        <div class="home-container">
-            <div class="home-row">
-                {% for product in products|slice:":8" %}
-                    <div class="col-md-3">
-                        <div class="home-card">
-                            <a class="home-img-wrap" href="{{ product.get_url }}">
-                                <img class="home-img" src="{{ product.images.url }}">
+    <div class="home-container">
+        <div class="home-row row gx-1">
+            {% for product in products|slice:":8" %}
+                <div class="col-6 col-sm-4 col-md-3">
+                    <div class="home-card">
+                        <a class="home-img-wrap" href="{{ product.get_url }}">
+                            <img class="home-img" src="{{ product.images.url }}">
+                        </a>
+                        <figcaption class="home-text-container">
+                            <a class="home-name" href="{{ product.get_url }}">
+                                {{ product.product_name }}
                             </a>
-                            <figcaption class="home-text-container">
-                                <a class="home-name" href="{{ product.get_url }}">
-                                    {{ product.product_name }}
-                                </a>
-                                <div class="home-price">$ {{ product.price }}</div>
-                            </figcaption>
-                        </div>
+                            <div class="home-price">$ {{ product.price }}</div>
+                        </figcaption>
                     </div>
-                {% endfor %}
-            </div>
+                </div>
+            {% endfor %}
         </div>
     </div>
 </div>
