@@ -16,7 +16,7 @@
 
 <div align="center">
 
-## ***Project Goals***
+## ***1. Project Goals***
 
 </div>
 
@@ -47,7 +47,7 @@
 
 <div align="center">
 
-## ***User Goals:***
+## ***2. User Goals:***
 
 </div>
 
@@ -69,15 +69,10 @@
 
 ***Overall, E-SHOP aims to offer a clean, trustworthy, and convenient platform for purchasing customizable clothing and electronics online.***
 
-<div align="center">
 
-## ***1 - UX***
+## ***3. User Stories:***
 
-</div>
-
-### ***1.1 - User Stories:***
-
-#### ***1.1.1 – First-Time User Goals***
+### ***3.1. First-Time User Goals***
 
 ***(These users are new and unfamiliar with the site.)***
 
@@ -87,7 +82,7 @@
 
 *c) I want to easily search for a specific type of clothing.*
 
-***1.1.2 – Returning User Goals***
+### ***3.2. Returning User Goals***
 
 ***(These users have visited before but may not be fully engaged or registered.)***
 
@@ -97,7 +92,7 @@
 
 *c) I want to register for an account to track my activity.*
 
-***1.1.3 – Frequent User Goals***
+### ***3.3. Frequent User Goals***
 
 ***(These users are active, likely registered, and returning regularly.)***
 
