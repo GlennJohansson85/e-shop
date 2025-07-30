@@ -110,12 +110,8 @@ c) I want to update my personal or account details.
 ![4.1-fonts](docs/readme_images/4.1-fonts.png)
 
 
-### 1.2.3 - Responsive Design
-
-<details>
-    <summary>Desktop, tablet and mobile view</summary>
-    <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/1-ux/responsive.png" alt="Desktop, tablet and mobile view - image">
-</details>
+### **4.2 - Responsive Design**
+![4.2-laptop](docs/readme_images/4.2-laptop.png)
 
 # 2 - Wireframes
 
