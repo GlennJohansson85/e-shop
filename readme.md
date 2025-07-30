@@ -74,7 +74,7 @@
 
 ### **3.1. First-Time User Goals**
 
-**(These users are new and unfamiliar with the site.)**
+*(These users are new and unfamiliar with the site.)*
 
 a) I want to quickly understand what this website offers.
 
@@ -84,7 +84,7 @@ c) I want to easily search for a specific type of clothing.
 
 ### **3.2. Returning User Goals**
 
-**(These users have visited before but may not be fully engaged or registered.)**
+*(These users have visited before but may not be fully engaged or registered.)*
 
 a) I want to view product details and reviews before purchasing.
 
@@ -94,7 +94,7 @@ c) I want to register for an account to track my activity.
 
 ### **3.3. Frequent User Goals**
 
-**(These users are active, likely registered, and returning regularly.)**
+*(These users are active, likely registered, and returning regularly.)*
 
 a) I want a faster, more streamlined checkout process.
 
@@ -103,17 +103,27 @@ b) I want to view and manage my past orders.
 c) I want to update my personal or account details.
 
 
+## **4. Design**
 
-## 1.2 - Design
 
-### 1.2.1 - Color Scheme:
-![Color Scheme - image](https://github.com/user-attachments/assets/592674b0-c9e6-4724-931b-73bba8272bb0)
+### **4.1 Fonts:**
+<table>
+  <tr>
+    <th>ELEPHNT</th>
+    <th>ELEPHNTI</th>
+    <th>Photina MT Ultra Bold</th>
+    <th>Photina MT</th>
+    <th>PhotinaMTStd-Semibold</th>
+  </tr>
+  <tr>
+    <td>Row 2, Col 1</td>
+    <td>Row 2, Col 2</td>
+    <td>Row 2, Col 3</td>
+    <td>Row 2, Col 4</td>
+    <td>Row 2, Col 5</td>
+  </tr>
+</table>
 
-### 1.2.2 - Fonts:
-<details>
-    <summary>JuneGull, VarelaRound-Regular, Sans-serif</summary>
-    <img src="https://raw.githubusercontent.com/GlennJohansson85/p5-shop/main/docs/images/1-ux/fonts.png" alt="JuneGull, VarelaRound-Regular, Sans-serif Font - image">
-</details>
 ### 1.2.3 - Responsive Design
 
 <details>
