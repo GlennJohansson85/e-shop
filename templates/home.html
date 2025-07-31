@@ -6,14 +6,15 @@
 {% block content %}
 <div class="home-page-container">
     <div class="home-banner-container">
-        <h1 class="home-banner">Wear Your Confidence. Shop the Style You Deserve.</h1>
+        <h1 class="home-banner">Wear your confidence with Style!</h1>
     </div>
-    <div class="home-header">POPULAR PRODUCTS:
+    <div class="home-header-container">
+        <span class="home-header">Popular Products:</span>
         <a href="{% url 'products' %}" class="btn">ALL PRODUCTS</a>
     </div>
 
     <div class="home-container">
-        <div class="home-row row gx-1">
+        <div class="home-row row gx-3">
             {% for product in products|slice:":8" %}
                 <div class="col-6 col-sm-4 col-md-3">
                     <div class="home-card">

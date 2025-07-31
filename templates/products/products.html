@@ -5,18 +5,20 @@
 
 {% block content %}
 <div class="products-page-container">
-    <section class="products-page-header-container">
+    <div class="row">
+    <div class="products-header-container">
         {% if 'search' in request.path %}
-            <h1 class="products-page-header">SEARCH RESULTS:</h1>
+            <span class="products-header">Search Results:</h1>
         {% else %}
-            <h1 class="products-page-header">OUR PRODUCTS:</h1>
+            <span class="products-header">Our Products:</h1>
         {% endif %}
-    </section>
+    </div>
+    </div>
 
     <section class="section-content padding-y">
         <div class="row">
 
-            <aside class="col-md-3 products-col">
+            <aside class="col-md-3">
                 <article class="filter-group">
                     <div class="products-list-header" data-toggle="collapse" data-target="#collapse_1" aria-expanded="true">
                         Categories:

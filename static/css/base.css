@@ -67,12 +67,6 @@ table {
     margin:                         0 auto;
 }
 
-.products-col {
-    flex:                           1 1 calc(25% - 20px);
-    max-width:                      calc(25% - 20px);
-    transition:                     transform 0.2s ease;
-}
-
 .page-header-container {
     margin:                         10px;
     display:                        flex;
@@ -152,6 +146,8 @@ table {
 
 .btn {
     font-family:                    "PhotinaMTStd-Semibold", "Sans-serif";
+    font-size: 14px;
+    letter-spacing: 0.4;
     text-align:                     center;
     border-radius:                  0;
     border:                         2px solid #FAFAFA;
@@ -165,7 +161,10 @@ table {
     transition:                     all 0.3s ease;
 }
 
-.btn:hover {
+/* Btn effect + Remove default state styles */
+.btn:hover,
+.btn:active,
+.btn:focus {
     cursor:                         pointer;
     color:                          #fafafa;
     background-color:               #4c4b4bb1;
@@ -195,36 +194,48 @@ table {
 }
 
 /*                                              HOME.HTML*/
-
+/* Container Style */
 .home-banner-container {
-    max-width:                      1000px;
-    margin:                         10px auto;
-    padding:                        5px;
-    background-color:              #FFF;
-    box-shadow:                     1px 2px 3px #000000b6;
-
-
+    max-width:              1000px;
+    margin:                 10px auto 20px;
+    background-image:       url(/static/images/items/s-black.png);
+    background-size:        100%;
+    background-repeat:      repeat;
+    background-position:    center;
+    background-color:       #0c0c0c;
+    border:                 3px inset #f9f9f9;
 }
 
+/* Text Style */
 .home-banner {
-    font-family:                "ELEPHNTI", "Sans-serif";
-    text-shadow:                1px 1px 2px #1e1e1e8f;
-    text-align:                 center;
-    color:                      #000000;
-
+    font-family:            "Elephnti", sans-serif;
+    text-align:             center;
+    text-shadow:            2px 0px 0px rgb(240, 134, 226);
+    color:                  #ffffffb4;
+    font-size:              2.4rem;
+    font-weight:            600;
+    padding:                2rem 1rem;
+    letter-spacing:         0.5px;
 }
 
-.home-header {
+/* "Popular Products:" + All Products-btn */
+.home-header-container {
     max-width:                      1000px;
-    font-family:                    "ELEPHNT", "Sans-serif";
-    width:                          100%;
     display:                        flex;
     justify-content:                space-between;
     align-items:                    center;
     margin:                         0 auto;
     margin-bottom:                  5px;
-    padding:                        10px;
-    color:                          #2a2929;
+}
+
+.home-header {
+    font-family:                    "ELEPHNTI", "Sans-serif";
+    font-size:                      1.4rem;
+    font-weight:                    600;
+    letter-spacing:                 0.5px;
+    text-shadow:                    1px 1px 3px rgb(0, 0, 0);
+    width:                          100%;
+    color:                          #fffffffe;
 }
 
 .home-container {
@@ -237,20 +248,22 @@ table {
 }
 
 .home-row {
-    margin-bottom:                  80px;
+    margin: 1rem;
 }
 
 /* Img- + img text-container style */ 
 .home-card {
-    padding:                        15px;
     overflow:                       hidden;
     box-sizing:                     border-box;
     display:                        block;
+    box-shadow:                     1px 2px 4px rgba(0, 0, 0, 0.7);
     transition:                     transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 1.5rem;
 }
 
 .home-card:hover {
     transform:                      scale(1.05);
+    box-shadow:                     2px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 /* Hovering card = Bold Font also */
@@ -307,18 +320,28 @@ table {
 }
 
 /*                                              PRODUCTS.HTML*/
-/* PRODUCTS PAGE HEADER TEXT STYLE */
-.products-page-header {
-    margin:                         5px;
-    font-family:                    "ELEPHNT", "Sans-serif";
-    color:                          #000;
-}
-
 /* Page Container */
 .products-page-container {
-    max-width:                      1100px;
-    margin:                         0 auto;
+    max-width: 1000px;
+    margin: 0 auto;
 }
+
+.products-header-container{
+    margin: 0 auto;
+}
+
+/* PRODUCTS PAGE HEADER TEXT STYLE */
+.products-header {
+    font-family:                    "ELEPHNTI", "Sans-serif";
+    font-size:                      2rem;
+    font-weight:                    600;
+    letter-spacing:                 0.5px;
+    text-shadow:                    1px 1px 3px rgb(0, 0, 0);
+    width:                          100%;
+    color:                          #fffffffe;
+}                       
+
+
 
 /* Number of items displayed */
 .products-count {
@@ -389,10 +412,7 @@ table {
     box-sizing:                     border-box;
     display:                        block;
     color:                          #000;
-    background-position:            center;
-    background-size:                cover;
-    background-repeat:              repeat;
-    background-image:               url("/static/images/items/paper.png");
+    background-color: #fff;
     box-shadow:                     1px 2px 4px rgba(0, 0, 0, 0.7);
     transition:                     transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -412,20 +432,19 @@ table {
 .products-card-text-container {
     text-align:                     center;
     padding:                        5px;
+    font-family:                    "PhotinaMTStd-SemiBold", "Sans-serif";
+    font-size:                      14px;                
 }
 
 .products-info {
     margin:                         5px;
     padding:                        0;
-    font-family:                    "Photina MT", "Sans-serif";
-    font-size:                      14px;
+    color: #000;
     text-decoration:                none;
 }
 
 .products-price {
     padding:                        0;
-    font-family:                    "PhotinaMTStd-Semibold", "Sans-serif";
-    font-size:                      14px;
     text-decoration:                none;
     color:                          #005023;
 }
@@ -1136,31 +1155,24 @@ table {
 
 /*                                                                                                  SMALL */
 @media (max-width: 768px) {
+    /* HOME.HTML */
     /* Remove witdh between columns */
     .home-page-container {
         padding: 0 20px;
     }
 
-
     .home-banner {
         margin: 20px 0;
     }
 
-    .home-header {
-        font-size: 16px;
+    /* PRODUCTS.HTML */
+    /* Covers the full witdh of the page when in mobile view */
+    .filter-group {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
     }
 
-    .btn {
-        font-size: 12px;
-    }
-
-    /* 2 columns and 4 rows */
-    .products-col {
-        flex:                   1 1 1 calc(50% - 20px);
-        max-width:              calc(50% - 20px);
-    }
-
-    /*                                          SMALL PRODUCTS.HTML */
     .products-page-container {
         max-width:              400px;
         margin:                 0 auto;
@@ -1173,7 +1185,7 @@ table {
     }
 
     /* Filter group container takes the whole page width */
-    .section-content .products-row > aside.products-col {
+    .section-content .products-row {
         width:                  100%;
         flex:                   0 0 100%;
         max-width:              100%;
@@ -1213,23 +1225,6 @@ table {
         margin: 40px 0;
     }
 
-    .home-header {
-        font-size: 18px;
-    }
-
-    .btn {
-        font-size: 14px;
-        letter-spacing: 0.8px;
-    }
-
-    /* 3 columns and 3 rows */
-    .products-col {
-        flex: 1 1 1 calc(50% - 20px);
-        max-width: calc(50% - 20px);
-        display: flex; /* 1. Center the cards */
-        box-sizing: border-box; /* 2. Center the cards */
-        justify-content: center;  /* 3. Center the cards */
-    }
 
     /*                                          MEDIUM PRODUCTS.HTML */
     .products-page-container {
@@ -1252,16 +1247,6 @@ table {
 /*                                                                                                  LARGE */
 @media (min-width: 1201px) {
     .home-banner {
-        font-size: 32px;
         margin: 40px 0;
-    }
-
-    .home-header {
-        font-size: 22px;
-    }
-
-    .btn {
-        font-size: 14px;
-        letter-spacing: 0.8px;
     }
 }
