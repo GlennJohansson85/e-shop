@@ -324,6 +324,7 @@ table {
 .products-page-container {
     max-width: 1000px;
     margin: 0 auto;
+    padding: 0 10px;
 }
 
 .products-header-container{
@@ -340,8 +341,6 @@ table {
     width:                          100%;
     color:                          #fffffffe;
 }                       
-
-
 
 /* Number of items displayed */
 .products-count {
@@ -407,21 +406,22 @@ table {
 }
 
 .products-card {
-    padding:                        0px;
+    padding:                        0;
     overflow:                       hidden;
     box-sizing:                     border-box;
     display:                        block;
     color:                          #000;
-    background-color: #fff;
+    background-color:               #fff;
     box-shadow:                     1px 2px 4px rgba(0, 0, 0, 0.7);
     transition:                     transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .products-card:hover {
-    transform:                      scale(1.05);
+    transform:                      scale(1.02);
     box-shadow:                     2px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
+/* Text + Price follows when hovering the product card */
 .products-card:hover .products-card-name,
 .products-card:hover .products-card-price {
     font-family:                    "Elephant-Bold", "Sans-serif";
@@ -1182,13 +1182,6 @@ table {
     .border-header-container {
         margin-top:             10px;
         text-align:             center;
-    }
-
-    /* Filter group container takes the whole page width */
-    .section-content .products-row {
-        width:                  100%;
-        flex:                   0 0 100%;
-        max-width:              100%;
     }
 
     /* Centers the text inside the filter group container  */
