@@ -485,7 +485,7 @@ table {
     box-shadow         : 1px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-/* PAGINATION PAGE CONTAINER */ "CONTINUE HERE"
+/* Pagination number container */
 .page-link {
     display         : inline-block;
     padding         : 8px 12px;
@@ -498,39 +498,35 @@ table {
     transition      : all 0.3s ease;
 }
 
-  /* PAGINATION PAGE CONTAINER STATES */
+/* Pagination States */
 .page-item.active .page-link,
-.page-link: hover,
-.page-link: focus {
+.page-link:hover, .page-link:focus {
     cursor          : default;
     color           : #fafafa;
     background-color: #4c4b4bb1;
     box-shadow      : none;
 }
 
-  /* PAGINATION PAGE CONTAINER DISABLED */
+/* Pagination item disabled when no more items available */
 .page-item.disabled .page-link {
     cursor          : not-allowed;
     color           : #6e6e6e;
     background-color: transparent;
-
 }
 
-  /*                                              PRODUCT_DETAIL.HTML */
+/* Product_detail.html styles */
 .detail-section {
     max-width: 900px;
     margin   : 0 auto;
 }
 
-  /* Page container */
 .detail-container {
     display        : flex;
     flex-direction : column;
     justify-content: center;
 }
 
-
-  /* Product Detail - Left Column - Image settings */
+/* Left column - product image*/
 .detail-left-column {
     justify-content: center;
     padding        : 1rem;
@@ -541,6 +537,7 @@ table {
     padding-right  : 0;
 }
 
+/* Product image style */
 .detail-img {
     width              : 400px;
     max-width          : 100%;
@@ -553,7 +550,7 @@ table {
     border-image-repeat: repeat;
 }
 
-  /* Product Detail - Right Column - Product Info & Color/Size Selection */
+/* Right column - product Info & color + size selection */
 .detail-right-column {
     justify-content: center;
     padding        : 1rem;
@@ -563,13 +560,11 @@ table {
     padding-right  : 0;
 }
 
-
-  /*                      DETAIL-INFO-CONTAINER */
 .detail-info-container {
     width: 400px;
 }
 
-  /* Product header */
+/* Product name header style */
 .detail-info-header {
     margin-top : 10px;
     font-family: "ELEPHNT", "Sans-serif";
@@ -577,7 +572,15 @@ table {
     color      : #000;
 }
 
-  /* Product Description */
+/* Product price style */
+.detail-info-price {
+    font-family: "ELEPHNT", "Sans-serif";
+    font-size  : 18px;
+    color      : #1c7e48;
+
+}
+
+/* Product description text style */
 .detail-info-text {
     margin-top   : 10px;
     padding-right: 10px;
@@ -587,15 +590,7 @@ table {
     color        : #272727;
 }
 
-  /* Product Price */
-.detail-info-price {
-    font-family: "ELEPHNT", "Sans-serif";
-    font-size  : 18px;
-    color      : #1c7e48;
-
-}
-
-  /* Product Color & Size Container */
+/* Product Color & Size Container */
 .product-select {
     margin-top : 20px;
     font-family: "PhotinaMTStd-Semibold", "Sans-serif";
@@ -603,7 +598,7 @@ table {
     color      : #333232;
 }
 
-  /* Product Color & Size input form */
+/* Product color & size input form */
 .detail-selection {
     width        : 200px;
     margin-bottom: 20px;
@@ -612,17 +607,15 @@ table {
     color        : #000000;
 }
 
-  /* Add item - Button */
+/* Add item - Button */
 .detail-btn-container {
-    margin-bottom: 20px;  /* Push closer to detail-selection, away from detail-review-section */
+    margin-bottom: 20px; /* Push closer to detail-selection, away from detail-review-section */
 }      
 
-  /*                                      REVIEW SECTION */
 .detail-review-section {
     max-width: 900px;
-    margin   : 60px auto 10px;  /* Push section away from top section and closer to footer */
+    margin   : 60px auto 10px; /* Push section away from top section and closer to footer */
 }
-
 
 .detail-review-header {
     position     : relative;
@@ -636,9 +629,6 @@ table {
 
 }
 
-
-
-  /* REVIEW CONTAINER */
 .detail-review-container {
     flex-direction : column;
     justify-content: center;
@@ -648,8 +638,6 @@ table {
     margin         : 40px auto 20px;
 }
 
-
-  /* Review Text */
 .detail-review-text {
     font-family: "Photina MT", "Sans-serif";
     font-size  : 14px;
@@ -659,16 +647,15 @@ table {
     color      : #272727;
 }
 
-  /* Review Image */
 .detail-review-img {
-    width        : 100px;  /* Reduce size for better mobile fit */
+    width        : 100px; /* Reduce size for better mobile fit */
     height       : 100px;
     border-radius: 2px;
-    object-fit   : cover;  /* Rnsure proper image scaling */
+    object-fit   : cover; /* Ensure proper image scaling */
     margin-bottom: 10px;
 }
 
-  /*                                              CART.HTML */
+/* Cart.html */
 .cart-page-container {
     width     : 1000px;
     max-width : 100%;
@@ -677,20 +664,20 @@ table {
     padding   : 0 15px;
 }
 
-  /* "Product:, Details:, Quantity:, Price:" Headers */
+/* "Product:, Details:, Quantity:, Price:" Headers */
 .cart-th {
     font-family: "PhotinaMTStd-SemiBold", "Sans-serif";
     font-size  : 18px;
 }
 
-  /* Product Image Container in Product Column */
+/* Product Image Container in Product Column */
 .cart-img-container {
     width          : 100px;
     align-items    : center;
     justify-content: center;
 }
 
-  /* Image Settings */
+/* Image Settings */
 .cart-img {
     width          : 80px;
     justify-content: center;
@@ -700,13 +687,13 @@ table {
     box-shadow     : 1px 2px 2px rgba(51, 51, 51, 0.7);
 }
 
-  /* Details Column - Text Settings */
+/* Details Column - Text Settings */
 .cart-product-details {
     font-family: "Photina MT", "Sans-serif";
     font-size  : 14px;
 }
 
-  /* Quantiy Column - FIX THIS HERE !!!! */
+/* Quantiy Column - FIX THIS HERE !!!! */
 .cart-quantity {
     font-family: "Photina MT", "Sans-serif";
     font-size  : 14px;
@@ -726,34 +713,34 @@ table {
     padding            : 0;
 }
 
-  /* Quantiy Column - Plus Image Settings */
+/* Quantiy Column - Plus Image Settings */
 .cart-plus {
     background-image: url("/static/images/icons/plus.png");
-    margin-right    : 3px;                                   /* Space between plus and input */
+    margin-right    : 3px; /* Space between plus and input */
 }
 
 .cart-plus:hover {
     background-image: url("/static/images/icons/plus-green.png");
 }
 
-  /* Quantiy Column - Minus Image Settings */
+/* Quantiy Column - Minus Image Settings */
 .cart-minus {
     background-image: url("/static/images/icons/minus.png");
-    margin-left     : 3px;                                    /* Space between minus and input */
+    margin-left     : 3px; /* Space between minus and input */
 }
 
 .cart-minus:hover {
     background-image: url("/static/images/icons/minus-red.png");
 }
 
-  /* Price Column */
+/* Price Column */
 .cart-price {
     font-family: "Photina MT", "Sans-serif";
     font-size  : 14px;
     color      : #005023;
 }
 
-  /* Remove Column - Container settings for remove image */
+/* Remove Column - Container settings for remove image */
 .cart-remove {
     display            : inline-block;
     width              : 25px;
@@ -767,7 +754,7 @@ table {
     padding            : 0;
 }
 
-  /* Remove Column - Remove Image Settings */
+/* Remove Column - Remove Image Settings */
 .cart-remove {
     background-image: url("/static/images/icons/remove-1.png");
     margin-top      : 8px;
@@ -778,7 +765,7 @@ table {
     margin-top      : 8px;
 }
 
-  /* CART-COST-CONTAINER STYLE */
+/* CART-COST-CONTAINER STYLE */
 .cart-cost-container {
     font-family        : "PhotinaMTStd-SemiBold", "Sans-serif";
     padding            : 10px;
@@ -791,18 +778,17 @@ table {
     box-shadow         : 1px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-  /* CART-COST-HEADER TEXT STYLE */
+/* CART-COST-HEADER TEXT STYLE */
 .cart-cost-header {
     font-size: 18px;
 }
 
-  /* CART-COST STYLE (NUMBERS) */
+/* CART-COST STYLE (NUMBERS) */
 .cart-cost {
     color: #005023;
 }
 
-
-  /* CART-LINK Style (Links in cart.html) */
+/* CART-LINK Style (Links in cart.html) */
 .cart-link {
     font-family       : "PhotinaMTStd-SemiBold", "Sans-serif";
     color             : #004078;
@@ -839,8 +825,7 @@ table {
     transform        : scaleX(1);
 }
 
-  /*                                              DASHBOARD_SIDARBAR.HTML */
-  /* LIST-GROUP (Dashboard, My Orders, Edit Profile, Change Password) */
+/* Dashboard_sidebar.html styles */
 .list-group {
     display         : flex;
     flex-direction  : column;
@@ -850,10 +835,9 @@ table {
     background-color: #4c4b4bb1;
     background-image: url("/static/images/items/paper.png");
     box-shadow      : 1px 2px 4px rgba(0, 0, 0, 0.7);
-    height          : fit-content;                            /* This ensures the box only wraps its content */
+    height          : fit-content; /* This ensures the box only wraps its content */
 }
-
-  /* LIST-GROUP-ITEM */
+/* Dashboard, My Orders, Edit Profile, Change Password */
 .list-group-item {
     font-family        : "PhotinaMTStd-SemiBold", "Sans-serif";
     font-size          : 14px;
@@ -868,9 +852,7 @@ table {
     transition         : all 0.3s ease;
 }
 
-  /* LIST-GROUP-ITEM EFFECTS */
-.list-group-item: hover,
-.list-group-item.active {
+.list-group-item:hover, .list-group-item.active {
     cursor          : pointer;
     color           : #fafafa;
     background-color: #4c4b4bb1;
@@ -878,43 +860,43 @@ table {
     box-shadow      : none;
 }
 
-  /* Sign Out - Container */
+/* Sign Out - Container */
 .sidebar-btn-container {
     display        : flex;
-    justify-content: center;  /* center horizontally */
-    align-items    : center;  /* center vertically (if height is available) */
+    justify-content: center; /* center horizontally */
+    align-items    : center; /* center vertically (if height is available) */
     margin         : 20px 0;
 }
 
 .sidebar-btn-container .btn {
     text-align: center;
-    width     : auto;    /* or 100% if you want full width */
+    width     : auto; /* or 100% if you want full width */
 }
 
-  /* Sign Out - Icon */
+/* Sign Out - Icon */
 .icon-control {
     margin-top: 5px;
     float     : right;
     font-size : 80%;
 }
 
-  /* Edit_Profile & My_orders = Added for space between card and footer */
+/* Edit_Profile & My_orders = Added for space between card and footer */
 .d-card {
     margin: 20px 0px;
 }
 
-  /*                                              DASHBOARD.HTML */
+/* Dashboard.html */
 .dash-container {
     max-width: 1000px;
 }
 
-  /* Cards in dashboard sticks together */
+/* Cards in dashboard sticks together */
 .dash-row {
     display  : flex;
     flex-wrap: wrap;
 }
 
-  /* HTML TEMPLATE: USER NAME | CONTAINER STYLE */
+/* Form header for list-group-items: (Username | List-group-item=*/
 .dash-header-container {
     text-transform     : uppercase;
     display            : flex;
@@ -929,19 +911,17 @@ table {
     box-shadow         : 1px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-  /* HTML TEMPLATE: USER NAME | TEXT STYLE */
 .dash-header {
     font-family    : "PhotinaMTStd-SemiBold", "Sans-serif";
     font-size      : 14px;
     letter-spacing : 0.8px;
     display        : flex;
-    width          : 100%;                                   /* Ensure text is in middle */
+    width          : 100%; /* Ensure text is in middle */
     justify-content: center;
-    align-items    : center;                                 /* Vertically align */
+    align-items    : center; /* Vertically align */
 }
 
-
-  /* Column Cards */
+/* Column Cards */
 .dash-col {
     width              : 50%;
     display            : flex;
@@ -959,19 +939,19 @@ table {
     border-right: 1px dashed #393939;
 }
 
-  /* Card Container in Column */
+/* Card Container in Column */
 .dash-col .card {
     height       : 100%;
     flex         : 1;
     border-radius: 0;
 }
 
-  /* Card Body: Centered Content */
+/* Card Body: Centered Content */
 .dash-card-body {
     display            : flex;
     flex-direction     : column;
-    justify-content    : center;                                 /* vertical centering */
-    align-items        : center;                                 /* horizontal centering */
+    justify-content    : center; /* vertical centering */
+    align-items        : center; /* horizontal centering */
     height             : 250px;
     background-image   : url("/static/images/items/paper.png");
     background-position: center;
@@ -980,7 +960,6 @@ table {
     background-color   : #FAFAFA;
 }
 
-  /* RIGHT COLUMN */
 .semi-bold {
     font-family   : "PhotinaMTStd-SemiBold", "Sans-serif";
     font-size     : 15px;
@@ -988,7 +967,6 @@ table {
     letter-spacing: 0.8px;
 }
 
-  /* LEFT COLUMN */
 .dash-img {
     width        : 150px;
     height       : auto;
@@ -1000,7 +978,7 @@ table {
     font-size  : 14px;
 }
 
-  /*                                              MY_ORDERS */
+/* My_orders.html styles */
 .my-column-header {
     font-family: "PhotinaMTStd-SemiBold", "Sans-serif";
     font-size  : 15px;
@@ -1012,8 +990,8 @@ table {
     font-size  : 15px;
 }
 
-  /*                                              EDIT_PROFILE.HTML*/
-  /* Width of content inside form */
+/* Edit_profile.html styles */
+/* Width of content inside form */
 .edit-form {
     max-width: 600px;
     margin   : 0 auto;
@@ -1021,13 +999,13 @@ table {
     color    : #000;
 }
 
-  /* 1. SETTINGS FOR PROFILE PICTURE (Container for 1. | 1.1. | 1.2) */
+/* 1. Profile picture (Container for 1. | 1.1. | 1.2) */
 .edit-form-picture {
     width : 200px;
     margin: 0 auto;
 }
 
-  /* PROFILE PICTURE STYLE */
+/* Profile picture */
 .edit-profile-picture {
     margin       : 0 auto;
     width        : 150px;
@@ -1035,14 +1013,14 @@ table {
     display      : block;
 }
 
-  /* PROFIILE PICTURE LABEL TEXT */
+/* Profile picture label*/
 .edit-label-picture {
     margin-bottom: 10px;
     display      : block;
     text-align   : center;
 }
 
-  /*                                              CHANGE_PASSWORD.HTML */
+/* Change_password.html styles */
 .change-form {
     max-width: 600px;
     margin   : 0 auto;
@@ -1056,8 +1034,8 @@ table {
     margin   : 0 auto;
 }
 
-  /*                                              RESET_PASSWORD.HTML */
-  /* PASSWORD RESET TEXT */
+/* Reset_password.html styles */
+/* Password reset text style */
 .reset_header {
     font-family   : "ELEPHNT", "Sans-serif";
     font-size     : 22px;
@@ -1066,7 +1044,7 @@ table {
     color         : #000;
 }
 
-  /*                                              CHECKOUT.HTML */
+/* Checkout.html styles */
 .checkout-container {
     max-width          : 400px;
     margin             : 20px auto;
@@ -1085,7 +1063,7 @@ table {
     box-shadow         : 1px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-  /*                                              SIGNIN.HTML */
+/* Signin.html styles */
 .signin {
     text-align: center;
 }
@@ -1102,7 +1080,7 @@ table {
     border-bottom  : 1px solid #004078;
 }
 
-  /* Signin.html - Specific Styles */
+/* Forgott_password.html styles */
 .forgot_password {
     color          : #000;
     text-decoration: none;
@@ -1127,7 +1105,7 @@ table {
     text-align: center;
 }
 
-  /*                                              REGISTER.HTML */
+/* Register.html styles */
 .register-no-account {
     font-family    : "PhotinaMTStd-SemiBold", "Sans-serif";
     text-align     : center;
@@ -1136,7 +1114,7 @@ table {
     color          : #121212;
 }
 
-  /*                                              PAYMENTS.HTML / PLACE_ORDER */
+/* Payments.html (Place order) styles */
 .payments-page-container {
     margin     : 0 auto;
     font-family: "Photina MT", "Sans-serif";
@@ -1149,7 +1127,7 @@ table {
     text-align    : center;
 }
 
-  /* Space between cards */
+/* Space between cards */
 .payments-card {
     margin-bottom: 10px;
 }
@@ -1158,7 +1136,6 @@ table {
     font-family: "PhotinaMTStd-SemiBold", "Sans-serif";
     font-size  : 14px;
 }
-
 
 .payments-billing-text {
     font-size: 14px;
@@ -1172,10 +1149,9 @@ table {
     font-size: 12px;
 }
 
-  /*                                                                                                  SMALL */
+/* Responsive settings */
 @media (max-width: 768px) {
-      /* HOME.HTML */
-      /* Remove witdh between columns */
+    /* Remove witdh between columns */
     .home-page-container {
         padding: 0 20px;
     }
@@ -1184,8 +1160,7 @@ table {
         margin: 20px 0;
     }
 
-      /* PRODUCTS.HTML */
-      /* Covers the full witdh of the page when in mobile view */
+    /* Covers the full witdh of the page when in mobile view */
     .filter-group {
         width        : 100%;
         padding-left : 0;
@@ -1197,36 +1172,33 @@ table {
         margin   : 0 auto;
     }
 
-      /* Product Count Style */
+    /* Product Count Style */
     .border-header-container {
         margin-top: 10px;
         text-align: center;
     }
 
-      /* Centers the text inside the filter group container  */
+    /* Centers the text inside the filter group container  */
     .products-list-menu {
         text-align: left;
     }
 
-      /*                                          SMALL CART.HTML */
-      /* Container for the whole cart page */
+    /* Container for the whole cart page */
     .cart-section {
         padding: 5px;
     }
 
-      /* Centers text in Container */
+    /* Centers text in Container */
     .cart-cost-container {
         text-align: center;
     }
 
-      /*                                          SMALL DASHBOARD.HTML */
     .dashboard-card {
         margin: 0 20px;
         
     }
 }
 
-  /*                                                                                                  MEDIUM */
 @media (min-width: 769px) and (max-width: 1200px) {
       /* Remove witdh between columns */
     .home-page-container {
@@ -1237,14 +1209,11 @@ table {
         margin: 40px 0;
     }
 
-
-      /*                                          MEDIUM PRODUCTS.HTML */
     .products-page-container {
         max-width: 800px;
         margin   : 0 auto;
     }
 
-      /*                                          MEDIUM PRODUCT_DETAIL.HTML */
     .detail-review-header {
         margin-top: 110px;
     }
@@ -1256,7 +1225,6 @@ table {
     }
 }
 
-  /*                                                                                                  LARGE */
 @media (min-width: 1201px) {
     .home-banner {
         margin: 40px 0;
