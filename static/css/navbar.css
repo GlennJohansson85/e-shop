@@ -167,10 +167,7 @@
     opacity  : 1;
 }
 
-/* Combined hover effect */
-.navbar-toggler:hover .bar {
-    background-color: #FFF;
-}
+
 
 .navbar-collapse {
     width          : 100%;
