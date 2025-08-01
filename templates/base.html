@@ -1,4 +1,5 @@
 {% load static %}
+{% load django_browser_reload %}
 
 <!DOCTYPE HTML>
 <html lang="en">
@@ -34,6 +35,8 @@
     <script src="{% static 'js/script.js' %}"></script>
 </head>
 <body>
+    
+
     <!-- Navbar -->
     {% include 'includes/navbar.html' %}
 
@@ -50,5 +53,7 @@
     {% include 'includes/footer.html' %}
 
     {% block extra_js %} {% endblock %}
+
+    {% django_browser_reload_script %}
 </body>
 </html>

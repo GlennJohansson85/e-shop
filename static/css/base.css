@@ -104,8 +104,11 @@ table {
 .form-header {
     margin-left:                    10px;
     font-family:                    "ELEPHNT", "Sans-serif";
-    font-size:                      20px;
-    letter-spacing:                 1px;
+    font-size:                      1.8rem;
+    font-weight:                    600;
+    letter-spacing:                 0.8px;
+    width:                          100%;
+    color:                          #000000c3;
 }
 
 /* Text above form inputs "First Name:", "Email:" etc. */
@@ -340,7 +343,7 @@ table {
     text-shadow:                    1px 1px 3px rgb(0, 0, 0);
     width:                          100%;
     color:                          #fffffffe;
-}                       
+}
 
 /* Number of items displayed */
 .products-count {
@@ -352,13 +355,16 @@ table {
 /* Header text "Categories" of all products */
 .products-list-header {
     font-family:                    "ELEPHNT", "Sans-serif";
-    font-size:                      22px;
+    font-size:                      1.4rem;
+    font-weight:                    400;
+    letter-spacing:                 0.5px;
+    text-shadow:                    1px 1px 3px rgb(0, 0, 0);
     padding:                        10px;
     display:                        flex;
     justify-content:                space-between;
     align-items:                    center;
     overflow:                       hidden;
-    color:                          #FAFAFA;
+    color:                          #fffffffe;
     border-top:                     2px solid #FAFAFA;
     border-left:                    2px solid #FAFAFA;
     border-right:                   2px solid #FAFAFA;
@@ -986,6 +992,7 @@ table {
 .my-column-header {
     font-family:                "PhotinaMTStd-SemiBold", "Sans-serif";
     font-size:                  15px;
+    font-weight: 500;
 }
 
 .my-column-data {

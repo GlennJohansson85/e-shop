@@ -9,7 +9,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
-DEBUG = False
+DEBUG = True
 
 ROOT_URLCONF = 'e-shop.urls'
 
@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'products',
     'storages',
     'gunicorn',
+    'django_browser_reload',
 ]
 
 MIDDLEWARE = [
@@ -53,6 +54,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
+    "django_browser_reload.middleware.BrowserReloadMiddleware",
 ]
 
 TEMPLATES = [

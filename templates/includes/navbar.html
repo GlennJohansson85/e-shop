@@ -13,7 +13,7 @@
                 <a class="navbar-brand "href="{% url 'home' %}">E-SHOP</a>
 
                 <!-- NAVBAR SEARCH-FORM -->
-                <form class="d-flex" role="search" method="GET" action="{% url 'search' %}">
+                <form class="d-flex align-items-center search-form" role="search" method="GET" action="{% url 'search' %}">
                     <input class="search-input" type="search" name="keyword" placeholder="Search..." aria-label="Search">
                     <button class="btn-search" type="submit">
                         <div class="icon-search" aria-label="Search Icon"></div>
@@ -23,16 +23,16 @@
                 <!-- NAVBAR TOGGLER -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <div class="navbar-toggler-icon">
-                        <span class="bar bar-1"></span>
-                        <span class="bar bar-2"></span>
-                        <span class="bar bar-3"></span>
+                        <span class="bar bar-1" aria-hidden="true"></span>
+                        <span class="bar bar-2" aria-hidden="true"></span>
+                        <span class="bar bar-3" aria-hidden="true"></span>
                     </div>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
                     <!-- Push left -->
-                    <ul class="navbar-nav me-auto ms-md-3 ms-lg-3">
+                    <ul class="navbar-nav">
 
                         <!-- NAV-LINK 'CATEGORIES' DROPDOWN-->
                         <li class="nav-item dropdown">
