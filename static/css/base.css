@@ -664,6 +664,11 @@ table {
     padding   : 0 15px;
 }
 
+.cart-item-row {
+    height: 100px;
+    vertical-align: middle;
+}
+
 /* "Product:, Details:, Quantity:, Price:" Headers */
 .cart-th {
     font-family: "PhotinaMTStd-SemiBold", "Sans-serif";
@@ -1117,6 +1122,7 @@ table {
 /* Payments.html (Place order) styles */
 .payments-page-container {
     margin     : 0 auto;
+    padding: 10px;
     font-family: "Photina MT", "Sans-serif";
 }
 

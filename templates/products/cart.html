@@ -12,7 +12,7 @@
                     <!-- Container for Column widths -->
                     <thead class="cart-thead">
                         <!-- Widths for Product-, Quantity-, Price- & Remove Button-columns -->
-                        <tr class="cart-tr"> 
+                        <tr> 
                             <th class="cart-th" scope="col" width="80">Products:</th>
                             <th class="cart-th" scope="col" width="100">Details:</th>
                             <th class="cart-th text-center" scope="col" width="200">Quantity:</th>
@@ -23,7 +23,7 @@
 
                     <tbody class="cart-body">
                         {% for cart_item in cart_items %}
-                        <tr>
+                        <tr class="cart-item-row">
                             <!-- Product image column -->
                             <td>
                                 <div class="cart-img-container">
