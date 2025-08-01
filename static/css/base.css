@@ -35,8 +35,6 @@
     font-display: swap;
 }
 
-
-  /*                                              BASIC */
 html {
     background-color     : #fff;
     background-blend-mode: exclusion;
@@ -71,6 +69,7 @@ table {
     width       : 100%;
 }
 
+/* All pages have the same height + keeping footer at bottom of the page */
 .main-content {
     margin-top: 80px;
     min-height: calc(90vh);
@@ -100,7 +99,7 @@ table {
     background-image: linear-gradient(135deg, #000, #3d3d3d);
 }
 
-.card-product-name {
+/*.card-product-name {
     text-decoration: none;
     color          : #000;
 }
@@ -114,6 +113,7 @@ table {
     margin-bottom: 5px;
     color        : #000;
 }
+*/
 
 .form-header {
     margin-left   : 10px;
@@ -125,31 +125,31 @@ table {
     color         : #000000c3;
 }
 
-  /* Text above form inputs "First Name:", "Email:" etc. */
+/* Text above form inputs "First Name:", "Email:" etc. */
 .form-group {
     margin     : 10px;
     font-family: "PhotinaMTStd-Semibold", "Sans-serif";
     color      : #000;
 }
 
-  /* Form and user text input style (Rectangle shaped)  */
+/* Form and user text input style (Rectangle shaped)  */
 .form-control {
     font-family  : "Photina MT", "Sans-serif";
     font-size    : 14px;
     border-radius: 0;
     border       : none;
-    box-shadow   : none;                        /* Remove browser default color*/
+    box-shadow   : none; /* Remove browser default color*/
     outline      : none;
 }
 
-  /* Remove browser default color and adding my own */
+/* Remove browser default color and adding my own */
 .form-control:focus {
     box-shadow: inset 1px 1px 2px #313131;
     border    : none;
     outline   : none;
 }
 
-  /* Showing number of clothes */
+/* Showing number of clothes */
 .form-inline {
     font-family : "ELEPHNT", "Sans-serif";
     font-size   : 16px;
@@ -178,10 +178,8 @@ table {
     transition         : all 0.3s ease;
 }
 
-  /* Btn effect + Remove default state styles */
-.btn: hover,
-.btn: active,
-.btn: focus {
+/* Btn effect + Remove default state styles */
+.btn:hover, .btn:active, .btn:focus {
     cursor          : pointer;
     color           : #fafafa;
     background-color: #4c4b4bb1;
@@ -205,13 +203,14 @@ table {
     transition      : transform 0.3s ease;
 }
 
-.info-wrap {
+/*.info-wrap {
     font-family: "Photina MT", "Sans-serif";
     text-align : center;
 }
+*/
 
-  /*                                              HOME.HTML*/
-  /* Container Style */
+/* Home.html Styles */
+/* Container Style */
 .home-banner-container {
     max-width          : 1000px;
     margin             : 10px auto 20px;
@@ -223,7 +222,7 @@ table {
     border             : 3px inset #f9f9f9;
 }
 
-  /* Text Style */
+/* Text Style */
 .home-banner {
     font-family   : "Elephnti", sans-serif;
     text-align    : center;
@@ -235,7 +234,7 @@ table {
     letter-spacing: 0.5px;
 }
 
-  /* "Popular Products:" + All Products-btn */
+/* "Popular Products:" + All Products-btn */
 .home-header-container {
     max-width      : 1000px;
     display        : flex;
@@ -268,7 +267,7 @@ table {
     margin: 1rem;
 }
 
-  /* Img- + img text-container style */
+/* Img- + img text-container style */
 .home-card {
     overflow     : hidden;
     box-sizing   : border-box;
@@ -283,13 +282,13 @@ table {
     box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-  /* Hovering card = Bold Font also */
+/* Hovering card = Bold Font also */
 .home-card:hover.home-text-container {
     text-decoration: none;
     color          : #000;
 }
 
-  /* Image container within card */
+/* Image container within card */
 .home-img-wrap {
     width           : 100%;
     height          : 200px;
@@ -301,7 +300,7 @@ table {
     background-color: #fff;
 }
 
-  /* Image within card */
+/* Image within card */
 .home-img {
     width           : 100%;
     height          : 100%;
@@ -309,7 +308,7 @@ table {
     object-fit      : contain;
 }
 
-  /* Product name & price */
+/* Product name & price */
 .home-text-container {
     font-family     : "PhotinaMTStd-SemiBold", "Sans-serif";
     font-size       : 14px;
@@ -319,36 +318,36 @@ table {
     background-color: #fff;
 }
 
-  /* Remove default */
+/* Item name on product card */
 .home-name {
     text-decoration: none;
     color          : #171616;
 }
 
-  /* Remove default */
 .home-name:hover {
     color: #000;
 }
 
-  /* Remove default */
+/* Item price on product card */
 .home-price {
     margin-bottom: 10px;
     color        : #005023;
 }
 
-  /*                                              PRODUCTS.HTML*/
-  /* Page Container */
+/*                                              PRODUCTS.HTML*/
+/* Page Layout for content */
 .products-page-container {
     max-width: 1000px;
     margin   : 0 auto;
     padding  : 0 10px;
 }
 
+/* Center container on page */
 .products-header-container{
     margin: 0 auto;
 }
 
-  /* PRODUCTS PAGE HEADER TEXT STYLE */
+/* Page header Style */
 .products-header {
     font-family   : "ELEPHNTI", "Sans-serif";
     font-size     : 2rem;
@@ -359,14 +358,13 @@ table {
     color         : #fffffffe;
 }
 
-  /* Number of items displayed */
+/* Number of items displayed - text style */
 .products-count {
     font-family: "PhotinaMTStd-Semibold", "Sans-serif";
     color      : #474442;
 }
 
-
-  /* Header text "Categories" of all products */
+/* Categorylist header style (text: "Categories") */
 .products-list-header {
     font-family        : "ELEPHNT", "Sans-serif";
     font-size          : 1.4rem;
@@ -391,7 +389,7 @@ table {
 }
 
 
-  /* Menu Container for item categories (T-shirts, Jackets, Shorts etc.)*/
+/* Menu Container for item categories (T-shirts, Jackets, Shorts etc.)*/
 .card-body {
     border-bottom      : 2px solid #FAFAFA;
     border-left        : 2px solid #FAFAFA;
@@ -404,14 +402,14 @@ table {
     box-shadow         : 1px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-  /* T-shirts, Jackets, Shorts etc. List customization */
+/* T-shirts, Jackets, Shorts etc. List customization */
 .products-list-menu {
     list-style: none;
     text-align: right;
 
 }
 
-  /* Product text in the list container */
+/* Product text in the list container */
 .products-list-item {
     font-family    : "Photina MT", "Sans-serif";
     line-height    : 8px;
@@ -441,9 +439,9 @@ table {
     box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-  /* Text + Price follows when hovering the product card */
-.products-card: hover .products-card-name,
-.products-card: hover .products-card-price {
+/* Text + Price follows when hovering the product card */
+.products-card:hover .products-card-name,
+.products-card:hover .products-card-price {
     font-family    : "Elephant-Bold", "Sans-serif";
     text-decoration: none;
     color          : #000;
@@ -469,7 +467,7 @@ table {
     color          : #005023;
 }
 
-  /* PAGINATION CONTAINER */
+/* Pagination container */
 .pagination {
     font-family        : "PhotinaMTStd-Semibold", "Sans-serif";
     font-size          : 14px;
@@ -487,7 +485,7 @@ table {
     box-shadow         : 1px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-  /* PAGINATION PAGE CONTAINER */
+/* PAGINATION PAGE CONTAINER */ "CONTINUE HERE"
 .page-link {
     display         : inline-block;
     padding         : 8px 12px;
