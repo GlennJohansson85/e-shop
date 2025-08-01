@@ -247,9 +247,9 @@
     right           : 6px;
     border-radius   : 50%;
     font-family     : "ELEPHNT";
-    color           : #ffffffd8;
+    color           : #ffffffa5;
     background-color: transparent;
-    transform       : scale(1); /* Base state */
+    transform       : scale(0.8); /* Base state */
     transition      : all 0.2s ease;
 }
 

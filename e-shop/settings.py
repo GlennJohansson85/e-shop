@@ -70,6 +70,7 @@ TEMPLATES = [
                 'django.contrib.messages.context_processors.messages',
                 'django.template.context_processors.media',
                 'category.context_processors.menu_links',
+                'cart.context_processors.counter',
             ],
         },
     },
