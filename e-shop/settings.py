@@ -5,20 +5,13 @@ import dj_database_url
 if os.path.isfile('env.py'):
     import env
 
-BASE_DIR = Path(__file__).resolve().parent.parent
-
-SECRET_KEY = os.environ.get('SECRET_KEY', '')
-
-DEBUG = True
-
-ROOT_URLCONF = 'e-shop.urls'
-
-WSGI_APPLICATION = 'e-shop.wsgi.application'
-
-AUTH_USER_MODEL = 'accounts.Account'
-
-MESSAGE_TAGS = {messages.ERROR: 'danger'}
-
+BASE_DIR             = Path(__file__).resolve().parent.parent
+SECRET_KEY           = os.environ.get('SECRET_KEY', '')
+DEBUG                = True
+ROOT_URLCONF         = 'e-shop.urls'
+WSGI_APPLICATION     = 'e-shop.wsgi.application'
+AUTH_USER_MODEL      = 'accounts.Account'
+MESSAGE_TAGS         = {messages.ERROR: 'danger'}
 CSRF_TRUSTED_ORIGINS = ['https://app-e-shop-c5039fdaf8fd.herokuapp.com']
 
 
@@ -79,16 +72,16 @@ TEMPLATES = [
 if 'DATABASE_URL' in os.environ:
     DATABASES = {
         'default': dj_database_url.config(
-            default = os.environ['DATABASE_URL'],
+            default      = os.environ['DATABASE_URL'],
             conn_max_age = 600,
-            ssl_require = True
+            ssl_require  = True
         )
     }
 else:
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': BASE_DIR / 'db.sqlite3',
+            'NAME'  : BASE_DIR / 'db.sqlite3',
         }
     }
 
@@ -102,37 +95,34 @@ AUTH_PASSWORD_VALIDATORS = [
 
 
 LANGUAGE_CODE = 'en-us'
-TIME_ZONE = 'UTC'
-USE_I18N = True
-USE_L10N = True
-USE_TZ = True
+TIME_ZONE     = 'UTC'
+USE_I18N      = True
+USE_L10N      = True
+USE_TZ        = True
 
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_USE_TLS = True
-EMAIL_PORT = 587
-EMAIL_HOST ='smtp.gmail.com'
-EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
+EMAIL_BACKEND       = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_USE_TLS       = True
+EMAIL_PORT          = 587
+EMAIL_HOST          = 'smtp.gmail.com'
+EMAIL_HOST_USER     = os.environ.get('EMAIL_HOST_USER')
 EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
 
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 if 'USE_AWS' in os.environ:
-    AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY', '')
-    AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY', '')
+    AWS_ACCESS_KEY_ID       = os.environ.get('AWS_ACCESS_KEY', '')
+    AWS_SECRET_ACCESS_KEY   = os.environ.get('AWS_SECRET_ACCESS_KEY', '')
     AWS_STORAGE_BUCKET_NAME = 'app-e-shop'
-    AWS_S3_REGION_NAME = 'eu-north-1'
-    AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
-
-    STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/static/'
-    STATICFILES_STORAGE = 'e-shop.custom_storages.StaticStorage'
-
-    MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/media/'
-    DEFAULT_FILE_STORAGE = 'e-shop.custom_storages.MediaStorage'
+    AWS_S3_REGION_NAME      = 'eu-north-1'
+    AWS_S3_CUSTOM_DOMAIN    = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
+    STATIC_URL              = f'https://{AWS_S3_CUSTOM_DOMAIN}/static/'
+    STATICFILES_STORAGE     = 'e-shop.custom_storages.StaticStorage'
+    MEDIA_URL               = f'https://{AWS_S3_CUSTOM_DOMAIN}/media/'
+    DEFAULT_FILE_STORAGE    = 'e-shop.custom_storages.MediaStorage'
 else:
-    STATIC_URL = '/static/'
+    STATIC_URL       = '/static/'
     STATICFILES_DIRS = [BASE_DIR / "static"]
-    STATIC_ROOT = BASE_DIR / 'staticfiles'
-
-    MEDIA_URL = '/media/'
-    MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+    STATIC_ROOT      = BASE_DIR / 'staticfiles'
+    MEDIA_URL        = '/media/'
+    MEDIA_ROOT       = os.path.join(BASE_DIR, 'media')

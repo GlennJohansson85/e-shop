@@ -26,8 +26,8 @@ class RegistrationForm(forms.ModelForm):
         Raises:
         - forms.ValidationError: If passwords do not match.
         """
-        cleaned_data = super(RegistrationForm, self).clean()
-        password = cleaned_data.get('password')
+        cleaned_data     = super(RegistrationForm, self).clean()
+        password         = cleaned_data.get('password')
         confirm_password = cleaned_data.get('confirm_password')
 
         if password != confirm_password:
