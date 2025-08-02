@@ -93,13 +93,14 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 
-
+# INITIALIZATION
 LANGUAGE_CODE = 'en-us'
 TIME_ZONE     = 'UTC'
 USE_I18N      = True
 USE_L10N      = True
 USE_TZ        = True
 
+# SMTP Settings 
 EMAIL_BACKEND       = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_USE_TLS       = True
 EMAIL_PORT          = 587
@@ -110,6 +111,7 @@ EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+# AMAZON AWS
 if 'USE_AWS' in os.environ:
     AWS_ACCESS_KEY_ID       = os.environ.get('AWS_ACCESS_KEY', '')
     AWS_SECRET_ACCESS_KEY   = os.environ.get('AWS_SECRET_ACCESS_KEY', '')
@@ -126,3 +128,7 @@ else:
     STATIC_ROOT      = BASE_DIR / 'staticfiles'
     MEDIA_URL        = '/media/'
     MEDIA_ROOT       = os.path.join(BASE_DIR, 'media')
+
+# PAYPAL
+PAYPAL_CLIENT_ID     = os.environ.get('PAYPAL_CLIENT_ID')
+PAYPAL_SECRET_KEY    = os.environ.get('PAYPAL_SECRET_KEY')

@@ -85,7 +85,7 @@ def place_order(request, total=0, quantity=0,):
     cart_items = CartItem.objects.filter(user=current_user)
     cart_count = cart_items.count()
     if cart_count <= 0:
-        return redirect('store')
+        return redirect('order_complete')
 
     grand_total = 0
     tax = 0
@@ -143,19 +143,23 @@ def order_complete(request):
     transID = request.GET.get('payment_id')
 
     try:
-        order            = Order.objects.get(order_number=order_number, is_ordered=True)
+        order = Order.objects.get(order_number=order_number, is_ordered=True)
         ordered_products = OrderProduct.objects.filter(order_id=order.id)
-        subtotal         = sum(item.product_price * item.quantity for item in ordered_products)
-        payment          = Payment.objects.get(payment_id=transID)
+        subtotal = sum(item.product_price * item.quantity for item in ordered_products)
+        payment = Payment.objects.get(payment_id=transID)
+
+        # Add the success message here
+        messages.success(request, "Thank you! Your payment was successful.")
 
         context = {
-            'order'           : order,
+            'order': order,
             'ordered_products': ordered_products,
-            'order_number'    : order.order_number,
-            'transID'         : payment.payment_id,
-            'payment'         : payment,
-            'subtotal'        : subtotal,
+            'order_number': order.order_number,
+            'transID': payment.payment_id,
+            'payment': payment,
+            'subtotal': subtotal,
         }
         return render(request, 'orders/order_complete.html', context)
+
     except (Payment.DoesNotExist, Order.DoesNotExist):
         return redirect('home')
