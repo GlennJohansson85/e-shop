@@ -187,31 +187,33 @@
 }
 
 .dropdown-menu {
-    font-family  : "Photina MT", "Sans-serif";
-    font-size    : 14px;
-    line-height  : 14px;
-    top          : 100%;
-    right        : 0;
-    z-index      : 1060;
-    position     : absolute !important;
-    min-width    : auto !important;
-    padding      : 2px;
-    border-radius: 5px 0 0 5px;
-    border       : 1px solid #000;
-    display      : none; /* Initially hidden */
+    font-family    : "Photina MT", "Sans-serif";
+    width          : 100px; /* fixed width */
+    padding        : 2px;
+    top            : 100%;
+    z-index        : 1060;
+    position       : absolute !important;
+    box-sizing     : border-box;
+    border         : 1px solid #000;
+    display        : none;
+    overflow       : hidden;
 }
 
 /* Text/item style */
 .dropdown-item {
-    padding         : 3px 10px;
+    font-size       : 12px;
+    line-height     : 12px;
+    margin          : 5px;
     color           : #000;
     background-color: transparent;
+    display         : block;
+    transition      : transform 0.2s ease;
 }
 
 .dropdown-item:hover {
-    color           : #000;
-    font-size       : 16px;
+    transform       : scale(1.1);
     background-color: transparent;
+    color           : #000;
 }
 
 /* Last nav-link container style */

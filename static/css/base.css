@@ -1161,7 +1161,7 @@ table {
 
 /* Responsive settings */
 @media (max-width: 768px) {
-    p, li, th, td {
+    p,li, th, td {
         font-size: 14px;
     }
 
