@@ -28,33 +28,33 @@
                                 <table class="table table-hover">
                                     <thead>
                                         <tr>
-                                            <th class="my-column-header">Order #</th>
-                                            <th class="my-column-header">Billing Name:</th>
-                                            <th class="my-column-header">Phone Number:</th>
-                                            <th class="my-column-header">Order Total:</th>
-                                            <th class="my-column-header">Date:</th>
+                                            <th class="myorders-text">Order #</th>
+                                            <th class="myorders-text">Billing Name:</th>
+                                            <th class="myorders-text">Phone Number:</th>
+                                            <th class="myorders-text">Order Total:</th>
+                                            <th class="myorders-text">Date:</th>
                                         </tr>
                                     </thead>
                                     {% if orders %}
                                         <tbody>
                                         {% for order in orders %}
                                             <tr>
-                                                <th scope="row">
-                                                    <a href="{% url 'order_detail' order.order_number %}">
+                                                <td scope="row">
+                                                    <a class="myorders-text" href="{% url 'order_detail' order.order_number %}">
                                                         {{order.order_number}}
                                                     </a>
-                                                </th>
-                                                <td class="my-column-data">{{order.full_name}}</td>
-                                                <td class="my-column-data">{{order.phone}}</td>
-                                                <td class="my-column-data">${{order.order_total}}</td>
-                                                <td class="my-column-data">{{order.created_at}}</td>
+                                                </td>
+                                                <td class="myorders-text">{{order.full_name}}</td>
+                                                <td class="myorders-text">{{order.phone}}</td>
+                                                <td class="myorders-text">${{order.order_total}}</td>
+                                                <td class="myorders-text">{{order.created_at}}</td>
                                             </tr>
                                         {% endfor %}
                                         </tbody>
                                         {% else %}
                                         <tbody>
                                             <tr>
-                                                <td class="my-column-data" colspan="5">No orders found</td>
+                                                <td class="myorders-td" colspan="5">No orders found</td>
                                             </tr>
                                         </tbody>
                                     {% endif %}

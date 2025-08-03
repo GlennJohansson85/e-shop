@@ -1159,6 +1159,8 @@ table {
     letter-spacing: 0.6;
 }
 
+
+
 /* Responsive settings */
 @media (max-width: 768px) {
     p,li, th, td {
@@ -1208,7 +1210,7 @@ table {
     }
 
     .dashboard-card {
-        margin: 0 20px;
+        margin-top: 20px;
         
     }
 
@@ -1236,6 +1238,12 @@ table {
     .orderd-invoice-container {
         padding: 10px;
     }
+
+    /* my_orders.html */
+    .myorders-text {
+        font-size: 12px;
+    }
+
 }
 
 
@@ -1274,6 +1282,10 @@ table {
 }
 
 @media (min-width: 1201px) {
+    p, li, th, td {
+        font-size: 14px;
+    }
+
     .home-banner {
         margin: 40px 0;
     }
