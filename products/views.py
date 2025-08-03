@@ -71,15 +71,20 @@ def product_detail(request, category_slug, product_slug):
 
 
 def search(request):
-    '''
+    """
     Searches for products based on the provided keyword
     in the request GET parameters.
-    '''
+    """
+    products = []
+    product_count = 0
+
     if 'keyword' in request.GET:
-        keyword = request.GET['keyword']
+        keyword = request.GET['keyword'].strip()  # Clean up the input
 
         if keyword:
-            products = Product.objects.order_by('-created_date').filter(Q(description__icontains=keyword) | Q(product_name__icontains=keyword))
+            products = Product.objects.order_by('-created_date').filter(
+                Q(description__icontains=keyword) | Q(product_name__icontains=keyword)
+            )
             product_count = products.count()
 
     context = {
