@@ -545,10 +545,10 @@ table {
 }
 
 .detail-form-container {
-    width: 150px;
-    text-align: center;
-    margin: 0 auto;
-    align-items:center;
+    width      : 150px;
+    text-align : center;
+    margin     : 0 auto;
+    align-items: center;
 }
 
 /* Label text "Color" & "Size"*/
@@ -574,8 +574,8 @@ table {
 
 /* Color & Size option box dropdown */
 select.detail-selection {
-    max-width: 150px;
-    max-width: 100%;
+    max-width : 150px;
+    max-width : 100%;
     box-sizing: border-box;
 }
 
