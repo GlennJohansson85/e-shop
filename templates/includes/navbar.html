@@ -10,7 +10,7 @@
             <div class="container-fluid">
 
                 <!-- NAVBAR BRAND -->
-                <a class="navbar-brand "href="{% url 'home' %}">E-SHOP</a>
+                <a class="navbar-brand"  href="{% url 'home' %}">E-SHOP</a>
 
                 <!-- NAVBAR SEARCH-FORM -->
                 <form class="d-flex align-items-center search-form" role="search" method="GET" action="{% url 'search' %}">
@@ -46,7 +46,7 @@
 
                         <!-- NAV-LINK 'ALL PRODUCTS' -->
                         <li class="nav-item">
-                            <a class="nav-link" href="{% url 'products' %}">All Products</a>
+                            <a class="nav-link" href="{% url 'products' %}" id="AllProducts">All Products</a>
                         </li>
                     </ul>
 
@@ -65,9 +65,9 @@
                                 {% endif %}
                             </ul>
                         </li>
-                        <!-- NAV-LINK 'CART' -->
+                        <!-- CART CONTAINER -->
                         <li class="cart-container">
-                            <a class="icon-cart" id="IconCart" href="{% url 'cart' %}">
+                            <a class="icon-cart" href="{% url 'cart' %}">
                                 <span class="notify">{{ cart_count|default:"0" }}</span>
                             </a>
                         </li>
