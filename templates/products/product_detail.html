@@ -23,35 +23,40 @@
                         <div class="detail-info-price">${{ single_product.price }}</div>
                         <div class="detail-info-text">{{ single_product.description }}</div>
 
-                        <!-- Color Selection -->
-                        <div class="product-select mb-3">Choose Color:
-                            <select name="color" class="detail-selection form-control" required>
-                                {% for variation in single_product.variation_set.colors %}
-                                    <option value="{{ variation.variation_value }}">{{ variation.variation_value }}</option>
-                                {% endfor %}
-                            </select>
-                        </div>
-
-                        <!-- Size Selection -->
-                        <div class="product-select mb-3">Choose Size:
-                            <select name="size" class="detail-selection form-control" required>
-                                {% for variation in single_product.variation_set.sizes %}
-                                    <option value="{{ variation.variation_value }}">{{ variation.variation_value }}</option>
-                                {% endfor %}
-                            </select>
-                        </div>
-
-                        <!-- Stock Check -->
-                        {% if single_product.stock <= 0 %}
-                            <h5 class="text-danger">Out of Stock</h5>
-                        {% else %}
-                            <div class="detail-btn-container">
-                                <button class="btn" type="submit">
-                                    <span class="text">ADD ITEM</span>
-                                    <i class="fas fa-shopping-cart"></i>
-                                </button>
+                        <div class="detail-form-container">
+                            <!-- Color Selection -->
+                            <div class="detail-form-label">Choose Color:
+                                <select name="color" class="detail-selection" required>
+                                    {% for variation in single_product.variation_set.colors %}
+                                        <option value="{{ variation.variation_value }}">{{ variation.variation_value }}</option>
+                                    {% endfor %}
+                                </select>
                             </div>
-                        {% endif %}
+
+                            <!-- Size Selection -->
+                            <div class="detail-form-label">Choose Size:
+                                <select name="size" class="detail-selection" required>
+                                    {% for variation in single_product.variation_set.sizes %}
+                                        <option value="{{ variation.variation_value }}">{{ variation.variation_value }}</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+
+                            <!-- Stock Check -->
+                            {% if single_product.stock <= 0 %}
+                                <h5 class="text-danger">Out of Stock</h5>
+                            {% else %}
+                            <!-- Button - Add item -->
+                                <div class="btn-container">
+                                    <button class="detail-btn" type="submit">
+                                        <span class="text">ADD ITEM</span>
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </button>
+                                </div>
+                            {% endif %}
+                        </div>
+
+                        
                     </article>
                 </form>
             </div>

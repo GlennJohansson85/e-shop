@@ -501,8 +501,6 @@ table {
     padding: 1rem;
 }
 
-
-
 /* Product image style */
 .detail-img {
     width              : 100%;
@@ -546,27 +544,71 @@ table {
     color        : #272727;
 }
 
-/* Product Color & Size Container */
-.product-select {
+.detail-form-container {
+    width: 150px;
+    text-align: center;
+    margin: 0 auto;
+    align-items:center;
+}
+
+/* Label text "Color" & "Size"*/
+.detail-form-label {
     margin-top : 20px;
     font-family: "PhotinaMTStd-Semibold", "Sans-serif";
     font-size  : 16px;
     color      : #333232;
 }
 
-/* Product color & size input form */
+/* Color & Size option box */
 .detail-selection {
-    width        : 200px;
-    margin-bottom: 20px;
+    display      : block;
+    margin       : 5px auto;
     font-family  : "Photina MT", "Sans-serif";
     font-size    : 14px;
+    text-align   : center;
     color        : #000000;
+    overflow     : hidden;
+    text-overflow: ellipsis;
+    white-space  : nowrap;
 }
 
-/* Add item - Button */
-.detail-btn-container {
-    margin-bottom: 20px; /* Push closer to detail-selection, away from detail-review-section */
-}      
+/* Color & Size option box dropdown */
+select.detail-selection {
+    max-width: 150px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+
+.detail-btn {
+    width: 100px;
+    padding: 5px;
+    font-family        : "PhotinaMTStd-Semibold", "Sans-serif";
+    font-size          : 12px;
+    letter-spacing     : 0.4;
+    text-align         : center;
+    border-radius      : 0;
+    border             : 2px solid #FAFAFA;
+    color              : #000;
+    background-color   : #FAFAFA;
+    background-position: center;
+    background-size    : 30%;
+    background-repeat  : repeat;
+    background-image   : url(/static/images/items/paper.png);
+    box-shadow         : 1px 2px 4px rgba(0, 0, 0, 0.7);
+    transition         : all 0.3s ease;
+}
+
+/* Btn effect + Remove default state styles */
+.detail-btn:hover,
+.detail-btn:active,
+.detail-btn:focus {
+    cursor          : pointer;
+    color           : #fafafa;
+    background-color: #4c4b4bb1;
+    border          : 2px solid #FAFAFA;
+    box-shadow      : none;
+}
 
 .detail-review-section {
     max-width: 900px;
@@ -581,7 +623,6 @@ table {
     font-size    : 24px;
     border-bottom: 1px solid #838282;
     color        : #000;
-
 }
 
 .detail-review-container {
@@ -1171,6 +1212,16 @@ table {
         text-align: left;
     }
 
+    /* Center product description */
+    .detail-info-container {
+        text-align: center;
+    }
+
+    /* Center form-selection text (Blue, 38) */
+    .detail-selection {
+        font-size: 12px;
+        padding: 0;
+    }
 
     /* Container for the whole cart page */
     .cart-section {
