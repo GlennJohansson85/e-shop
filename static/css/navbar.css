@@ -261,8 +261,7 @@
     transform: scale(1.4);
 }
 
-
-/* Responsive Settings */
+/* ========== RESPONSIVE SETTINGS ========== */
 @media (max-width: 992px) {
     /* Navbar background follews to second row when toggler */
     .navbar {

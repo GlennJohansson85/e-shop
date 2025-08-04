@@ -1,4 +1,4 @@
-/* Used Fonts */
+/* ========== FONT-FAMILY ========== */
 @font-face {
     font-family : "ELEPHNT";
     src         : url('/static/fonts/ELEPHNT.woff2') format('woff2');
@@ -35,6 +35,7 @@
     font-display: swap;
 }
 
+/* ========== GLOBAL ========== */
 html {
     background-color     : #fff;
     background-blend-mode: exclusion;
@@ -51,24 +52,10 @@ body {
     color           : #000;
     background-size : 30%;
     background-image: url("/static/images/items/exclusive-paper.png");
-    box-shadow      : inset -4px 4px 6px #000,
-                                    inset 4px 4px 6px #000;
+    box-shadow      : inset -4px 4px 6px #000, inset 4px 4px 6px #000;
 }
 
-h1, h2, h3 {
-    font-family: "ELEPHNT", "Sans-serif";
-}
-
-p, li, th, td {
-    font-family: "Photina MT", "Sans-serif";
-}
-
-table {
-    table-layout: auto;
-    width       : 100%;
-}
-
-/* All pages have the same height + keeping footer at bottom of the page */
+/* Ensure overall page height & Footer at bottom */
 .main-content {
     margin-top: 80px;
     min-height: calc(90vh);
@@ -86,6 +73,17 @@ table {
     align-items    : center;
 }
 
+/* ========== HEADERS ========== */
+.form-header {
+    margin-left   : 10px;
+    font-family   : "ELEPHNT", "Sans-serif";
+    font-size     : 1.8rem;
+    font-weight   : 600;
+    letter-spacing: 0.8px;
+    width         : 100%;
+    color         : #000000c3;
+}
+
 .card-header {
     font-family     : "ELEPHNTI", "Sans-serif";
     text-shadow     : 2px 1px 1px#000;
@@ -98,16 +96,21 @@ table {
     background-image: linear-gradient(135deg, #000, #3d3d3d);
 }
 
-.form-header {
-    margin-left   : 10px;
-    font-family   : "ELEPHNT", "Sans-serif";
-    font-size     : 1.8rem;
-    font-weight   : 600;
-    letter-spacing: 0.8px;
-    width         : 100%;
-    color         : #000000c3;
+/* ========== TYPOGRAPHY ========== */
+h1, h2, h3 {
+    font-family: "ELEPHNT", "Sans-serif";
 }
 
+p, li, th, td {
+    font-family: "Photina MT", "Sans-serif";
+}
+
+table {
+    table-layout: auto;
+    width       : 100%;
+}
+
+/* ========== FORM ========== */
 /* Text above form inputs "First Name:", "Email:" etc. */
 .form-group {
     margin     : 10px;
@@ -140,6 +143,7 @@ table {
     word-spacing: 2px;
 }
 
+/* ========== BUTTON ========== */
 .btn-container {
     margin-top: 20px;
 }
@@ -170,6 +174,7 @@ table {
     box-shadow      : none;
 }
 
+/* ========== IMAGE ========== */
 .img-wrap {
     display     : block;
     overflow    : hidden;
@@ -186,13 +191,7 @@ table {
     transition      : transform 0.3s ease;
 }
 
-/*.info-wrap {
-    font-family: "Photina MT", "Sans-serif";
-    text-align : center;
-}
-*/
-
-/* Home.html Styles */
+/* ========== HOME.HTML ========== */
 /* Container Style */
 .home-banner-container {
     max-width          : 1000px;
@@ -317,7 +316,7 @@ table {
     color        : #005023;
 }
 
-/*                                              PRODUCTS.HTML*/
+/* ========== PRODUCTS.HTML ========== */
 /* Page Layout for content */
 .products-page-container {
     max-width: 1000px;
@@ -497,7 +496,7 @@ table {
     background-color: transparent;
 }
 
-/* Product_detail.html styles */
+/* ========== PRODUCT_DETAIL.HTML ========== */
 .detail-section {
     max-width: 900px;
     margin   : 0 auto;
@@ -638,7 +637,7 @@ table {
     margin-bottom: 10px;
 }
 
-/* Cart.html */
+/* ========== CART.HTML ========== */
 .cart-page-container {
     width     : 1000px;
     max-width : 100%;
@@ -813,7 +812,7 @@ table {
     transform        : scaleX(1);
 }
 
-/* Dashboard_sidebar.html styles */
+/* ========== DASHBOARD_SIDEBAR.HTML ========== */
 .list-group {
     display         : flex;
     flex-direction  : column;
@@ -825,6 +824,8 @@ table {
     box-shadow      : 1px 2px 4px rgba(0, 0, 0, 0.7);
     height          : fit-content; /* This ensures the box only wraps its content */
 }
+
+/* ========== DASHBOARD.-, MY_ORDERS.-, EDIT_PROFILE., CHAMGE_PASSWORD.HTML ========== */
 /* Dashboard, My Orders, Edit Profile, Change Password */
 .list-group-item {
     font-family        : "PhotinaMTStd-SemiBold", "Sans-serif";
@@ -873,7 +874,7 @@ table {
     margin: 20px 0px;
 }
 
-/* Dashboard.html */
+/* ========== DASHBOARD.HTML ========== */
 .dash-container {
     max-width: 1000px;
 }
@@ -966,7 +967,7 @@ table {
     font-size  : 14px;
 }
 
-/* My_orders.html styles */
+/* ========== MY_ORDERS.HTML ========== */
 .my-column-header {
     font-family: "PhotinaMTStd-SemiBold", "Sans-serif";
     font-size  : 15px;
@@ -978,7 +979,7 @@ table {
     font-size  : 15px;
 }
 
-/* Edit_profile.html styles */
+/* ========== EDIT_PROFILE.HTML ========== */
 /* Width of content inside form */
 .edit-form {
     max-width: 600px;
@@ -1022,7 +1023,7 @@ table {
     margin   : 0 auto;
 }
 
-/* Reset_password.html styles */
+/* ========== RESET_PASSWORD.HTML ========== */
 /* Password reset text style */
 .reset_header {
     font-family   : "ELEPHNT", "Sans-serif";
@@ -1032,7 +1033,7 @@ table {
     color         : #000;
 }
 
-/* Checkout.html styles */
+/* ========== CHECKOUT.HTML ========== */
 .checkout-container {
     max-width          : 400px;
     margin             : 20px auto;
@@ -1051,7 +1052,7 @@ table {
     box-shadow         : 1px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-/* Signin.html styles */
+/* ========== SIGNIN.HTML ========== */
 .signin {
     text-align: center;
 }
@@ -1068,7 +1069,7 @@ table {
     border-bottom  : 1px solid #004078;
 }
 
-/* Forgott_password.html styles */
+/* ========== FORGOT_PASSWORD.HTML ========== */
 .forgot_password {
     color          : #000;
     text-decoration: none;
@@ -1093,7 +1094,7 @@ table {
     text-align: center;
 }
 
-/* Register.html styles */
+/* ========== REGISTER.HTML ========== */
 .register-no-account {
     font-family    : "PhotinaMTStd-SemiBold", "Sans-serif";
     text-align     : center;
@@ -1102,7 +1103,7 @@ table {
     color          : #121212;
 }
 
-/* Payments.html (Place order) styles */
+/* ========== PAYMENTS.HTML ========== */
 .payments-page-container {
     margin     : 0 auto;
     padding    : 10px;
@@ -1138,7 +1139,7 @@ table {
     font-size: 12px;
 }
 
-/* order_detail.html */
+/* ========== ORDER_DETAIL.HTML ========== */
 .orderd-page-container {
     margin: 60px;
 }
@@ -1159,9 +1160,7 @@ table {
     letter-spacing: 0.6;
 }
 
-
-
-/* Responsive settings */
+/* ========== RESPONSIVE SETTINGS ========== */
 @media (max-width: 768px) {
     p,li, th, td {
         font-size: 14px;
