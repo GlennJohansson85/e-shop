@@ -4,17 +4,18 @@
 {% block title %} E-SHOP @ Product Details {% endblock %}
 
 {% block content %}
-<section class="detail-section">
-    <div class="detail-container">
-        <div class="row align-items-center" style="min-height: 50vh;">
+<div class="products-page-container">
 
+    <div class="detail-container">
+        <div class="row" style="min-height: 50vh;">
+            
             <!-- Left Column: Product Image -->
-            <div class="col-md-6 detail-left-column">
+            <div class="col-md-6 text-start">
                 <img class="detail-img" src="{{ single_product.images.url }}" alt="Product Image">
             </div>
 
             <!-- Right Column: Product Info & Add to Cart -->
-            <div class="col-md-6 detail-right-column">
+            <div class="col-md-6 text-start">
                 <form action="{% url 'add_cart' single_product.id %}" method="POST">
                     {% csrf_token %}
                     <article class="detail-info-container">
@@ -56,46 +57,47 @@
             </div>
         </div>
     </div>
-</section>
 
-<!-- Customer Reviews Section -->
-<section class="detail-review-section">
-    <div class="detail-container">
-        <div class="detail-review-header">
-            <span>Customer Reviews</span>
-        </div>
-        <div class="row">
-            <!-- Mark's Review -->
-            <div class="col-md-6">
-                <div class="detail-review-container">
-                    <div class="detail-img-container">
-                        <img class="detail-review-img" src="{% static 'images/avatars/avatar1.png' %}" alt="Reviewer Avatar">
+
+    <!-- Customer Reviews Section -->
+    <section class="detail-review-section">
+        <div class="detail-container">
+            <div class="detail-review-header">
+                <span>Customer Reviews</span>
+            </div>
+            <div class="row">
+                <!-- Mark's Review -->
+                <div class="col-md-6">
+                    <div class="detail-review-container">
+                        <div class="detail-img-container">
+                            <img class="detail-review-img" src="{% static 'images/avatars/avatar1.png' %}" alt="Reviewer Avatar">
+                        </div>
+                        <div class="detail-review-content">
+                            <p class="detail-review-text">Mark Johnson</p>
+                            <p class="detail-review-text">11.05.2020</p>
+                            <p class="detail-review-text">
+                                <i>Great Service, Great Clothes, and Great Prices!</i>
+                            </p>
+                        </div>
                     </div>
-                    <div class="detail-review-content">
-                        <p class="detail-review-text">Mark Johnson</p>
-                        <p class="detail-review-text">11.05.2020</p>
-                        <p class="detail-review-text">
-                            <i>Great Service, Great Clothes, and Great Prices!</i>
-                        </p>
+                </div>
+                <!-- Jane's Review -->
+                <div class="col-md-6 ">
+                    <div class="detail-review-container">
+                        <div class="detail-img-container">
+                            <img class="detail-review-img" src="{% static 'images/avatars/avatar2.png' %}" alt="Reviewer Avatar">
+                        </div>
+                        <div class="detail-review-content">
+                            <p class="detail-review-text">Jane Doe</p>
+                            <p class="detail-review-text">15.07.2021</p>
+                            <p class="detail-review-text">
+                                <i>Absolutely love the product! Excellent quality and very fast shipping.</i>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <!-- Jane's Review -->
-            <div class="col-md-6 ">
-                <div class="detail-review-container">
-                    <div class="detail-img-container">
-                        <img class="detail-review-img" src="{% static 'images/avatars/avatar2.png' %}" alt="Reviewer Avatar">
-                    </div>
-                    <div class="detail-review-content">
-                        <p class="detail-review-text">Jane Doe</p>
-                        <p class="detail-review-text">15.07.2021</p>
-                        <p class="detail-review-text">
-                            <i>Absolutely love the product! Excellent quality and very fast shipping.</i>
-                        </p>
-                    </div>
-                </div>
-            </div>
         </div>
-    </div>
-</section>
+    </section>
+</div>
 {% endblock %}

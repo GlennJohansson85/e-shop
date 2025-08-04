@@ -497,53 +497,27 @@ table {
 }
 
 /* ========== PRODUCT_DETAIL.HTML ========== */
-.detail-section {
-    max-width: 900px;
-    margin   : 0 auto;
-}
-
 .detail-container {
-    display        : flex;
-    flex-direction : column;
-    justify-content: center;
+    padding: 1rem;
 }
 
-/* Left column - product image*/
-.detail-left-column {
-    justify-content: center;
-    padding        : 1rem;
-    text-align     : center;
-    display        : flex;
-    align-items    : center;
-    padding-left   : 0;
-    padding-right  : 0;
-}
+
 
 /* Product image style */
 .detail-img {
-    width              : 400px;
-    max-width          : 100%;
-    height             : auto;
+    width              : 100%;
+    max-width          : 400px;
     height             : auto;
     display            : block;
+    margin             : 0 auto;
     border             : 5px solid #4c4b4bb1;
     border-image-source: url("/static/images/items/paper.png");
     border-image-slice : 50;
     border-image-repeat: repeat;
 }
 
-/* Right column - product Info & color + size selection */
-.detail-right-column {
-    justify-content: center;
-    padding        : 1rem;
-    display        : flex;
-    align-items    : center;
-    padding-left   : 0;
-    padding-right  : 0;
-}
-
 .detail-info-container {
-    width: 400px;
+    max-width: 400px;
 }
 
 /* Product name header style */
@@ -601,7 +575,6 @@ table {
 
 .detail-review-header {
     position     : relative;
-    display      : inline-block;
     text-align   : center;
     box-sizing   : border-box;
     font-family  : "ELEPHNTI", "Sans-serif";
@@ -1198,6 +1171,7 @@ table {
         text-align: left;
     }
 
+
     /* Container for the whole cart page */
     .cart-section {
         padding: 5px;
@@ -1247,7 +1221,6 @@ table {
 }
 
 
-
 @media (min-width: 769px) and (max-width: 1200px) {
     p, li, th, td {
         font-size: 14px;
@@ -1289,5 +1262,4 @@ table {
     .home-banner {
         margin: 40px 0;
     }
-
 }   
