@@ -125,13 +125,14 @@
 }
 
 .navbar-toggler {
-    line-height: 30px;
     padding    : 0;
+    border     : none;
 }
 
 /* Remove default black box-shadow when clicking */
 .navbar-toggler:focus {
     box-shadow: none;
+    outline   : none;
 }
 
 .navbar-toggler-icon {
@@ -141,31 +142,33 @@
     width          : 30px;
     height         : 20px;
     cursor         : pointer;
-    transition     : all 0.3s ease-in-out;
 }
+
 
 /* Toggler icon bars style */
 .navbar-toggler-icon .bar {
-    width           : 100%;
-    height          : 2px;
+    height          : 3px; /* Ensure all are exactly the same */
+    width           : 90%;
     background-color: #000;
+    border-radius   : 2px;
     transition      : all 0.3s ease-in-out;
+    margin          : 3px 0; /* Add spacing between bars */
+    display         : block;
 }
 
 /* Toggler icon bars animation when clicking */
 .navbar-toggler.collapsed .bar-1 {
-    transform: translateY(8px) rotate(0deg);
+    transform: rotate(45deg) translate(5px, 5px);
 }
+
 .navbar-toggler.collapsed .bar-2 {
-    opacity: 1;
+    opacity: 0;
 }
+
 .navbar-toggler.collapsed .bar-3 {
-    transform: translateY(-8px) rotate(0deg);
+    transform: rotate(-45deg) translate(5px, -5px);
 }
-.navbar-toggler .bar-2 {
-    transform: translateY(0);
-    opacity  : 1;
-}
+
 
 .navbar-collapse {
     width          : 100%;
