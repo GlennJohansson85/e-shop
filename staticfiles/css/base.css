@@ -527,6 +527,7 @@ table {
 
 /* Product description text style */
 .detail-info-text {
+    text-align: start;
     margin-top: 10px;
     color     : #272727;
 }
