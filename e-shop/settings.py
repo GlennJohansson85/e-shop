@@ -130,5 +130,5 @@ else:
     MEDIA_ROOT       = os.path.join(BASE_DIR, 'media')
 
 # PAYPAL
-PAYPAL_CLIENT_ID     = os.environ.get('PAYPAL_CLIENT_ID')
-PAYPAL_SECRET_KEY    = os.environ.get('PAYPAL_SECRET_KEY')
+PAYPAL_CLIENT_ID  = os.environ.get('PAYPAL_CLIENT_ID')
+PAYPAL_SECRET_KEY = os.environ.get('PAYPAL_SECRET_KEY')
