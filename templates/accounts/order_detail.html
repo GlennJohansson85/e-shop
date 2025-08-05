@@ -4,93 +4,95 @@
 {% block title %} E-SHOP @ Order Details {% endblock %}
 
 {% block content %}
-        <div class="orderd-page-container">
-            <div class="orderd-container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="orderd-invoice-container">
-                            <div class="row">
+<div class="orderd-page-container">
+    <div class="orderd-container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="orderd-invoice-container">
+                    <div class="row">
 
-                                <!-- Invoiced to: -->
-                                <div class="col-md-6 col-lg-6">
-                                    <div>
-                                        <ul class="list-unstyled">
-                                            <li><strong>Invoiced To:</underline></strong></li>
-                                            <li>{{order.full_name}}</li>
-                                            <li>{{order.full_address}}</li>
-                                            <li>{{order.city}}</li>
-                                            <li>{{order.country}}</li>
-                                        </ul>
-                                    </div>
-                                </div>
-
-                                <!-- Order Details: -->
-                                <div class="col-md-6 col-lg-6">
-                                    <p class="mb-0 mt-0 text-start"><strong>Order Details:</strong></p>
-                                    <div class="row">
-                                        <div class="col-5 text-start">
-                                            <p class="mb-0">Order:</p>
-                                            <p class="mb-0">Transaction ID:</p>
-                                            <p class="mb-0">Date:</p>
-                                            <p class="mb-0">Status:</p>
-                                        </div>
-                                        <div class="col-7 text-start">
-                                            <p class="mb-0">#{{ order.order_number }}</p>
-                                            <p class="mb-0">{{ order.payment.payment_id }}</p>
-                                            <p class="mb-0">{{ order.created_at }}</p>
-                                            <p class="mb-0">{{ order.payment.status }}</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="table-responsive mt-4"> <!-- mt-4 adds space above table -->
-                                        <table class="table table-bordered">
-                                            <thead>
-                                                <tr>
-                                                    <th class="text-center">Products</th>
-                                                    <th class="text-center">Qty</th>
-                                                    <th class="text-center">Total</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                            {% for item in order_detail %}
-                                                <tr>
-                                                    <td>{{item.product.product_name}}
-                                                    <p class="text-muted small">
-                                                                {% if item.variations.all %}
-                                                                    {% for i in item.variations.all %}
-                                                                        {{ i.variation_category | capfirst }} : {{ i.variation_value | capfirst }} <br>
-                                                                    {% endfor %}
-                                                                {% endif %}
-                                                            </p>
-                                                    </td>
-                                                    <td class="text-center">{{item.quantity}}</td>
-                                                    <td class="text-center">${{item.product_price}} USD</td>
-                                                </tr>
-                                            {% endfor %}
-                                            </tbody>
-                                            <tfoot>
-                                                <tr>
-                                                    <th colspan="2" class="text-right">Sub Total:</th>
-                                                    <th class="text-center">${{subtotal}} USD</th>
-                                                </tr>
-                                                <tr>
-                                                    <th colspan="2" class="text-right">Tax:</th>
-                                                    <th class="text-center">${{order.tax}} USD</th>
-                                                </tr>
-                                                <tr>
-                                                    <th colspan="2" class="text-right">Grand Total:</th>
-                                                    <th class="text-center">${{order.order_total}} USD</th>
-                                                </tr>
-                                            </tfoot>
-                                        </table>
-                                    </div>
-                                </div>
-                                <div class="orderd-footer text-center">Thank you for shopping with us!</div>
+                        <!-- Invoiced to: -->
+                        <div class="col-md-6 col-lg-6">
+                            <div>
+                                <ul class="list-unstyled">
+                                    <li><strong>Invoiced To:</underline></strong></li>
+                                    <li>{{order.full_name}}</li>
+                                    <li>{{order.full_address}}</li>
+                                    <li>{{order.city}}</li>
+                                    <li>{{order.country}}</li>
+                                </ul>
                             </div>
                         </div>
+
+                        <!-- Order Details: -->
+                        <div class="col-md-6 col-lg-6">
+                            <p class="mb-0 mt-0 text-start"><strong>Order Details:</strong></p>
+                            <div class="row">
+                                <div class="col-5 text-start">
+                                    <p class="mb-0">Order:</p>
+                                    <p class="mb-0">Transaction ID:</p>
+                                    <p class="mb-0">Date:</p>
+                                    <p class="mb-0">Status:</p>
+                                </div>
+                                <div class="col-7 text-start">
+                                    <p class="mb-0">#{{ order.order_number }}</p>
+                                    <p class="mb-0">{{ order.payment.payment_id }}</p>
+                                    <p class="mb-0">{{ order.created_at }}</p>
+                                    <p class="mb-0">{{ order.payment.status }}</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Products -->
+                        <div>
+                            <div class="table-responsive mt-4"> <!-- mt-4 adds space above table -->
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center">Products</th>
+                                            <th class="text-center">Qty</th>
+                                            <th class="text-center">Total</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    {% for item in order_detail %}
+                                        <tr>
+                                            <td>{{item.product.product_name}}
+                                            <p class="text-muted small">
+                                                        {% if item.variations.all %}
+                                                            {% for i in item.variations.all %}
+                                                                {{ i.variation_category | capfirst }} : {{ i.variation_value | capfirst }} <br>
+                                                            {% endfor %}
+                                                        {% endif %}
+                                                    </p>
+                                            </td>
+                                            <td class="text-center">{{item.quantity}}</td>
+                                            <td class="text-center">${{item.product_price}} USD</td>
+                                        </tr>
+                                    {% endfor %}
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <th colspan="2" class="text-right">Sub Total:</th>
+                                            <th class="text-center">${{subtotal}} USD</th>
+                                        </tr>
+                                        <tr>
+                                            <th colspan="2" class="text-right">Tax:</th>
+                                            <th class="text-center">${{order.tax}} USD</th>
+                                        </tr>
+                                        <tr>
+                                            <th colspan="2" class="text-right">Grand Total:</th>
+                                            <th class="text-center">${{order.order_total}} USD</th>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="orderd-footer text-center">Thank you for shopping with us!</div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+</div>
 {% endblock %}

@@ -1156,6 +1156,17 @@ table {
     letter-spacing: 0.6;
 }
 
+/* ========== ORDER_COMPLETE.HTML ========== */
+.orderc-container {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color:
+}
+
+.orderc-btn-container {
+    margin-top: 20px;
+}
+
 /* ========== RESPONSIVE SETTINGS ========== */
 @media (max-width: 768px) {
     p,li, th, td {
@@ -1244,6 +1255,10 @@ table {
     /* order_detail.html */
     .orderd-page-container {
         margin: 20px;
+    }
+
+    .orderd-container {
+        margin-bottom: 10px;
     }
 
     /* Invoice needs fullspace in mobile view */
