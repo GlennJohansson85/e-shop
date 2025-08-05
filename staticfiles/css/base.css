@@ -550,16 +550,13 @@ table {
 /* Selection form + dropdown */
 .detail-select {
     display           : block;
-    width             : 150px;
+    width             : 200px;
     margin            : 0 auto;
-    padding           : 5px;
+    padding           : 3px;
     border            : none !important;
     font-family       : "Photina MT", "Sans-serif";
-    font-size         : 14px;
     text-align        : center;
     appearance        : none;
-    -webkit-appearance: none;
-    -moz-appearance   : none;
     background-color  : white;
     background-image  : none;
     outline           : none;
@@ -567,7 +564,7 @@ table {
 }
 
 .detail-btn {
-    width: 100px;
+    width: 200px;
     padding: 5px;
     font-family        : "PhotinaMTStd-Semibold", "Sans-serif";
     font-size          : 12px;
