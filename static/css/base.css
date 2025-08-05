@@ -514,22 +514,15 @@ table {
     border-image-repeat: repeat;
 }
 
+/* Header, price, info, select-label, select-form, button */
 .detail-info-container {
     max-width: 400px;
-}
-
-/* Product name header style */
-.detail-info-header {
-    margin-top : 10px;
-    font-family: "ELEPHNT", "Sans-serif";
-    font-size  : 26px;
-    color      : #000;
+    text-align: center;
+    
 }
 
 /* Product price style */
 .detail-info-price {
-    font-family: "ELEPHNT", "Sans-serif";
-    font-size  : 18px;
     color      : #1c7e48;
 
 }
@@ -537,15 +530,10 @@ table {
 /* Product description text style */
 .detail-info-text {
     margin-top   : 10px;
-    padding-right: 10px;
-    font-family  : "Photina MT", "Sans-serif";
-    font-size    : 14px;
-    line-height  : 20px;
     color        : #272727;
 }
 
 .detail-form-container {
-    width      : 150px;
     text-align : center;
     margin     : 0 auto;
     align-items: center;
@@ -553,30 +541,29 @@ table {
 
 /* Label text "Color" & "Size"*/
 .detail-form-label {
-    margin-top : 20px;
+    margin-top : 10px;
     font-family: "PhotinaMTStd-Semibold", "Sans-serif";
     font-size  : 16px;
     color      : #333232;
 }
 
-/* Color & Size option box */
-.detail-selection {
-    display      : block;
-    margin       : 5px auto;
-    font-family  : "Photina MT", "Sans-serif";
-    font-size    : 14px;
-    text-align   : center;
-    color        : #000000;
-    overflow     : hidden;
-    text-overflow: ellipsis;
-    white-space  : nowrap;
-}
-
-/* Color & Size option box dropdown */
-select.detail-selection {
-    max-width : 150px;
-    max-width : 100%;
-    box-sizing: border-box;
+/* Selection form + dropdown */
+.detail-select {
+    display: block;
+    width: 150px;
+    margin: 0 auto;
+    padding: 5px;
+    border: none !important;
+    font-family: "Photina MT", "Sans-serif";
+    font-size: 14px;
+    text-align: center;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: white;
+    background-image: none;
+    outline: none;
+    box-shadow: none;
 }
 
 
@@ -1217,11 +1204,11 @@ select.detail-selection {
         text-align: center;
     }
 
-    /* Center form-selection text (Blue, 38) */
-    .detail-selection {
-        font-size: 12px;
-        padding: 0;
+    /* Space above product header and below product image in mobile view */
+    .detail-info-header {
+        margin-top: 10px;
     }
+
 
     /* Container for the whole cart page */
     .cart-section {
