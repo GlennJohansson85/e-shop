@@ -1,4 +1,4 @@
-/* ========== FONT-FAMILY ========== */
+/************************************************************* FONT-FAMILY */
 @font-face {
     font-family : "ELEPHNT";
     src         : url('/static/fonts/ELEPHNT.woff2') format('woff2');
@@ -35,7 +35,7 @@
     font-display: swap;
 }
 
-/* ========== GLOBAL ========== */
+/************************************************************* GLOBAL */
 html {
     background-color     : #fff;
     background-blend-mode: exclusion;
@@ -73,7 +73,7 @@ body {
     align-items    : center;
 }
 
-/* ========== HEADERS ========== */
+/************************************************************* GLOBAL HEADERS */
 .form-header {
     margin-left   : 10px;
     font-family   : "ELEPHNT", "Sans-serif";
@@ -96,9 +96,18 @@ body {
     background-image: linear-gradient(135deg, #000, #3d3d3d);
 }
 
-/* ========== TYPOGRAPHY ========== */
-h1, h2, h3 {
-    font-family: "ELEPHNT", "Sans-serif";
+/************************************************************* GLOBAL TYPOGRAPHY */
+
+h1, h2, h3, h4, h5 {
+    font-family   : "ELEPHNTI", "Sans-serif";
+    font-weight   : 600;
+    letter-spacing: 0.8px;
+    width         : 100%;
+
+}
+
+h2, h3 {
+    color: #333232;
 }
 
 p, li, th, td {
@@ -110,11 +119,12 @@ table {
     width       : 100%;
 }
 
-/* ========== FORM ========== */
+/************************************************************* GLOBAL FORM */
 /* Text above form inputs "First Name:", "Email:" etc. */
 .form-group {
     margin     : 10px;
     font-family: "PhotinaMTStd-Semibold", "Sans-serif";
+    font-size: 14px;
     color      : #000;
 }
 
@@ -143,7 +153,7 @@ table {
     word-spacing: 2px;
 }
 
-/* ========== BUTTON ========== */
+/************************************************************* GLOBAL BUTTON */
 .btn-container {
     margin-top: 20px;
 }
@@ -174,7 +184,7 @@ table {
     box-shadow      : none;
 }
 
-/* ========== IMAGE ========== */
+/************************************************************** GLOBAL IMAGE */
 .img-wrap {
     display     : block;
     overflow    : hidden;
@@ -191,10 +201,16 @@ table {
     transition      : transform 0.3s ease;
 }
 
-/* ========== HOME.HTML ========== */
+/************************************************************* HOME.HTML*/
+.home-page-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
 /* Container Style */
 .home-banner-container {
-    max-width          : 1000px;
     margin             : 10px auto 20px;
     background-image   : url(/static/images/items/s-black.png);
     background-size    : 100%;
@@ -206,19 +222,14 @@ table {
 
 /* Text Style */
 .home-banner {
-    font-family   : "Elephnti", sans-serif;
     text-align    : center;
     text-shadow   : 2px 0px 0px rgb(240, 134, 226);
     color         : #ffffffb4;
-    font-size     : 2.4rem;
-    font-weight   : 600;
     padding       : 2rem 1rem;
-    letter-spacing: 0.5px;
 }
 
 /* "Popular Products:" + All Products-btn */
 .home-header-container {
-    max-width      : 1000px;
     display        : flex;
     justify-content: space-between;
     align-items    : center;
@@ -226,18 +237,7 @@ table {
     margin-bottom  : 5px;
 }
 
-.home-header {
-    font-family   : "ELEPHNTI", "Sans-serif";
-    font-size     : 1.4rem;
-    font-weight   : 600;
-    letter-spacing: 0.5px;
-    text-shadow   : 1px 1px 3px rgb(0, 0, 0);
-    width         : 100%;
-    color         : #fffffffe;
-}
-
 .home-container {
-    max-width      : 1000px;
     width          : 100%;
     display        : flex;
     justify-content: space-between;
@@ -329,17 +329,6 @@ table {
     margin: 0 auto;
 }
 
-/* Page header Style */
-.products-header {
-    font-family   : "ELEPHNTI", "Sans-serif";
-    font-size     : 2rem;
-    font-weight   : 600;
-    letter-spacing: 0.5px;
-    text-shadow   : 1px 1px 3px rgb(0, 0, 0);
-    width         : 100%;
-    color         : #fffffffe;
-}
-
 /* Number of items displayed - text style */
 .products-count {
     font-family: "PhotinaMTStd-Semibold", "Sans-serif";
@@ -352,7 +341,6 @@ table {
     font-size          : 1.4rem;
     font-weight        : 400;
     letter-spacing     : 0.5px;
-    text-shadow        : 1px 1px 3px rgb(0, 0, 0);
     padding            : 10px;
     display            : flex;
     justify-content    : space-between;
@@ -496,7 +484,7 @@ table {
     background-color: transparent;
 }
 
-/* ========== PRODUCT_DETAIL.HTML ========== */
+/************************************************************* PRODUCT_DETAIL.HTML */
 .detail-container {
     padding: 1rem;
 }
@@ -549,23 +537,23 @@ table {
 
 /* Selection form + dropdown */
 .detail-select {
-    display           : block;
-    width             : 200px;
-    margin            : 0 auto;
-    padding           : 3px;
-    border            : none !important;
-    font-family       : "Photina MT", "Sans-serif";
-    text-align        : center;
-    appearance        : none;
-    background-color  : white;
-    background-image  : none;
-    outline           : none;
-    box-shadow        : none;
+    display         : block;
+    width           : 200px;
+    margin          : 0 auto;
+    padding         : 3px;
+    border          : none !important;
+    font-family     : "Photina MT", "Sans-serif";
+    text-align      : center;
+    appearance      : none;
+    background-color: white;
+    background-image: none;
+    outline         : none;
+    box-shadow      : none;
 }
 
 .detail-btn {
-    width: 200px;
-    padding: 5px;
+    width              : 200px;
+    padding            : 5px;
     font-family        : "PhotinaMTStd-Semibold", "Sans-serif";
     font-size          : 12px;
     letter-spacing     : 0.4;
@@ -595,16 +583,14 @@ table {
 
 .detail-review-section {
     max-width: 900px;
-    margin   : 60px auto 10px; /* Push section away from top section and closer to footer */
+    margin   : 60px auto 10px;  /* Push section away from top section and closer to footer */
 }
 
 .detail-review-header {
     position     : relative;
     text-align   : center;
     box-sizing   : border-box;
-    font-family  : "ELEPHNTI", "Sans-serif";
     border-bottom: 1px solid #838282;
-    color        : #333232;
 }
 
 .detail-review-container {
@@ -626,31 +612,35 @@ table {
 }
 
 .detail-review-img {
-    width        : 100px; /* Reduce size for better mobile fit */
+    width        : 100px;
     height       : 100px;
     border-radius: 2px;
-    object-fit   : cover; /* Ensure proper image scaling */
+    object-fit   : cover;
     margin-bottom: 10px;
 }
 
-/* ========== CART.HTML ========== */
+/************************************************************* CART.HTML */
 .cart-page-container {
-    width     : 1000px;
-    max-width : 100%;
+    max-width : 1200px;
     margin    : 0 auto;
-    margin-top: 30px;
-    padding   : 0 15px;
+    padding   : 40px 20px;
+    box-sizing: border-box;
+}
+
+.cart-section {
+    width    : 100%;
+    max-width: 1200px;
+}
+
+.cart-page-header {
+    margin-bottom : 20px;
+    letter-spacing: 1px;
+    text-align    : center;
 }
 
 .cart-item-row {
-    height: 100px;
+    height        : 100px;
     vertical-align: middle;
-}
-
-/* "Product:, Details:, Quantity:, Price:" Headers */
-.cart-th {
-    font-family: "PhotinaMTStd-SemiBold", "Sans-serif";
-    font-size  : 18px;
 }
 
 /* Product Image Container in Product Column */
@@ -761,9 +751,9 @@ table {
     box-shadow         : 1px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-/* CART-COST-HEADER TEXT STYLE */
-.cart-cost-header {
-    font-size: 18px;
+/* Products, Details, Quantity, Price, Total Price, Tax, Grand Total */
+.cart-header {
+    font-size: 16px;
 }
 
 /* CART-COST STYLE (NUMBERS) */
@@ -808,7 +798,7 @@ table {
     transform        : scaleX(1);
 }
 
-/* ========== DASHBOARD_SIDEBAR.HTML ========== */
+/************************************************************* DASHBOARD_SIDEBAR.HTML */
 .list-group {
     display         : flex;
     flex-direction  : column;
@@ -821,7 +811,7 @@ table {
     height          : fit-content; /* This ensures the box only wraps its content */
 }
 
-/* ========== DASHBOARD.-, MY_ORDERS.-, EDIT_PROFILE., CHAMGE_PASSWORD.HTML ========== */
+/************************************************************* DASHBOARD.-, MY_ORDERS.-, EDIT_PROFILE., CHAMGE_PASSWORD.HTML */
 /* Dashboard, My Orders, Edit Profile, Change Password */
 .list-group-item {
     font-family        : "PhotinaMTStd-SemiBold", "Sans-serif";
@@ -870,7 +860,7 @@ table {
     margin: 20px 0px;
 }
 
-/* ========== DASHBOARD.HTML ========== */
+/************************************************************* DASHBOARD.HTML */
 .dash-container {
     max-width: 1000px;
 }
@@ -963,7 +953,7 @@ table {
     font-size  : 14px;
 }
 
-/* ========== MY_ORDERS.HTML ========== */
+/************************************************************* MY_ORDERS.HTML */
 .my-column-header {
     font-family: "PhotinaMTStd-SemiBold", "Sans-serif";
     font-size  : 15px;
@@ -975,7 +965,7 @@ table {
     font-size  : 15px;
 }
 
-/* ========== EDIT_PROFILE.HTML ========== */
+/************************************************************* EDIT_PROFILE.HTML */
 /* Width of content inside form */
 .edit-form {
     max-width: 600px;
@@ -1019,7 +1009,7 @@ table {
     margin   : 0 auto;
 }
 
-/* ========== RESET_PASSWORD.HTML ========== */
+/************************************************************* RESET_PASSWORD.HTML */
 /* Password reset text style */
 .reset_header {
     font-family   : "ELEPHNT", "Sans-serif";
@@ -1029,7 +1019,7 @@ table {
     color         : #000;
 }
 
-/* ========== CHECKOUT.HTML ========== */
+/************************************************************* CHECKOUT.HTML */
 .checkout-container {
     max-width          : 400px;
     margin             : 20px auto;
@@ -1048,7 +1038,7 @@ table {
     box-shadow         : 1px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-/* ========== SIGNIN.HTML ========== */
+/************************************************************* SIGNIN.HTML */
 .signin {
     text-align: center;
 }
@@ -1065,7 +1055,7 @@ table {
     border-bottom  : 1px solid #004078;
 }
 
-/* ========== FORGOT_PASSWORD.HTML ========== */
+/************************************************************* FORGOT_PASSWORD.HTML */
 .forgot_password {
     color          : #000;
     text-decoration: none;
@@ -1090,7 +1080,7 @@ table {
     text-align: center;
 }
 
-/* ========== REGISTER.HTML ========== */
+/************************************************************* REGISTER.HTML */
 .register-no-account {
     font-family    : "PhotinaMTStd-SemiBold", "Sans-serif";
     text-align     : center;
@@ -1099,7 +1089,7 @@ table {
     color          : #121212;
 }
 
-/* ========== PAYMENTS.HTML ========== */
+/************************************************************* PAYMENTS.HTML */
 .payments-page-container {
     margin     : 0 auto;
     padding    : 10px;
@@ -1135,14 +1125,14 @@ table {
     font-size: 12px;
 }
 
-/* ========== ORDER_DETAIL.HTML ========== */
+/************************************************************* ORDER_DETAIL.HTML */
 .orderd-page-container {
     margin: 60px;
 }
 
 .orderd-container {
     background-color: #fff;
-    box-shadow: 1px 1px 2px #000000ae;
+    box-shadow      : 1px 1px 2px #000000ae;
 }
 
 .orderd-invoice-container {
@@ -1150,13 +1140,23 @@ table {
 }
 
 .orderd-footer {
-    padding:5px;
-    font-family: "ELEPHNTI";
-    font-size: 14px;
+    padding       : 5px;
+    font-family   : "ELEPHNTI";
+    font-size     : 14px;
     letter-spacing: 0.6;
 }
 
-/* ========== RESPONSIVE SETTINGS ========== */
+/************************************************************* ORDER_COMPLETE.HTML */
+.orderc-container {
+    text-align      : center;
+    margin-bottom   : 20px;
+}
+
+.orderc-btn-container {
+    margin-top: 20px;
+}
+
+/************************************************************* RESPONSIVE SETTINGS */
 @media (max-width: 768px) {
     p,li, th, td {
         font-size: 14px;
@@ -1210,13 +1210,26 @@ table {
         margin: 10px;
     }
 
+
+
     /* Container for the whole cart page */
     .cart-section {
         padding: 5px;
     }
 
+    .cart-table {
+        font-size: 12px;
+    }
+
+    /* Text: "Total price", "Tax", "Grand Total" */
+    .cart-header {
+        font-size: 14px;
+    }
+
     /* Centers text in Container */
     .cart-cost-container {
+        margin-top: 10px; 
+        font-size: 12px;
         text-align: center;
     }
 
@@ -1244,6 +1257,10 @@ table {
     /* order_detail.html */
     .orderd-page-container {
         margin: 20px;
+    }
+
+    .orderd-container {
+        margin-bottom: 10px;
     }
 
     /* Invoice needs fullspace in mobile view */
