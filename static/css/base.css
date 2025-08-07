@@ -1145,8 +1145,10 @@ table {
 }
 
 .orderd-container {
+    margin          : 20px;
     background-color: #fff;
     box-shadow      : 1px 1px 2px #000000ae;
+    
 }
 
 .orderd-invoice-container {
@@ -1162,8 +1164,8 @@ table {
 
 /************************************************************* ORDER_COMPLETE.HTML */
 .orderc-container {
-    text-align      : center;
-    margin-bottom   : 20px;
+    text-align: center;
+    margin    : 20px;
 }
 
 .orderc-btn-container {
@@ -1226,7 +1228,6 @@ table {
 
     .cart-page-container {
         margin    : 0 auto;
-
     }
 
     /* Container for the whole cart page */
@@ -1257,7 +1258,6 @@ table {
     .dashboard-card {
         margin-top: 20px;
         margin-bottom: 20px;
-        
     }
 
     /* Billing Address: Ensures the 2 columns stays as 2 columns in mobile view */
@@ -1278,10 +1278,6 @@ table {
     /* order_detail.html */
     .orderd-page-container {
         margin: 20px;
-    }
-
-    .orderd-container {
-        margin-bottom: 10px;
     }
 
     /* Invoice needs fullspace in mobile view */

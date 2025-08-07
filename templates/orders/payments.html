@@ -223,10 +223,10 @@ function sendData(details) {
             "X-CSRFToken": csrftoken,
         },
         body: JSON.stringify({
-            orderID: orderID,  // Order ID from the server
-            transID: details.id,  // PayPal transaction ID
+            orderID: orderID,
+            transID: details.id,
             payment_method: payment_method,
-            status: details.status,  // PayPal payment status
+            status: details.status,
         }),
     })
     .then(response => response.json())
