@@ -76,12 +76,6 @@ body {
 /************************************************************* GLOBAL HEADERS */
 .form-header {
     margin-left   : 10px;
-    font-family   : "ELEPHNT", "Sans-serif";
-    font-size     : 1.8rem;
-    font-weight   : 600;
-    letter-spacing: 0.8px;
-    width         : 100%;
-    color         : #000000c3;
 }
 
 .card-header {
@@ -761,6 +755,10 @@ table {
     color: #005023;
 }
 
+.cart-empty-message {
+    color: #791919;
+}
+
 /* CART-LINK Style (Links in cart.html) */
 .cart-link {
     font-family       : "PhotinaMTStd-SemiBold", "Sans-serif";
@@ -1128,6 +1126,12 @@ table {
 /************************************************************* ORDER_DETAIL.HTML */
 .orderd-page-container {
     margin: 60px;
+}
+
+/* Header: "Order Details: */
+.orderd-page-header {
+    text-align   : center;
+    margin-bottom: 10px;
 }
 
 .orderd-container {

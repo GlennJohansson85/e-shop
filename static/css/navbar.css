@@ -1,4 +1,5 @@
-/* ========== LAYOUT & STRUCTURE ========== */
+/************************************************************* NAVBAR */
+/************************************************************* LAYOUT & STRUCTURE */
 .navbar {
     max-width          : 1200px;
     width              : 100%;
@@ -28,7 +29,7 @@
     align-items   : center;
 }
 
-/* ========== BRAND ========== */
+/************************************************************* NAVBAR-BRAND */
 .navbar-brand {
     padding: 0 5px;
     cursor          : pointer;
@@ -39,7 +40,7 @@
     border          : 0.5px solid #000; /* inherited bootstrap style makes  brand border thicker than links */
 }
 
-/* ========== SEARCH ========== */
+/************************************************************* SEARCH-FORM */
 .search-form {
     margin-right : 20px;
     outline      : none;
@@ -84,7 +85,7 @@
     background-image   : url('../images/icons/e6.png');
 }
 
-/* ========== TOGGLER ========== */
+/************************************************************* NAVBAR-TOGGLER */
 .navbar-toggler {
     padding    : 2px;
     border     : none;
@@ -109,7 +110,6 @@
     height          : 5px;
     width           : 100%;
     background-color: #000;
-
     transition      : all 0.3s ease-in-out;
     margin          : 3px 0;
     display         : block;
@@ -128,7 +128,7 @@
     transform: rotate(-45deg) translate(5px, -5px);
 }
 
-/* ========== NAV LINKS ========== */
+/************************************************************* NAV-LINKS */
 .nav-link {
     padding         : 0px 10px;
     cursor          : pointer;
@@ -190,14 +190,13 @@
     transition      : all 0.2s ease;
 }
 
-/* ========== DROPDOWNS ========== */
+/************************************************************* DROPDOWN */
 /* Better performance on touch screens */
 .nav-item.dropdown.show .dropdown-menu {
     display: block;
 }
 
 .dropdown-menu {
-    font-family    : "Photina MT", "Sans-serif";
     width          : 100px; /* fixed width */
     padding        : 2px;
     top            : 100%;
@@ -210,9 +209,10 @@
 }
 
 .dropdown-item {
+    font-family    : "Photina MT", "Sans-serif";
     font-size       : 12px;
     line-height     : 12px;
-    margin          : 5px;
+
     color           : #000;
     background-color: transparent;
     display         : block;
@@ -225,7 +225,7 @@
     color           : #000;
 }
 
-/* ========== ACTIVE & HOVER STATES ========== */
+/************************************************************* ACTIVE STATES */
 .navbar-brand:hover,
 .nav-link:hover,
 .nav-link:focus,
@@ -261,7 +261,7 @@
     transform: scale(1.4);
 }
 
-/* ========== RESPONSIVE SETTINGS ========== */
+/************************************************************* RESPONSIVE SETTINGS */
 @media (max-width: 992px) {
     /* Navbar background follews to second row when toggler */
     .navbar {

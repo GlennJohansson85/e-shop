@@ -8,7 +8,7 @@
         <div class="card-width-400">
             <article class="card-body">
                 {% include 'includes/alerts.html' %}
-                <div class="form-header">REGISTER:</div>
+                <h2 class="form-header">REGISTER:</h2>
                 <form action="{% url 'register' %}" method="POST">
                     {% csrf_token %}
 
