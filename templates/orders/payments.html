@@ -231,7 +231,7 @@ function sendData(details) {
     })
     .then(response => response.json())
     .then(data => {
-        // Redirect to order complete page with order number and transaction ID
+        console.log("Data from backend:", data);
         window.location.href = redirect_url + '?order_number=' + data.order_number + '&payment_id=' + data.transID;
     })
     .catch(error => {
