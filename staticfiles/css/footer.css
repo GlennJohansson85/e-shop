@@ -1,4 +1,4 @@
-/* Footer.html - Specific Styles */
+/************************************************************* FOOTER */
 .footer {
     font-family      : "Photina MT", "Sans-serif";
     font-size        : 14px;
@@ -22,6 +22,7 @@
     margin: 5px 10px;
 }
 
+/* Shop contact info */
 .footer-center {
     margin: 10px;
 }
@@ -37,7 +38,7 @@
     text-shadow: 1px 1px 1px #000;
 }
 
-/* Card images */
+/* Transaction Cards */
 .footer-right {
     margin         : 5px 10px;
     font-size      : 25px;
@@ -55,7 +56,7 @@
     transition: all 0.2s ease;
 }
 
-/* ========== RESPONSIVE SETTINGS ========== */
+/************************************************************* RESPONSIVE SETTINGS */
 @media (max-width: 768px) {
     .footer {
         line-height: 14px;
@@ -66,24 +67,20 @@
         flex-direction: column;
     }
 
-    /* C 2024 ISHOP */
     .footer-left {
         font-size   : 12px;
         padding-left: 20px;
     }
 
-    /* ISHOP@INFO.COM */
     .footer-center {
         font-size: 12px;
     }
 
-    /* MASTERCARD */
     .footer-right {
         font-size    : 18px;
         padding-right: 20px;
     }
 }
-
 
 @media (max-width: 667px) {
     .footer {
@@ -95,22 +92,19 @@
         flex-direction: column;
     }
 
-    /* C 2024 ISHOP */
     .footer-left {
-        font-size   : 12px;
-        padding: 0;
+        font-size: 12px;
+        padding  : 0;
     }
 
-    /* ISHOP@INFO.COM */
     .footer-center {
         font-size: 12px;
-        padding: 0;
+        padding  : 0;
     }
 
-    /* MASTERCARD */
     .footer-right {
-        font-size    : 18px;
-        padding: 0;
+        font-size: 18px;
+        padding  : 0;
     }
 }
 
