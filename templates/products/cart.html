@@ -4,8 +4,9 @@
 {% block title %} E-SHOP @ Your Cart {% endblock %}
 
 {% block content %}
-<section class="cart-section">
-    <div class="cart-page-container">
+<div class="cart-page-container">
+    <section class="cart-section">
+        <h1 class="cart-page-header">Your Shopping Cart:</h1>
         <div class="row">
             {% if cart_items %}
                 <div class="col-lg-8">
@@ -14,11 +15,11 @@
                         <thead class="cart-thead">
                             <!-- Widths for Product-, Quantity-, Price- & Remove Button-columns -->
                             <tr> 
-                                <th class="cart-th" scope="col" width="80">Products:</th>
-                                <th class="cart-th" scope="col" width="100">Details:</th>
-                                <th class="cart-th text-center" scope="col" width="200">Quantity:</th>
-                                <th class="cart-th text-center" scope="col" width="100">Price:</th>
-                                <th class="cart-th text-center" scope="col" width="100"></th>
+                                <th class="cart-header" scope="col" width="80">Products:</th>
+                                <th class="cart-header" scope="col" width="100">Details:</th>
+                                <th class="cart-header text-center" scope="col" width="200">Quantity:</th>
+                                <th class="cart-header text-center" scope="col" width="100">Price:</th>
+                                <th class="cart-header text-center" scope="col" width="100"></th>
                             </tr>
                         </thead>
 
@@ -59,7 +60,7 @@
                                             <button type="submit" class="cart-plus"></button>
                                         </form>
 
-                                        <input type="text" class="form-control text-center border-1" value="{{ cart_item.quantity }}" readonly style="max-width: 40px;">
+                                        <input type="text" class="form-control text-center" value="{{ cart_item.quantity }}" readonly style="max-width: 40px;">
 
                                         <!-- Button Minus -->
                                         <a href="{% url 'remove_cart' cart_item.product.id cart_item.id %}" class="cart-minus"></a>
@@ -87,13 +88,13 @@
                 <!-- col-lg-4 = Container for total price, TAX, Grand Total, Checkout-btn, Continue Shopping-btn -->
                 <div class="col-lg-4">
                     <div class="cart-cost-container">
-                        <div class="cart-cost-header">Total price: </div>
+                        <div class="cart-header">Total price: </div>
                             <p class="cart-cost">${{total}}
 
-                        <div class="cart-cost-header">Tax: </div>
+                        <div class="cart-header">Tax: </div>
                             <p class="cart-cost">${{tax}}
                         
-                        <div class="cart-cost-header">Grand Total: </div>
+                        <div class="cart-header">Grand Total: </div>
                             <p class="cart-cost">${{grand_total}}
                             <hr>
                             <p class="text-center">
@@ -115,6 +116,6 @@
                 </div>
             {% endif %}
         </div>
-    </div>
-</section>
+    </section>
+</div>
 {% endblock %}

@@ -5,7 +5,6 @@
 
 {% block content %}
 <div class="products-page-container">
-
     <div class="detail-container">
         <div class="row" style="min-height: 50vh;">
             
@@ -19,11 +18,12 @@
                 <form action="{% url 'add_cart' single_product.id %}" method="POST">
                     {% csrf_token %}
                     <article class="detail-info-container">
-                        <h1 class="detail-info-header">{{ single_product.product_name }}</h1>
-                        <h3 class="detail-info-price">${{ single_product.price }}</h3>
+                        <h2 class="detail-info-header">{{ single_product.product_name }}</h2>
+                        <h5 class="detail-info-price">${{ single_product.price }}</h5>
                         <p class="detail-info-text">{{ single_product.description }}</p>
 
                         <div class="detail-form-container">
+
                             <!-- Color Selection -->
                             <div class="detail-form-label">Choose Color:
                                 <select name="color" id="DetailColorSelect" class="detail-select" required>
@@ -56,8 +56,6 @@
                                 </div>
                             {% endif %}
                         </div>
-
-                        
                     </article>
                 </form>
             </div>

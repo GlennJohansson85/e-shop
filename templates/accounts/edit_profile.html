@@ -14,9 +14,8 @@
             <!-- DASHBOARD_SIDEBAR.HTML -->
             {% include 'includes/dashboard_sidebar.html' %}
 
-            <!-- DASHBOARD.HTML -->
-            <main class="col-md-9">
 
+            <main class="col-md-9">
                 <article class="card dashboard-card d-card">
                     <div class="dash-header-container">
                         <div class="dash-header">Edit Profle: {{user.full_name}}</div>
@@ -25,7 +24,7 @@
                         <form class="edit-form" action="{% url 'edit_profile' %}"method="POST"enctype="multipart/form-data">
                             {% csrf_token %}
 
-                            <!-- Profile Picture -->
+                            <!-- USER PROFILE PICTURE -->
                             <div class="form-row">
                                 <div class="form-group">
                                     {% if userprofile.profile_picture and userprofile.profile_picture.url %}
