@@ -9,7 +9,6 @@
             <div class="dash-header">BILLING ADDRESS:</div>
             <form action="{% url 'place_order' %}" method="POST">
                 {% csrf_token %}
-
                     <!-- First & Last Name -->
                     <div class="form-row">
                         <div class="form-group">
@@ -35,7 +34,6 @@
                             >
                         </div>
                     </div>
-
                     <!-- Email & Phone -->
                     <div class="form-row">
                         <div class="form-group">
@@ -61,7 +59,6 @@
                             >
                         </div>
                     </div>
-
                     <!-- Address Line 1 & 2 -->
                     <div class="form-row">
                         <div class="form-group">
@@ -86,7 +83,6 @@
                             >
                         </div>
                     </div>
-
                     <!-- City & Country -->
                     <div class="form-row">
                         <div class="form-group">
@@ -112,7 +108,6 @@
                             >
                         </div>
                     </div>
-
                     <!-- Order Note -->
                     <div class="form-row">
                         <div class="form-group">
