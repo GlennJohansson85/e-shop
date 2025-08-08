@@ -111,7 +111,13 @@ c) I want to update my personal or account details.
 
 
 ### **4.2 - Responsive Design**
-![4.2-laptop](docs/readme_images/4.2-laptop.png)
+#### **4.2.1 - Desktop:**
+
+* <details>
+    <summary>Home - Landing Page</summary>
+    <img src="https://raw.githubusercontent.com/GlennJohansson85/e-shop/main/docs/readme_images/home" alt="Home desktop wireframe - image">
+</details>
+
 
 # 2 - Wireframes
 

@@ -1105,10 +1105,8 @@ table {
 }
 
 .payments-page-header {
-    font-family   : "ELEPHNT", "Sans-serif";
-    font-size     : 26px;
-    text-transform: uppercase;
-    text-align    : center;
+    text-align: center;
+    color     : #333232;
 }
 
 /* Space between cards */
@@ -1177,6 +1175,14 @@ table {
     p,li, th, td {
         font-size: 14px;
     }
+
+    /* Orderlist - All Columns visible in mobile view */
+    .table>:not(caption)>*>* {
+        padding: 0 3px;
+        margin: 0;
+        font-size: 10px;
+    }
+
 
     /* Remove witdh between columns */
     .home-page-container {
@@ -1255,9 +1261,12 @@ table {
         text-align: center;
     }
 
+    .checkout-container {
+        margin: 10px;
+    }
+
     .dashboard-card {
-        margin-top: 20px;
-        margin-bottom: 20px;
+        margin: 10px auto;
     }
 
     /* Billing Address: Ensures the 2 columns stays as 2 columns in mobile view */
@@ -1283,11 +1292,6 @@ table {
     /* Invoice needs fullspace in mobile view */
     .orderd-invoice-container {
         padding: 10px;
-    }
-
-    /* my_orders.html */
-    .myorders-text {
-        font-size: 12px;
     }
 }
 
