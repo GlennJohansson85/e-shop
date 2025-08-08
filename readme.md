@@ -115,7 +115,7 @@ c) I want to update my personal or account details.
 
 <details>
     <summary>Home - Landing Page</summary>
-    <img src="https://raw.githubusercontent.com/GlennJohansson85/e-shop/main/docs/readme_images/home-d" alt="Home desktop wireframe - image">
+    <img src="https://raw.githubusercontent.com/GlennJohansson85/e-shop/main/docs/readme_images/home-d.png" alt="Home - Landing Page">
 </details>
 
 
