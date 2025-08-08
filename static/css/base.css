@@ -97,7 +97,6 @@ h1, h2, h3, h4, h5 {
     font-weight   : 600;
     letter-spacing: 0.8px;
     width         : 100%;
-
 }
 
 h2, h3 {
@@ -118,7 +117,7 @@ table {
 .form-group {
     margin     : 10px;
     font-family: "PhotinaMTStd-Semibold", "Sans-serif";
-    font-size: 14px;
+    font-size  : 14px;
     color      : #000;
 }
 
@@ -196,9 +195,9 @@ table {
 
 /************************************************************* HOME.HTML*/
 .home-page-container {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 20px;
+    max-width : 1000px;
+    margin    : 0 auto;
+    padding   : 20px;
     box-sizing: border-box;
 }
 
@@ -215,10 +214,10 @@ table {
 
 /* Text Style */
 .home-banner {
-    text-align    : center;
-    text-shadow   : 2px 0px 0px rgb(240, 134, 226);
-    color         : #ffffffb4;
-    padding       : 2rem 1rem;
+    text-align : center;
+    text-shadow: 2px 0px 0px rgb(240, 134, 226);
+    color      : #ffffffb4;
+    padding    : 2rem 1rem;
 }
 
 /* "Popular Products:" + All Products-btn */
@@ -621,7 +620,7 @@ table {
 }
 
 .cart-section {
-    margin: 0 auto;
+    margin   : 0 auto;
     width    : 100%;
     max-width: 1000px;
 }
@@ -820,7 +819,7 @@ table {
 }
 
 /************************************************************* DASHBOARD.-, MY_ORDERS.-, EDIT_PROFILE., CHAMGE_PASSWORD.HTML */
-/* Dashboard, My Orders, Edit Profile, Change Password */
+/* List-group-items: Dashboard, My Orders, Edit Profile, Change Password */
 .list-group-item {
     font-family        : "PhotinaMTStd-SemiBold", "Sans-serif";
     font-size          : 14px;
@@ -927,6 +926,10 @@ table {
     height       : 100%;
     flex         : 1;
     border-radius: 0;
+}
+
+.dashboard-card {
+    margin: 10px;
 }
 
 /* Card Body: Centered Content */
@@ -1146,7 +1149,6 @@ table {
     margin          : 20px;
     background-color: #fff;
     box-shadow      : 1px 1px 2px #000000ae;
-    
 }
 
 .orderd-invoice-container {
@@ -1182,7 +1184,6 @@ table {
         margin: 0;
         font-size: 10px;
     }
-
 
     /* Remove witdh between columns */
     .home-page-container {
@@ -1263,10 +1264,6 @@ table {
 
     .checkout-container {
         margin: 10px;
-    }
-
-    .dashboard-card {
-        margin: 10px auto;
     }
 
     /* Billing Address: Ensures the 2 columns stays as 2 columns in mobile view */
