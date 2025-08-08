@@ -110,8 +110,10 @@ c) I want to update my personal or account details.
 ![4.1-fonts](docs/readme_images/4.1-fonts.png)
 
 
-### **4.2 - Responsive Design**
-#### **4.2.1 - Desktop:**
+### **4.2 - Screnshots** 
+
+**(Click on the ">" to see images)**
+
 
 <details>
     <summary>Home - Landing Page</summary>
