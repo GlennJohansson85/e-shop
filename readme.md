@@ -2,7 +2,7 @@
 
 # **E-Shop**
 
-![Homepage Preview](docs/readme_images/frontpage-img.png)
+![Homepage Preview](docs/readme_images/img-front.png)
 
 **E-SHOP is a dynamic e-commerce platform offering a wide range of products — primarily clothing — with customizable options. Customers can browse items by category, size and color, or quickly locate specific products using the built-in search function in the navigation bar.**
 
