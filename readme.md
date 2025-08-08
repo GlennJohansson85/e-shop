@@ -110,9 +110,9 @@ c) I want to update my personal or account details.
 ![4.1-fonts](docs/readme_images/4.1-fonts.png)
 
 
-### **4.2 - Screnshots** 
+### **4.2.1 - Desktop Screenshots** 
 
-**(Click on the ">" to see images)**
+***Click on the ">" to see images***
 
 
 <details>
@@ -120,6 +120,10 @@ c) I want to update my personal or account details.
     <img src="https://raw.githubusercontent.com/GlennJohansson85/e-shop/main/docs/readme_images/home-d.png" alt="Home - Landing Page">
 </details>
 
+<details>
+    <summary>Products</summary>
+    <img src="https://raw.githubusercontent.com/GlennJohansson85/e-shop/main/docs/readme_images/products-d.png" alt="Home - Landing Page">
+</details>
 
 # 2 - Wireframes
 
