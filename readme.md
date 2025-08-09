@@ -121,7 +121,7 @@ c) I want to update my personal or account details.
 </details>
 
 <details>
-    <summary>Products.</summary>
+    <summary>Products</summary>
     <img src="https://raw.githubusercontent.com/GlennJohansson85/e-shop/main/docs/readme_images/products-d.png" alt="Screenshot of Page 'Products' in desktop view">
 </details>
 
