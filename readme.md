@@ -116,13 +116,73 @@ c) I want to update my personal or account details.
 
 
 <details>
-    <summary>Home - Landing Page</summary>
-    <img src="https://raw.githubusercontent.com/GlennJohansson85/e-shop/main/docs/readme_images/home-d.png" alt="Home - Landing Page">
+    <summary>Home</summary>
+    <img src="https://raw.githubusercontent.com/GlennJohansson85/e-shop/main/docs/readme_images/home-d.png" alt="Screenshot of Page 'Home' in desktop view">
 </details>
 
 <details>
-    <summary>Products</summary>
-    <img src="https://raw.githubusercontent.com/GlennJohansson85/e-shop/main/docs/readme_images/products-d.png" alt="Home - Landing Page">
+    <summary>Products.</summary>
+    <img src="https://raw.githubusercontent.com/GlennJohansson85/e-shop/main/docs/readme_images/products-d.png" alt="Screenshot of Page 'Products' in desktop view">
+</details>
+
+<details>
+    <summary>Product Details</summary>
+    <img src="https://raw.githubusercontent.com/GlennJohansson85/e-shop/main/docs/readme_images/product_detail-d.png" alt="Screenshot of Page 'Product Details' in desktop view">
+</details>
+
+<details>
+    <summary>Cart</summary>
+    <img src="https://raw.githubusercontent.com/GlennJohansson85/e-shop/main/docs/readme_images/cart-d" alt="Screenshot of Page 'Cart' in desktop view">
+</details>
+
+<details>
+    <summary>Checkout / Billing Address</summary>
+    <img src="https://raw.githubusercontent.com/GlennJohansson85/e-shop/main/docs/readme_images/checkout-d" alt="Screenshot of Page 'Checkout' in desktop view">
+</details>
+
+<details>
+    <summary>Payments / Place order </summary>
+    <img src="https://raw.githubusercontent.com/GlennJohansson85/e-shop/main/docs/readme_images/place_order-d" alt="Screenshot of Page 'Payments/Place Order' in desktop view">
+</details>
+
+<details>
+    <summary>Order Complete</summary>
+    <img src="https://raw.githubusercontent.com/GlennJohansson85/e-shop/main/docs/readme_images/order_complete-d" alt="Screenshot of Page 'Order Complete' in desktop view">
+</details>
+
+<details>
+    <summary>Order Details</summary>
+    <img src="https://raw.githubusercontent.com/GlennJohansson85/e-shop/main/docs/readme_images/order_details-d" alt="Screenshot of Page 'Order Details' in desktop view">
+</details>
+
+<details>
+    <summary>Dashboard</summary>
+    <img src="https://raw.githubusercontent.com/GlennJohansson85/e-shop/main/docs/readme_images/dashboard-d" alt="Screenshot of Page 'Dashboard' in desktop view">
+</details>
+
+<details>
+    <summary>My Orders</summary>
+    <img src="https://raw.githubusercontent.com/GlennJohansson85/e-shop/main/docs/readme_images/my_orders-d" alt="Screenshot of Page 'My Orders' in desktop view">
+</details>
+
+<details>
+    <summary>Edit Profile</summary>
+    <img src="https://raw.githubusercontent.com/GlennJohansson85/e-shop/main/docs/readme_images/edit_profile-d" alt="Screenshot of Page 'Edit Profile' in desktop view">
+</details>
+
+<details>
+    <summary>Change Password</summary>
+    <img src="https://raw.githubusercontent.com/GlennJohansson85/e-shop/main/docs/readme_images/change_password-d" alt="Screenshot of Page 'Change Password' in desktop view">
+</details>
+
+<details>
+    <summary>Login</summary>
+    <img src="https://raw.githubusercontent.com/GlennJohansson85/e-shop/main/docs/readme_images/login-d" alt="Screenshot of Page 'Login' in desktop view">
+</details>
+
+<details>
+    <summary>Register</summary>
+    <img src="https://raw.githubusercontent.com/GlennJohansson85/e-shop/main/docs/readme_images/register-d" alt="Screenshot of Page 'Register' in desktop view">
 </details>
 
 # 2 - Wireframes
