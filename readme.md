@@ -110,11 +110,13 @@ c) I want to update my personal or account details.
 ![4.1-fonts](docs/readme_images/4.1-fonts.png)
 
 
-### **4.2. Website Images** 
+### **4.2. Website Images**
+
+*Click on the ">" to see images*
 
 #### **4.2.1. Desktop View** 
 
-***Click on the ">" to see images***
+
 
 <details>
     <summary>Home</summary>
