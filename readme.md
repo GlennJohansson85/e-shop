@@ -115,7 +115,7 @@ c) I want to update my personal or account details.
 **Click on the ">" to see images**
 
 <details>
-    <summary>Home Page – The landing page greets visitors with a nostalgic, retro-style banner featuring a soft, blurred effect. Just below, it showcases the shop’s eight most popular items, giving a quick snapshot of what’s trending.</summary>
+    <summary>**Home Page** – The landing page greets visitors with a nostalgic, retro-style banner featuring a soft, blurred effect. Just below, it showcases the shop’s eight most popular items, giving a quick snapshot of what’s trending.</summary>
     <img src="https://raw.githubusercontent.com/GlennJohansson85/e-shop/main/docs/readme_images/home-d.png" alt="Screenshot of Page 'Home' in desktop view">
 </details>
 
@@ -194,7 +194,7 @@ c) I want to update my personal or account details.
 ### **4.2.1. Website Screenshots - Smartphone**
 
 <details>
-    <summary><strong>Home Page</strong></summary>
+    <summary>Home Page</summary>
     <img src="https://raw.githubusercontent.com/GlennJohansson85/e-shop/main/docs/readme_images/home-m.png" alt="Screenshot of Page 'Home' in Smartphone view">
 </details>
 
