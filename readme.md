@@ -194,7 +194,7 @@ c) I want to update my personal or account details.
 ### **4.2.1. Website Screenshots - Smartphone**
 
 <details>
-    <summary>Home Page</summary>
+    <summary><strong>Home Page</strong></summary>
     <img src="https://raw.githubusercontent.com/GlennJohansson85/e-shop/main/docs/readme_images/home-m.png" alt="Screenshot of Page 'Home' in Smartphone view">
 </details>
 
@@ -209,7 +209,7 @@ c) I want to update my personal or account details.
 </details>
 
 <details>
-    <summary>Cart PaGE</summary>
+    <summary>Cart Page</summary>
     <img src="https://raw.githubusercontent.com/GlennJohansson85/e-shop/main/docs/readme_images/cart-m.png" alt="Screenshot of Page 'Cart' in Smartphone view">
 </details>
 
