@@ -107,152 +107,165 @@ c) I want to update my personal or account details.
 
 
 ### **4.1 Fonts used in project**
+
 ![4.1-fonts](docs/readme_images/4.1-fonts.png)
 
-
-### **4.2.1. Website Screenshots - Desktop
+### **4.2.1. Website Screenshots - Desktop**
 
 **Click on the ">" to see images**
+
 <details>
-    <summary>Home</summary>
+    <summary>Home Page – The landing page greets visitors with a nostalgic, retro-style banner featuring a soft, blurred effect. Just below, it showcases the shop’s eight most popular items, giving a quick snapshot of what’s trending.</summary>
     <img src="https://raw.githubusercontent.com/GlennJohansson85/e-shop/main/docs/readme_images/home-d.png" alt="Screenshot of Page 'Home' in desktop view">
 </details>
 
 <details>
-    <summary>Products</summary>
+    <summary>Products Page – Browse the full product range by category using the convenient filter box. Each page displays six items, with pagination controls allowing you to explore additional products beyond the first set.</summary>
     <img src="https://raw.githubusercontent.com/GlennJohansson85/e-shop/main/docs/readme_images/products-d.png" alt="Screenshot of Page 'Products' in desktop view">
 </details>
 
 <details>
-    <summary>Product Details</summary>
+    <summary>Product Detail Page – View a detailed item description and customer reviews, select your preferred color and size, and add the product to your cart for purchase.</summary>
     <img src="https://raw.githubusercontent.com/GlennJohansson85/e-shop/main/docs/readme_images/product_detail-d.png" alt="Screenshot of Page 'Product Details' in desktop view">
 </details>
 
 <details>
-    <summary>Cart</summary>
+    <summary>Cart Page - View and manage your cart items with options to add or remove products. See the subtotal, tax, and total amount updated in real time.</summary>
     <img src="https://raw.githubusercontent.com/GlennJohansson85/e-shop/main/docs/readme_images/cart-d.png" alt="Screenshot of Page 'Cart' in desktop view">
 </details>
 
 <details>
-    <summary>Checkout / Billing Address</summary>
+    <summary>Checkout Page - Enter or confirm your shipping details (auto-filled for registered users) to complete your purchase.</summary>
     <img src="https://raw.githubusercontent.com/GlennJohansson85/e-shop/main/docs/readme_images/checkout-d.png" alt="Screenshot of Page 'Checkout' in desktop view">
 </details>
 
 <details>
-    <summary>Payments / Place order </summary>
+    <summary>Place order Page - Review your order and shipping details. Choose payment method.</summary>
     <img src="https://raw.githubusercontent.com/GlennJohansson85/e-shop/main/docs/readme_images/place_order-d.png" alt="Screenshot of Page 'Payments/Place Order' in desktop view">
 </details>
 
 <details>
-    <summary>Order Complete</summary>
+    <summary>Order Complete Page - After a successful transaction, you’re redirected here to view your order details. You will also recieve a confirmation email with your order number.</summary>
     <img src="https://raw.githubusercontent.com/GlennJohansson85/e-shop/main/docs/readme_images/order_complete-d.png" alt="Screenshot of Page 'Order Complete' in desktop view">
 </details>
 
 <details>
-    <summary>Order Details</summary>
-    <img src="https://raw.githubusercontent.com/GlennJohansson85/e-shop/main/docs/readme_images/order_details-d.png" alt="Screenshot of Page 'Order Details' in desktop view">
-</details>
-
-<details>
-    <summary>Dashboard</summary>
+    <summary>Dashboard Page - Your personal space showing your profile picture (if added), contact info, total orders, and a link to your order history.</summary>
     <img src="https://raw.githubusercontent.com/GlennJohansson85/e-shop/main/docs/readme_images/dashboard-d.png" alt="Screenshot of Page 'Dashboard' in desktop view">
 </details>
 
 <details>
-    <summary>My Orders</summary>
+    <summary>My Orders Page - This page presents a detailed table of all your past orders, sorted by transaction date with the most recent first. Each order entry includes the Order Number, Billing Name, Phone Number, Total Cost, and Transaction Date, allowing you to easily track and review your purchase history in chronological order.</summary>
     <img src="https://raw.githubusercontent.com/GlennJohansson85/e-shop/main/docs/readme_images/my_orders-d.png" alt="Screenshot of Page 'My Orders' in desktop view">
 </details>
 
 <details>
-    <summary>Edit Profile</summary>
+    <summary>Order Details Page - Clicking an order number in “My Orders” opens this page, where you can view detailed information about that specific order, including the items purchased and other relevant order details.</summary>
+    <img src="https://raw.githubusercontent.com/GlennJohansson85/e-shop/main/docs/readme_images/order_details-d.png" alt="Screenshot of Page 'Order Details' in desktop view">
+</details>
+
+<details>
+    <summary>Edit Profile Page - Manage your personal information effortlessly by updating your shipping details and adding or changing your profile picture—all in one convenient place to keep your account up to date.</summary>
     <img src="https://raw.githubusercontent.com/GlennJohansson85/e-shop/main/docs/readme_images/edit_profile-d.png" alt="Screenshot of Page 'Edit Profile' in desktop view">
 </details>
 
 <details>
-    <summary>Change Password</summary>
+    <summary>Change Password Page - Easily boost your account security by updating your password anytime. Just enter your current password, then create and confirm a new one—keeping your account safe and giving you peace of mind.</summary>
     <img src="https://raw.githubusercontent.com/GlennJohansson85/e-shop/main/docs/readme_images/change_password-d.png" alt="Screenshot of Page 'Change Password' in desktop view">
 </details>
 
 <details>
-    <summary>Login</summary>
+    <summary>Register Page - Create an account to start making purchases quickly and securely. You can add your shipping details later in your profile or during checkout for a smooth, personalized shopping experience.
+</summary>
+    <img src="https://raw.githubusercontent.com/GlennJohansson85/e-shop/main/docs/readme_images/register-d.png" alt="Screenshot of Page 'Register' in desktop view">
+</details>
+
+<details>
+    <summary>Login Page - Sign in to your account to start shopping and complete purchases. Forgot your password? Simply click the “Forgot your password”.</summary>
     <img src="https://raw.githubusercontent.com/GlennJohansson85/e-shop/main/docs/readme_images/login-d.png" alt="Screenshot of Page 'Login' in desktop view">
 </details>
 
 <details>
-    <summary>Register</summary>
-    <img src="https://raw.githubusercontent.com/GlennJohansson85/e-shop/main/docs/readme_images/register-d.png" alt="Screenshot of Page 'Register' in desktop view">
+    <summary>Forgot your Password Page - Just add your registered email to reset your password. </summary>
+    <img src="https://raw.githubusercontent.com/GlennJohansson85/e-shop/main/docs/readme_images/reset-password-d" alt="Screenshot of Page 'Forgot your password Page' in desktop view">
 </details>
 
-### **4.2.1. Website Screenshots - Smartphone 
+
+### **4.2.1. Website Screenshots - Smartphone**
 
 <details>
-    <summary>Home</summary>
-    <img src="https://raw.githubusercontent.com/GlennJohansson85/e-shop/main/docs/readme_images/home-m.png" alt="Screenshot of Page 'Home' in desktop view">
-</details>
-
-<details>
-    <summary>Products</summary>
-    <img src="https://raw.githubusercontent.com/GlennJohansson85/e-shop/main/docs/readme_images/products-m.png" alt="Screenshot of Page 'Products' in desktop view">
+    <summary>Home Page</summary>
+    <img src="https://raw.githubusercontent.com/GlennJohansson85/e-shop/main/docs/readme_images/home-m.png" alt="Screenshot of Page 'Home' in Smartphone view">
 </details>
 
 <details>
-    <summary>Product Details</summary>
-    <img src="https://raw.githubusercontent.com/GlennJohansson85/e-shop/main/docs/readme_images/product_detail-m.png" alt="Screenshot of Page 'Product Details' in desktop view">
+    <summary>Products page</summary>
+    <img src="https://raw.githubusercontent.com/GlennJohansson85/e-shop/main/docs/readme_images/products-m.png" alt="Screenshot of Page 'Products' in Smartphone view">
 </details>
 
 <details>
-    <summary>Cart</summary>
-    <img src="https://raw.githubusercontent.com/GlennJohansson85/e-shop/main/docs/readme_images/cart-m.png" alt="Screenshot of Page 'Cart' in desktop view">
+    <summary>Product Details Page</summary>
+    <img src="https://raw.githubusercontent.com/GlennJohansson85/e-shop/main/docs/readme_images/product_detail-m.png" alt="Screenshot of Page 'Product Details' in Smartphone view">
 </details>
 
 <details>
-    <summary>Checkout / Billing Address</summary>
-    <img src="https://raw.githubusercontent.com/GlennJohansson85/e-shop/main/docs/readme_images/checkout-m.png" alt="Screenshot of Page 'Checkout' in desktop view">
+    <summary>Cart PaGE</summary>
+    <img src="https://raw.githubusercontent.com/GlennJohansson85/e-shop/main/docs/readme_images/cart-m.png" alt="Screenshot of Page 'Cart' in Smartphone view">
 </details>
 
 <details>
-    <summary>Payments / Place order </summary>
-    <img src="https://raw.githubusercontent.com/GlennJohansson85/e-shop/main/docs/readme_images/place_order-m.png" alt="Screenshot of Page 'Payments/Place Order' in desktop view">
+    <summary>Checkout Page</summary>
+    <img src="https://raw.githubusercontent.com/GlennJohansson85/e-shop/main/docs/readme_images/checkout-m.png" alt="Screenshot of Page 'Checkout' in Smartphone view">
 </details>
 
 <details>
-    <summary>Order Complete</summary>
-    <img src="https://raw.githubusercontent.com/GlennJohansson85/e-shop/main/docs/readme_images/order_complete-m.png" alt="Screenshot of Page 'Order Complete' in desktop view">
+    <summary>Place Order Page</summary>
+    <img src="https://raw.githubusercontent.com/GlennJohansson85/e-shop/main/docs/readme_images/place_order-m.png" alt="Screenshot of Page 'Payments/Place Order' in Smartphone view">
 </details>
 
 <details>
-    <summary>Order Details</summary>
-    <img src="https://raw.githubusercontent.com/GlennJohansson85/e-shop/main/docs/readme_images/order_details-m.png" alt="Screenshot of Page 'Order Details' in desktop view">
+    <summary>Order Complete Page</summary>
+    <img src="https://raw.githubusercontent.com/GlennJohansson85/e-shop/main/docs/readme_images/order_complete-m.png" alt="Screenshot of Page 'Order Complete' in Smartphone view">
 </details>
 
 <details>
-    <summary>Dashboard</summary>
-    <img src="https://raw.githubusercontent.com/GlennJohansson85/e-shop/main/docs/readme_images/dashboard-m.png" alt="Screenshot of Page 'Dashboard' in desktop view">
+    <summary>Order Details Page</summary>
+    <img src="https://raw.githubusercontent.com/GlennJohansson85/e-shop/main/docs/readme_images/order_details-m.png" alt="Screenshot of Page 'Order Details' in Smartphone view">
 </details>
 
 <details>
-    <summary>My Orders</summary>
-    <img src="https://raw.githubusercontent.com/GlennJohansson85/e-shop/main/docs/readme_images/my_orders-m.png" alt="Screenshot of Page 'My Orders' in desktop view">
+    <summary>Dashboard Page</summary>
+    <img src="https://raw.githubusercontent.com/GlennJohansson85/e-shop/main/docs/readme_images/dashboard-m.png" alt="Screenshot of Page 'Dashboard' in Smartphone view">
 </details>
 
 <details>
-    <summary>Edit Profile</summary>
-    <img src="https://raw.githubusercontent.com/GlennJohansson85/e-shop/main/docs/readme_images/edit_profile-m.png" alt="Screenshot of Page 'Edit Profile' in desktop view">
+    <summary>My Orders Page</summary>
+    <img src="https://raw.githubusercontent.com/GlennJohansson85/e-shop/main/docs/readme_images/my_orders-m.png" alt="Screenshot of Page 'My Orders' in Smartphone view">
 </details>
 
 <details>
-    <summary>Change Password</summary>
-    <img src="https://raw.githubusercontent.com/GlennJohansson85/e-shop/main/docs/readme_images/change_password-m.png" alt="Screenshot of Page 'Change Password' in desktop view">
+    <summary>Edit Profile Page</summary>
+    <img src="https://raw.githubusercontent.com/GlennJohansson85/e-shop/main/docs/readme_images/edit_profile-m.png" alt="Screenshot of Page 'Edit Profile' in Smartphone view">
 </details>
 
 <details>
-    <summary>Login</summary>
-    <img src="https://raw.githubusercontent.com/GlennJohansson85/e-shop/main/docs/readme_images/login-m.png" alt="Screenshot of Page 'Login' in desktop view">
+    <summary>Change Password Page</summary>
+    <img src="https://raw.githubusercontent.com/GlennJohansson85/e-shop/main/docs/readme_images/change_password-m.png" alt="Screenshot of Page 'Change Password' in Smartphone view">
 </details>
 
 <details>
-    <summary>Register</summary>
-    <img src="https://raw.githubusercontent.com/GlennJohansson85/e-shop/main/docs/readme_images/register-m.png" alt="Screenshot of Page 'Register' in desktop view">
+    <summary>Register Page</summary>
+    <img src="https://raw.githubusercontent.com/GlennJohansson85/e-shop/main/docs/readme_images/register-m.png" alt="Screenshot of Page 'Register' in Smartphone view">
+</details>
+
+<details>
+    <summary>Login Page</summary>
+    <img src="https://raw.githubusercontent.com/GlennJohansson85/e-shop/main/docs/readme_images/login-m.png" alt="Screenshot of Page 'Login' in Smartphone view">
+</details>
+
+<details>
+    <summary>Forgot your Password Page - Just add your registered email to reset your password. </summary>
+    <img src="https://raw.githubusercontent.com/GlennJohansson85/e-shop/main/docs/readme_images/reset-password-m" alt="Screenshot of Page 'Forgot your password Page' in Smartphone view">
 </details>
 
 

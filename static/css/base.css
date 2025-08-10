@@ -1023,11 +1023,12 @@ table {
 /************************************************************* RESET_PASSWORD.HTML */
 /* Password reset text style */
 .reset_header {
-    font-family   : "ELEPHNT", "Sans-serif";
-    font-size     : 22px;
-    letter-spacing: 1px;
-    margin-left   : 8px;
-    color         : #000;
+    margin-left   : 10px;
+}
+
+.reset-container {
+    max-width: 400px;
+    margin: 0 auto;
 }
 
 /************************************************************* CHECKOUT.HTML */
@@ -1099,6 +1100,9 @@ table {
     margin-top     : 20px;
     color          : #121212;
 }
+
+/************************************************************* RESET_PASSWORD.HTML */
+
 
 /************************************************************* PAYMENTS.HTML */
 .payments-page-container {
@@ -1290,6 +1294,12 @@ table {
     .orderd-invoice-container {
         padding: 10px;
     }
+
+    .reset-container {
+        margin: 10px;
+}
+
+
 }
 
 @media (min-width: 769px) and (max-width: 1200px) {
