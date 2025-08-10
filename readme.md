@@ -264,8 +264,8 @@ c) I want to update my personal or account details.
 </details>
 
 <details>
-    <summary>Forgot your Password Page - Just add your registered email to reset your password. </summary>
-    <img src="https://raw.githubusercontent.com/GlennJohansson85/e-shop/main/docs/readme_images/reset-password-m" alt="Screenshot of Page 'Forgot your password Page' in Smartphone view">
+    <summary>Forgot your Password Page</summary>
+    <img src="https://raw.githubusercontent.com/GlennJohansson85/e-shop/main/docs/readme_images/reset_password-m" alt="Screenshot of Page 'Forgot your password Page' in Smartphone view">
 </details>
 
 
