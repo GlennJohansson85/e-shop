@@ -110,14 +110,9 @@ c) I want to update my personal or account details.
 ![4.1-fonts](docs/readme_images/4.1-fonts.png)
 
 
-### **4.2. Website Images**
+### **4.2.1. Website Screenshots - Desktop
 
-*Click on the ">" to see images*
-
-#### **4.2.1. Desktop View** 
-
-
-
+**Click on the ">" to see images**
 <details>
     <summary>Home</summary>
     <img src="https://raw.githubusercontent.com/GlennJohansson85/e-shop/main/docs/readme_images/home-d.png" alt="Screenshot of Page 'Home' in desktop view">
@@ -188,7 +183,7 @@ c) I want to update my personal or account details.
     <img src="https://raw.githubusercontent.com/GlennJohansson85/e-shop/main/docs/readme_images/register-d.png" alt="Screenshot of Page 'Register' in desktop view">
 </details>
 
-#### **4.2.2. Smartphone View** 
+### **4.2.1. Website Screenshots - Smartphone 
 
 <details>
     <summary>Home</summary>
