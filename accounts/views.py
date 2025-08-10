@@ -43,7 +43,7 @@ def register(request):
 
             # USER ACTIVATION
             current_site    = get_current_site(request)
-            mail_subject    = 'iShop - Activation'
+            mail_subject    = 'E-Shop - Account Activation'
             message         = render_to_string('accounts/account_verification_email.html', {
                 'user': user,
                 'domain': current_site,
@@ -51,9 +51,15 @@ def register(request):
                 'token': default_token_generator.make_token(user),
             })
             to_email    = email
-            send_email  = EmailMessage(mail_subject, message, to=[to_email])
+            send_email  = EmailMessage(
+                mail_subject,
+                message,
+                from_email='E-SHOP <glenncoding@gmail.com',
+                to=[to_email]
+            )
+            send_email.content_subtype = "html"  # Content in email will be html format
             send_email.send()
-            return redirect('/accounts/login/?command=verification&email='+email)
+            return redirect('/accounts/signin/?command=verification&email='+email)
     else:
         form    = RegistrationForm()
     context = {
