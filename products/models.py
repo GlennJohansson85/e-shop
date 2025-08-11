@@ -7,16 +7,16 @@ class Product(models.Model):
       '''
       Model representing a product.
       '''
-      product_name      = models.CharField(max_length=200, unique=True)
-      slug              = models.SlugField(max_length=200, unique=True)
-      description       = models.TextField(max_length=500, blank=True)
-      price             = models.IntegerField()
-      images            = models.ImageField(upload_to='photos/products')
-      stock             = models.IntegerField()
-      is_available      = models.BooleanField(default=True)
-      category          = models.ForeignKey(Category, on_delete=models.CASCADE)
-      created_date      = models.DateTimeField(auto_now_add=True)
-      modified_date     = models.DateTimeField(auto_now=True)
+      product_name  = models.CharField(max_length=200, unique=True)
+      slug          = models.SlugField(max_length=200, unique=True)
+      description   = models.TextField(max_length=500, blank=True)
+      price         = models.IntegerField()
+      images        = models.ImageField(upload_to='photos/products')
+      stock         = models.IntegerField()
+      is_available  = models.BooleanField(default=True)
+      category      = models.ForeignKey(Category, on_delete=models.CASCADE)
+      created_date  = models.DateTimeField(auto_now_add=True)
+      modified_date = models.DateTimeField(auto_now=True)
 
       def get_url(self):
             return reverse('product_detail', args=[self.category.slug, self.slug])
@@ -56,9 +56,9 @@ class Variation(models.Model):
             max_length=100, choices=variation_category_choice
             )
       variation_value = models.CharField(max_length=100)
-      is_active = models.BooleanField(default=True)
-      created_date = models.DateTimeField(auto_now=True)
-      objects = VariationManager()
+      is_active       = models.BooleanField(default=True)
+      created_date    = models.DateTimeField(auto_now=True)
+      objects         = VariationManager()
 
       def __str__(self):
             return self.variation_value

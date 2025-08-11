@@ -27,7 +27,7 @@ def payments(request):
     )
     payment.save()
 
-    order.payment = payment
+    order.payment    = payment
     order.is_ordered = True
     order.save()
 
@@ -45,9 +45,9 @@ def payments(request):
         orderproduct.ordered       = True
         orderproduct.save()
 
-        cart_item = CartItem.objects.get(id=item.id)
+        cart_item         = CartItem.objects.get(id=item.id)
         product_variation = cart_item.variations.all()
-        orderproduct = OrderProduct.objects.get(id=orderproduct.id)
+        orderproduct      = OrderProduct.objects.get(id=orderproduct.id)
         orderproduct.variations.set(product_variation)
         orderproduct.save()
 
@@ -62,7 +62,7 @@ def payments(request):
 
     # Send order recieved email to customer
     mail_subject = 'Thank you for your order!'
-    message = render_to_string('orders/order_recieved_email.html', {
+    message      = render_to_string('orders/order_recieved_email.html', {
         'user' : request.user,
         'order': order,
     })
@@ -73,7 +73,7 @@ def payments(request):
     # Send order number and transaction id back to sendData method via JsonResponse
     data = {
         'order_number': order.order_number,
-        'transID': payment.payment_id,
+        'transID'     : payment.payment_id,
     }
     return JsonResponse(data)
 
@@ -81,18 +81,17 @@ def payments(request):
 
 def place_order(request, total=0, quantity=0,):
     current_user = request.user
-    # If the cart count is less than or equal to 0, then redirect back to shop
-    cart_items = CartItem.objects.filter(user=current_user)
-    cart_count = cart_items.count()
+    cart_items   = CartItem.objects.filter(user=current_user)
+    cart_count   = cart_items.count()
     if cart_count <= 0:
         return redirect('order_complete')
 
     grand_total = 0
-    tax = 0
+    tax         = 0
     for cart_item in cart_items:
-        total += (cart_item.product.price * cart_item.quantity)
+        total    += (cart_item.product.price * cart_item.quantity)
         quantity += cart_item.quantity
-    tax = (2 * total)/100
+    tax         = (2 * total)/100
     grand_total = total + tax
 
     if request.method == 'POST':
@@ -120,12 +119,12 @@ def place_order(request, total=0, quantity=0,):
             dt = int(datetime.date.today().strftime('%d'))
             mt = int(datetime.date.today().strftime('%m'))
             d  = datetime.date(yr,mt,dt)
-            current_date = d.strftime("%Y%m%d") #20210305
-            order_number = current_date + str(data.id)
+            current_date      = d.strftime("%Y%m%d") #20210305
+            order_number      = current_date + str(data.id)
             data.order_number = order_number
             data.save()
 
-            order = Order.objects.get(user=current_user, is_ordered=False, order_number=order_number)
+            order   = Order.objects.get(user=current_user, is_ordered=False, order_number=order_number)
             context = {
                 'order'      : order,
                 'cart_items' : cart_items,
@@ -140,24 +139,24 @@ def place_order(request, total=0, quantity=0,):
 
 def order_complete(request):
     order_number = request.GET.get('order_number')
-    transID = request.GET.get('payment_id')
+    transID      = request.GET.get('payment_id')
 
     try:
-        order = Order.objects.get(order_number=order_number, is_ordered=True)
+        order            = Order.objects.get(order_number=order_number, is_ordered=True)
         ordered_products = OrderProduct.objects.filter(order_id=order.id)
-        subtotal = sum(item.product_price * item.quantity for item in ordered_products)
-        payment = Payment.objects.get(payment_id=transID)
+        subtotal         = sum(item.product_price * item.quantity for item in ordered_products)
+        payment          = Payment.objects.get(payment_id=transID)
 
         # Add the success message here
         messages.success(request, "Thank you! Your payment was successful.")
 
         context = {
-            'order': order,
+            'order'           : order,
             'ordered_products': ordered_products,
-            'order_number': order.order_number,
-            'transID': payment.payment_id,
-            'payment': payment,
-            'subtotal': subtotal,
+            'order_number'    : order.order_number,
+            'transID'         : payment.payment_id,
+            'payment'         : payment,
+            'subtotal'        : subtotal,
         }
 
         return render(request, 'orders/order_complete.html', context)
