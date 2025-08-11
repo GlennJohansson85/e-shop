@@ -7,7 +7,7 @@ if os.path.isfile('env.py'):
 
 BASE_DIR             = Path(__file__).resolve().parent.parent
 SECRET_KEY           = os.environ.get('SECRET_KEY', '')
-DEBUG                = True
+DEBUG                = False
 ROOT_URLCONF         = 'e-shop.urls'
 WSGI_APPLICATION     = 'e-shop.wsgi.application'
 AUTH_USER_MODEL      = 'accounts.Account'
